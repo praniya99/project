@@ -20,7 +20,7 @@ const bridal = () => {
               </a>
             </div>
             <div className="rect-heading">
-              <h5 className="rect-head-head">Bridal</h5>
+              
             </div>
           </div>
 
@@ -35,7 +35,7 @@ const bridal = () => {
               </a>
             </div>
             <div className="rect-heading">
-              <h5 className="rect-head-head">Nails</h5>
+             
             </div>
           </div>
 
@@ -50,7 +50,7 @@ const bridal = () => {
               </a>
             </div>
             <div className="rect-heading">
-              <h5 className="rect-head-head">Makeup</h5>
+              
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@ const bridal = () => {
               </a>
             </div>
             <div className="rect-heading">
-              <h5 className="rect-head-head">Hair Cuts</h5>
+              
             </div>
           </div>
 
@@ -82,7 +82,7 @@ const bridal = () => {
               </a>
             </div>
             <div className="rect-heading">
-              <h5 className="rect-head-head">Hair Colouring</h5>
+             
             </div>
           </div>
 
@@ -97,7 +97,7 @@ const bridal = () => {
               </a>
             </div>
             <div className="rect-heading">
-              <h5 className="rect-head-head">Facial Cleanup</h5>
+             
             </div>
           </div>
         

@@ -1,17 +1,18 @@
 .Container1{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+
   }
   .mainHead{
-    display: flex;
-    width: 99%;
-    min-height: 150px;
-    flex-direction: row;
-    background-color: #F1A4BD;
-    text-align: center;
-    align-items: center;
+  display: flex;
+  width: 97.8vw;
+  min-height: 150px;
+  flex-direction: row;
+  background-color: #F1A4BD;
+  text-align: center;
+  align-items: center;
+
   }
   
   .mainHeadServices{
@@ -20,19 +21,21 @@
     font-family: 'Arial';
     font-size: 35px;
     font-family: 'Kaushan Script' ,cursive
+  
   }
   
   .admin1{
-    margin-left: 65vw;
-    color: black;
-    font-family: 'Arial';
-    font-size: 16px;
+  margin-left: 55vw;
+  color: black;
+  font-family: 'Arial';
+  font-size: 16px;
+
   }
   
   .sidePanel{
     display: flex;
     width: 18%;
-    min-height: 90vh;
+    min-height: 130vh;
     flex-direction: column;
     background-color: rgb(227, 227, 227);
     text-align: center;
@@ -40,19 +43,20 @@
   }
   .searchBtn{
    
-   margin-top: 20px;
+    margin-top: 20px;
     margin-left: 10px;
     margin-right: 20px;
-    
-   
+  
+     
   }
   
   
   .sideTopic{
     font-size: 20px;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
     
   }
   .topicBtn {
@@ -65,9 +69,11 @@
     cursor: pointer;
     padding: 12px;
     border-radius: 50px;
+  
   }
   .fot-tag{
-    text-align: center;
-    font-size: 10px;
-    margin-top: 40px;
+  text-align:center;
+  font-size: 10px;
+  margin-top:40px;
+
   }
