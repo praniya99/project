@@ -6,24 +6,17 @@ const Facialcleanup = () => {
     <div>
       <Subheader/>
       <div className="big-rect12">
-            <div> <h2 className='heading-Makeup'><b>Makeup</b></h2></div>
+            <div> <h2 className='heading-Nails'><b>Nails</b></h2></div>
                 <div className="small-rect12">
                      <div >
-                        <img src="../src/assets/T7.jpg"
+                        <img src="../src/assets/T6.jpg"
                              alt="Description 1" 
-                             className="rect-image-Makeup"/>
+                             className="rect-image-Nails"/>
                         
                     </div>
-                    <div className="rect-heading-Makeup">
-                    <h3><b> make the most beautiful day of your life even more beautiful.</b></h3>
-                    <h5 className="rect-head-Makeup">Natural Makeup: Enhances features subtly for a fresh, flawless look.
-Glam Makeup: Dramatic with bold colors and contouring for special events.
-Bridal Makeup: Tailored for weddings, ranging from soft to glamorous.
-Fashion/Editorial Makeup: Artistic and experimental, seen on runways and in magazines.
-Theatrical/Stage Makeup: Exaggerates features for visibility under stage lighting.
-Special Effects Makeup: Creates illusions like aging or wounds for film and theater.
-Everyday Makeup: Simple, daily wear for a polished look.
-Airbrush Makeup: Lightweight and long-lasting, applied with an airbrush gun</h5>
+                    <div className="rect-heading-Nails">
+                    <h3><b>Let's make the most beautiful day of your life even more beautiful.</b></h3>
+                    <h5 className="rect-head-Nails">A facial is a family of skin care treatments for the face, including steam, exfoliation, extraction, creams, lotions, facial masks, peels, and massage. They are normally performed in beauty salons, but are also a common spa treatment. They are used for general skin health as well as for specific skin conditions.</h5>
                     </div>
                 </div>
 
@@ -31,31 +24,48 @@ Airbrush Makeup: Lightweight and long-lasting, applied with an airbrush gun</h5>
                 <div className="small-rect12">
                     <div>
                     <ul>
-                        <b><h3 className="main-heading-Makeup">Service</h3></b>
-                        <li className="li-Makeup">Eyebrows </li>
-                        <li className="li-Makeup">Upper Lip</li>
-                        <li className="li-Makeup">Chin</li>
-                        <li className="li-Makeup">Neck</li>
-                        <li className="li-Makeup">Eyebrows </li>
-                        <li className="li-Makeup">Upper Lip</li>
-                        <li className="li-Makeup">Chin</li>
-                        <li className="li-Makeup">Neck</li>
+                        <b><h3 className="main-heading-Nails">Service</h3></b>
+                        <li className="li-Nails">Basic Manicure </li>
+                        <li className="li-Nails">Basic Pedicure</li>
+                        <li className="li-Nails">Fullset without colour</li>
+                        <li className="li-Nails">Fullset French</li>
+                        <li className="li-Nails">Refill</li>
+                        <li className="li-Nails">Buff & Remove Gel Extentions</li>
+                       
                     </ul>
                     </div>
-                    <div className='list-Makeup'>
+                    <div className='list-Nails'>
 
                    
 
                     <ul type='none'>
-                    <b><h3 className="main-heading-Makeup">Price</h3></b>
-                        <li className="li-Makeup">Rs.100.00 </li>
-                        <li className="li-Makeup">Rs.100.00 </li>
-                        <li className="li-Makeup">Rs.100.00 </li>
-                        <li className="li-Makeup">Rs.100.00 </li>
-                        <li className="li-Makeup">Rs.100.00 </li>
-                        <li className="li-Makeup">Rs.100.00 </li>
-                        <li className="li-Makeup">Rs.100.00 </li>
-                        <li className="li-Makeup">Rs.100.00 </li>
+                    <b><h3 className="main-heading-Nails1">Time Duration</h3></b>
+                    <li className="li-Nails">30 min </li>
+                        <li className="li-Nails">30 min </li>
+                        <li className="li-Nails">30 min </li>
+                        <li className="li-Nails">30 min </li>
+                        <li className="li-Nails">30 min </li>
+                        <li className="li-Nails">30 min </li>
+                        
+                        
+                    </ul>
+                    </div>
+
+                    <div className='list-Nails'>
+
+                   
+
+                    <ul type='none'>
+                    <b><h3 className="main-heading-Nails">Price</h3></b>
+                        
+                        <li className="li-Nails">Rs.2300.00 </li>
+                        <li className="li-Nails">Rs.2900.00 </li>
+                        <li className="li-Nails">Rs.600.00 </li>
+                        <li className="li-Nails">Rs.6500.00 </li>
+                        <li className="li-Nails">Rs.4500.00 </li>
+                        <li className="li-Nails">Rs.1700.00 </li>
+                        
+                        
                     </ul>
                     </div>
                 </div>
