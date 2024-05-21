@@ -42,6 +42,23 @@ Airbrush Makeup: Lightweight and long-lasting, applied with an airbrush gun</h5>
                         <li className="li-Makeup">Neck</li>
                     </ul>
                     </div>
+
+                    <div className='list-Makeup'>
+
+                   
+
+                    <ul type='none'>
+                    <b><h3 className="main-heading-Makeup1">Time Duration</h3></b>
+                        <li className="li-Makeup">30 min </li>
+                        <li className="li-Makeup">30 min </li>
+                        <li className="li-Makeup">30 min </li>
+                        <li className="li-Makeup">30 min </li>
+                        <li className="li-Makeup">30 min </li>
+                        <li className="li-Makeup">30 min </li>
+                        
+                    </ul>
+                    </div>
+
                     <div className='list-Makeup'>
 
                    
