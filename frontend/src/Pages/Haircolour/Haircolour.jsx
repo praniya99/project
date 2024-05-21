@@ -6,7 +6,7 @@ const Haircolour = () => {
     <div>
       <Subheader/>
       <div className="big-rect13">
-            <div> <h2 className='heading-Makeup'><b>Makeup</b></h2></div>
+            <div> <h2 className='heading-Haircolour'><b>Haircolour</b></h2></div>
                 <div className="small-rect13">
                      <div >
                         <img src="../src/assets/T7.jpg"
