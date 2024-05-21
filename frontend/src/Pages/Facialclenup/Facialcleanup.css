@@ -20,58 +20,58 @@
 background-color: white;
 }
 
-.rect-image-Nails{
+.rect-image-facialcleanup{
   display: flex;
 width: 100;
 height: 100%;
 margin-bottom: 10px;
 }
 
-.main-photo-Nails {
+.main-photo-facialcleanup {
   width: 100%;
   height: 90%;
   background-color: white;
 }
 
-.rect-heading-Nails {
-color: black; /* Text color */
-text-align: center; /* Adjust as needed */
+.rect-heading-facialcleanup {
+color: black; 
+text-align: center; 
 margin-top: 25px;
 margin-left: 20px;
 }
 
-.rect-head-Nails{
+.rect-head-facialcleanup{
   font-weight: 600;
   margin-top: 25px;
   font-size: 23px;
   text-align: left;
 }
 
-.main-heading-Nails{
+.main-heading-facialcleanup{
   margin-top: 30px;
   margin-left: 100px;
 }
 
-.main-heading-Nails1{
+.main-heading-facialcleanup1{
   margin-top: 30px;
   margin-left: 30px;
 }
 
-.li-Nails{
+.li-facialcleanup{
   font-size: 20px;
   font-weight: 500;
   margin-top: 18px;
   margin-left: 85px;
 }
 
-.heading-Nails{
+.heading-facialcleanup{
 font-size: 40px;
 margin-left: 50px;
 margin-top: 30px;
 
 }
 
-.list-Nails{
+.list-facialcleanup{
   margin-left: 80px;
 
 }
