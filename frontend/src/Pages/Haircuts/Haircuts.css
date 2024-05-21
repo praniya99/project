@@ -1,71 +1,77 @@
 .big-rect14 {
-    display: flex;
-    overflow-x: hidden;
-    flex-direction: column;
-    height: 130vh;
-    margin-top: -130.7vh;
-    margin-left: 18%;
-    width: 82%;
-    padding-bottom: 100px;
-    background-color: white;
-  }
-
-  .small-rect14 {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    height: 55%;
-    margin-left: 4.3%;
-    margin-top: 2%;
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  height: 130vh;
+  margin-top: -130.7vh;
+  margin-left: 18%;
+  width: 82%;
+  padding-bottom: 100px;
   background-color: white;
-  }
+}
 
-  .rect-image-Haircuts {
-    display: flex;
-  width: 100;
-  height: 100%;
-  margin-bottom: 10px;
+.small-rect14 {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 55%;
+  margin-left: 4.3%;
+  margin-top: 2%;
+background-color: white;
+}
+
+.rect-image-Haircuts{
+  display: flex;
+width: 100;
+height: 100%;
+margin-bottom: 10px;
 }
 
 .main-photo-Haircuts {
-    width: 100%;
-    height: 90%;
-    background-color: white;
-  }
+  width: 100%;
+  height: 90%;
+  background-color: white;
+}
 
 .rect-heading-Haircuts {
-  color: black; /* Text color */
-  text-align: center; /* Adjust as needed */
-  margin-top: 25px;
-  margin-left: 40px;
+color: black; /* Text color */
+text-align: center; /* Adjust as needed */
+margin-top: 25px;
+margin-left: 20px;
 }
 
 .rect-head-Haircuts{
-    font-weight: 600;
-    margin-top: 25px;
-    font-size: 23px;
-    text-align: left;
+  font-weight: 600;
+  margin-top: 25px;
+  font-size: 23px;
+  text-align: left;
 }
 
 .main-heading-Haircuts{
-    margin-top: 30px;
-    margin-left: 180px;
+  margin-top: 30px;
+  margin-left: 100px;
 }
+
+.main-heading-Haircuts1{
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
 .li-Haircuts{
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 18px;
-    margin-left: 180px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 18px;
+  margin-left: 85px;
 }
 
 .heading-Haircuts{
-  font-size: 40px;
-  margin-left: 50px;
-  margin-top: 30px;
+font-size: 40px;
+margin-left: 50px;
+margin-top: 30px;
 
 }
 
 .list-Haircuts{
-    margin-left: 150px;
+  margin-left: 80px;
 
 }

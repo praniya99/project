@@ -35,6 +35,21 @@ const Haircuts = () => {
                         <li className="li-Haircuts">Full Face and Neck</li>
                     </ul>
                     </div>
+
+                    <div className='list-Haircuts'>
+                      <ul type='none'>
+                        <b><h3 className="main-heading-Haircuts1">Time Duration</h3></b>
+                        <li className="li-Haircuts">30 min </li>
+                        <li className="li-Haircuts">30 min </li>
+                        <li className="li-Haircuts">30 min </li>
+                        <li className="li-Haircuts">30 min </li>
+                        <li className="li-Haircuts">30 min </li>
+                        <li className="li-Haircuts">30 min </li>
+                          </ul>
+                    </div>
+
+
+
                     <div className='list-Haircuts'>
 
                    
