@@ -33,10 +33,8 @@ const bridal = () => {
     <li className="li-Bride">saree Draping </li>
     <li className="li-Bride">Hair style</li>
     <li className="li-Bride">Bridal Makeup</li>
-    <li className="li-Bride">Complete Bridal dressing Package(include hair,makeup and sari draping)</li>
-    <li className="li-Bride1">Early Morning Dressing Charges
-     For services between 06.00 am and 9.00 am, 
-     an additional charge of Rs4,130.00 applies.</li>
+    <li className="li-Bride">Complete Bridal dressing Package<br/>(hair,makeup and saree draping)</li>
+    
 </ul>
 </div>
                     <div className='list-Bride'><ul type='none'>
@@ -59,6 +57,14 @@ const bridal = () => {
 
                     
                     </div>
+
+                    <div className="small-rect1">
+<ul>
+<li className="li-Bride1">Early Morning Dressing Charges
+     For services between 06.00 am and 9.00 am, 
+     an additional charge of <b>Rs.4130.00 </b>applies.</li>
+</ul>
+                      </div>
         </div>
     </div>
      
