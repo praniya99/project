@@ -1,0 +1,134 @@
+.BIg-main-main-rect-serviceform{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  .main-head-serviceform{
+    display: flex;
+    width: 105vw;
+    min-height: 120px;
+    flex-direction: row;
+    background-color: #F1A4BD;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .main-head-serviceform1-1{
+    margin-left: 10%;
+    color: black;
+    font-family: 'Arial';
+    font-size: 35px;
+    font-family: 'Idran' ,
+  }
+  
+ 
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  }
+
+  *,
+*::before,
+*::after {
+  box-sizing: inherit;}
+
+  .form-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+margin-top: -30px;
+    margin-left: 5px;
+    margin-right: 50px;
+    
+  }
+  
+  .product-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    width: 600px;
+    box-sizing: border-box;
+    background-color: rgba(204, 205, 206);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    display: flex;
+  flex-direction: column;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .form-group input[type="file"] {
+    padding: 3px;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 10px;
+    background-color: #F1A4BD;
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: pink;
+  }
+  
+  @media (max-width: 800px) {
+  .form-container {
+    padding: 10px;
+  }
+
+  .product-form {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .form-container {
+    padding: 5px;
+  }
+}
+
+  .field{
+    background-color: white;
+    
+  }
+
+  
+  .field1{
+    background-color: white;
+    color: black;
+    
+  }
