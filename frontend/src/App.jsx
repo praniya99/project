@@ -1,6 +1,6 @@
 
 //import Bridal from './Pages/Bridal/Bridal'
-import AddBeauticians from './Pages/AddBeauticians/AddBeauticians'
+import Footer from './Components/Footer/Footer'
 
 function App() {
   
@@ -8,7 +8,7 @@ function App() {
   return (
     
       <div>
-       <AddBeauticians/> 
+       <Footer/> 
    </div>
   )
 }
