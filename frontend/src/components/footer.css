@@ -1,0 +1,52 @@
+.footer{
+padding-top: 10px;
+display: flex;
+justify-content: center;
+}
+.img02{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+
+   
+}
+.img03{
+    width: 20px;
+    height: 20px;
+    margin-right:5px;
+}
+.img04{
+    width: 15px;
+    height: 20px;
+    margin-right:5px;
+}
+.line{
+    border: none; 
+    height: 2px;
+    background-color: #000000;
+    width: 50%; 
+    margin: 10px auto; 
+}
+.footer01{
+    display: flex;
+justify-content: space-between;
+p{
+    font-size:15px;
+    
+}}
+ .p1{
+    margin-left: 2%;
+ }   
+ .p3{
+    margin-right: 10%;
+
+ }
+.fulfooter{
+  
+  background-color: #C3689F;
+  
+ 
+ 
+  
+
+}

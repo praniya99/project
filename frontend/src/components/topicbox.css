@@ -1,0 +1,8 @@
+.topicBox{
+    background-color:#F1A4BD;
+    height: 150px;
+    padding-left: 50px;
+    font-size:60px;
+    display: grid;
+    align-content: center;
+}
