@@ -76,30 +76,30 @@ const Sidebar = () => {
         </Box>
         </div><br/>
         <div >
-          <h3 className="sideTopic">CATEGORIES</h3><br/>
-        </div>
+          <h3 className="sideTopic">CATEGORIES</h3>
+        </div><br/>
         <div >
           <button className="topicBtn">All Product</button>
-        </div>
+        </div><br/>
         <div >
           <button className="topicBtn">Skin Care</button>
-        </div>
+        </div><br/>
 
         <div >
           <button className="topicBtn">Makeup</button>
-        </div>
+        </div><br/>
 
         <div >
           <button className="topicBtn">Nails</button>
-        </div>
+        </div><br/>
 
         <div >
           <button className="topicBtn">Hair Care</button>
-        </div>
+        </div><br/>
 
         <div >
           <button className="topicBtn">Bath & Body care</button>
-        </div>
+        </div><br/>
 
        
       </div>
