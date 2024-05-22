@@ -1,0 +1,22 @@
+.BIg-main-main-rect-serviceform{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  .main-head-serviceform{
+    display: flex;
+    width: 105vw;
+    min-height: 120px;
+    flex-direction: row;
+    background-color: #F1A4BD;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .main-head-serviceform1-1{
+    margin-left: 10%;
+    color: black;
+    font-family: 'Arial';
+    font-size: 35px;
+    font-family: 'Idran' ,
+  }

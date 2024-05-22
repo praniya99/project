@@ -1,5 +1,6 @@
 import  { useState } from 'react';
 import './Addserviceform.css';
+import Adminsubheaderservice from '../../Components/Adminsubheaderservice'
 
 function Addserviceform() {
   const [hours, setHours] = useState('');
@@ -12,12 +13,8 @@ function Addserviceform() {
   };
   return (
     <div>
-<div className="BIg-main-main-rect-serviceform">
-      <div className="main-head-serviceform">
-        <h3 className="main-head-serviceform1-1">Services</h3>
-        
-        </div>
-        </div>
+<Adminsubheaderservice/>
+
 
 
 
@@ -43,7 +40,7 @@ function Addserviceform() {
         </div>
         <div className="form-group" >
           <label>Select Category :</label>
-          <select name="category" className='field1'  required>
+          <select name="category" className='field1'>
             <option value="Bridal">Bridal</option>
             <option value="Nails">Nails</option>
             <option value="Makeup">Makeup</option>

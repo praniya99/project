@@ -1,25 +1,4 @@
-.BIg-main-main-rect-serviceform{
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-  }
-  .main-head-serviceform{
-    display: flex;
-    width: 105vw;
-    min-height: 120px;
-    flex-direction: row;
-    background-color: #F1A4BD;
-    text-align: center;
-    align-items: center;
-  }
-  
-  .main-head-serviceform1-1{
-    margin-left: 10%;
-    color: black;
-    font-family: 'Arial';
-    font-size: 35px;
-    font-family: 'Idran' ,
-  }
+
   
  
   body {
@@ -105,7 +84,7 @@ margin-top: -30px;
   
   .button:hover {
     background-color: #974f7a;
-    border-color:##c3689f
+    border-color:#c3689f
   }
   
   @media (max-width: 800px) {
