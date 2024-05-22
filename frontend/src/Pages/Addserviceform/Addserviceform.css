@@ -100,9 +100,12 @@ margin-top: -30px;
     font-size: 16px;
     cursor: pointer;
   }
+
+ 
   
-  button:hover {
-    background-color: pink;
+  .button:hover {
+    background-color: #974f7a;
+    border-color:##c3689f
   }
   
   @media (max-width: 800px) {

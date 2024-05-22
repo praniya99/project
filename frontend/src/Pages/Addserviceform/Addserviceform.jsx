@@ -1,7 +1,15 @@
-
+import  { useState } from 'react';
 import './Addserviceform.css';
 
 function Addserviceform() {
+  const [hours, setHours] = useState('');
+  const [minutes, setMinutes] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const duration = { hours, minutes };
+    console.log(duration);
+  };
   return (
     <div>
 <div className="BIg-main-main-rect-serviceform">
@@ -24,7 +32,7 @@ function Addserviceform() {
 
 
     <div className="form-container">
-      <form className="product-form">
+      <form onSubmit={handleSubmit} className="product-form">
         <div className="form-group">
           <label>Service Name :</label>
           <input type="text" name="name" placeholder="Name" className='field' />
@@ -46,13 +54,32 @@ function Addserviceform() {
           </select>
         </div>
         <div className="form-group">
-          <label>Additional Details :</label>
-          <textarea name="details" placeholder="Additional details" className='field'></textarea>
-        </div>
-        <div className="form-group">
-          <label>Upload Service Image :</label>
-          <input type="file" name="image" className='field1'/>
-        </div>
+        <label>
+        Hours:
+        <input
+          type="number"
+          value={hours}
+          onChange={(e) => setHours(e.target.value)}
+          min="0"
+          required
+          className='field1'
+        />
+      </label>
+      <br />
+      <label>
+        Minutes:
+        <input
+          type="number"
+          value={minutes}
+          onChange={(e) => setMinutes(e.target.value)}
+          min="0"
+          max="59"
+          required
+          className='field1'
+        />
+      </label>
+        
+  </div>
         <button type="submit"className='button'>ADD SERVICE</button>
       </form>
     </div>
