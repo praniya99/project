@@ -1,0 +1,88 @@
+
+
+.Admin-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  
+  .Admin-logo {
+    flex: 1;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .Admin-nav-links-container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Admin-nav-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .Admin-nav-links a {
+    text-decoration: none;
+    color: #000;
+      margin-right: 10%;
+  
+  }
+  
+  
+  .Admin-dropdown {
+    position: relative;
+    cursor: pointer;
+  
+  }
+  
+  .Admin-dropdown-menu {
+    position:absolute;
+    top: 100%;
+    left: 0;
+    background-color: #C3689F;
+    color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .Admin-dropdown-menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 5px 5px;
+  }
+  .Admin-dropdown-menu a:hover{
+   background-color: #e497b3;
+  }
+  .Admin-icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+  
+  .Admin-icons span {
+    cursor: pointer;
+  }
+  .Admin-img05{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  @media (max-width: 768px) {
+    .Admin-navbar {
+      flex-direction: column;
+      padding: 10px 10px;
+    }
+    
+    .Admin-navbar a {
+      padding: 10px;
+    }
+  }
