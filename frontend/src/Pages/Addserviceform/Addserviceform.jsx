@@ -35,15 +35,15 @@ function Addserviceform() {
       <form onSubmit={handleSubmit} className="product-form">
         <div className="form-group">
           <label>Service Name :</label>
-          <input type="text" name="name" placeholder="Name" className='field' />
+          <input type="text" name="name" placeholder="Name" className='field'  required />
         </div>
         <div className="form-group">
           <label>Service Price :</label>
-          <input type="text" name="price" placeholder="Price" className='field'/>
+          <input type="text" name="price" placeholder="Price" className='field'  required/>
         </div>
         <div className="form-group" >
           <label>Select Category :</label>
-          <select name="category" className='field1'>
+          <select name="category" className='field1'  required>
             <option value="Bridal">Bridal</option>
             <option value="Nails">Nails</option>
             <option value="Makeup">Makeup</option>
@@ -62,6 +62,8 @@ function Addserviceform() {
           onChange={(e) => setHours(e.target.value)}
           min="0"
           required
+
+          placeholder="Hours"
           className='field1'
         />
       </label>
@@ -75,6 +77,7 @@ function Addserviceform() {
           min="0"
           max="59"
           required
+          placeholder="Minutes"
           className='field1'
         />
       </label>
