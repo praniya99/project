@@ -1,6 +1,6 @@
 
 //import Bridal from './Pages/Bridal/Bridal'
-import Addserviceform from './Pages/Addserviceform/Addserviceform'
+import AddBeauticians from './Pages/AddBeauticians/AddBeauticians'
 
 function App() {
   
@@ -8,7 +8,7 @@ function App() {
   return (
     
       <div>
-       <Addserviceform/> 
+       <AddBeauticians/> 
    </div>
   )
 }
