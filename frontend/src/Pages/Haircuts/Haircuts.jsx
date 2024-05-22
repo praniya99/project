@@ -1,5 +1,5 @@
 import './Haircuts.css'
-import Subheader from "../../components/Subheader/Subheader"
+import Subheader from "../../Components/Subheader/Subheader"
 
 const Haircuts = () => {
   return (
@@ -9,7 +9,7 @@ const Haircuts = () => {
             <div> <h2 className='heading-Haircuts'><b>Hair Cuts</b></h2></div>
                 <div className="small-rect14">
                      <div >
-                        <img src="../src/assets/H1.jpg"
+                        <img src="../src/assets/Haircuts/H1.jpg"
                              alt="Description 1" 
                              className="rect-image-Haircuts"/>
                         
