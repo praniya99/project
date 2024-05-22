@@ -1,17 +1,18 @@
 .contact-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background-color: #d97cb5;
     padding: 20px;
     border-radius: 10px;
+    width: 193.2%;
   }
   
   .contact-info,
   .contact-form {
-    flex: 1 1 300px;
+    flex: 1;
     margin: 10px;
+    min-width: 300px;
   }
-  
   .contact-info {
     color: #000;
   }
@@ -88,6 +89,7 @@
   
   .form-buttons {
     display: flex;
+   
     gap: 10px;
   }
   
@@ -103,10 +105,11 @@
   
   @media (max-width: 768px) {
     .contact-container {
-      flex-direction: column;
+        flex-wrap: wrap;
     }
   
     .form-group {
       flex-direction: column;
     }
-  }
+  
+   
