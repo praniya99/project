@@ -1,5 +1,5 @@
 
-import Haircolour from './Pages/Haircolour/Haircolour'
+import Bridal from './Pages/Bridal/Bridal'
 
 function App() {
   
@@ -7,7 +7,7 @@ function App() {
   return (
     
       <div>
-       <Haircolour/> 
+       <Bridal/> 
    </div>
   )
 }

@@ -1,4 +1,4 @@
-import Subheader from "../../components/Subheader/Subheader"
+import Subheader from "../../Components/Subheader/Subheader"
 import './Bridal.css'
 const bridal = () => {
   return (
@@ -9,7 +9,7 @@ const bridal = () => {
             <div className="small-rect1">
                 <div >
                         
-                            <img src="../src/assets/T3.jpg"
+                            <img src="../src/assets/Bridal/T3.jpg"
                              alt="Description 1" 
                              className="rect-image-Bride"/>
                         
@@ -34,7 +34,7 @@ const bridal = () => {
     <li className="li-Bride">Hair style</li>
     <li className="li-Bride">Bridal Makeup</li>
     <li className="li-Bride">Complete Bridal dressing Package(include hair,makeup and sari draping)</li>
-    <li className="li-Bride">Early Morning Dressing Charges
+    <li className="li-Bride1">Early Morning Dressing Charges
      For services between 06.00 am and 9.00 am, 
      an additional charge of Rs4,130.00 applies.</li>
 </ul>
@@ -45,10 +45,7 @@ const bridal = () => {
                         <li className="li-Bride">Rs.100.00 </li>
                         <li className="li-Bride">Rs.100.00 </li>
                         <li className="li-Bride">Rs.100.00 </li>
-                        <li className="li-Bride">Rs.100.00 </li>
-                        <li className="li-Bride">Rs.100.00 </li>
-                        <li className="li-Bride">Rs.100.00 </li>
-                        <li className="li-Bride">Rs.100.00 </li>
+                        
                     </ul></div>
 
                     <div className='list-Bride'><ul type='none'>
@@ -57,8 +54,7 @@ const bridal = () => {
                         <li className="li-Bride">15 min </li>
                         <li className="li-Bride">15 min </li>
                         <li className="li-Bride">15 min </li>
-                        <li className="li-Bride">15 min </li>
-                        <li className="li-Bride">15 min </li>
+                       
                     </ul></div>
 
                     

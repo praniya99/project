@@ -9,7 +9,7 @@ const Haircolour = () => {
             <div> <h2 className='heading-Haircolour'><b>Haircolour</b></h2></div>
                 <div className="small-rect13">
                      <div >
-                        <img src="../src/assets/T7.jpg"
+                        <img src="../src/assets/Haircolour/T8.jpg"
                              alt="Description 1" 
                              className="rect-image-Haircolour"/>
                         
