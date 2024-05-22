@@ -1,5 +1,5 @@
 import './Haircolour.css'
-import Subheader from "../../components/Subheader/Subheader"
+import Subheader from "../../Components/Subheader/Subheader"
 
 const Haircolour = () => {
   return (
