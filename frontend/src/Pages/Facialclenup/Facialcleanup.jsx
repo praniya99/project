@@ -1,22 +1,22 @@
 import './Facialcleanup.css'
-import Subheader from "../../components/Subheader/Subheader"
+import Subheader from "../../Components/Subheader/Subheader"
 
 const Facialcleanup = () => {
   return (
     <div>
       <Subheader/>
       <div className="big-rect12">
-            <div> <h2 className='heading-facialcleanup'><b>facialcleanup</b></h2></div>
+            <div> <h2 className='heading-facialcleanup'><b>Facialcleanup</b></h2></div>
                 <div className="small-rect12">
                      <div >
-                        <img src="../src/assets/T6.jpg"
+                        <img src="../src/assets/Facialcleanup/T5.jpg"
                              alt="Description 1" 
                              className="rect-image-facialcleanup"/>
                         
                     </div>
                     <div className="rect-heading-facialcleanup">
                     <h3><b>Let's make the most beautiful day of your life even more beautiful.</b></h3>
-                    <h5 className="rect-head-Nails">A facial is a family of skin care treatments for the face, including steam, exfoliation, extraction, creams, lotions, facial masks, peels, and massage. They are normally performed in beauty salons, but are also a common spa treatment. They are used for general skin health as well as for specific skin conditions.</h5>
+                    <h5 className="rect-head-Facialcleanup">A facial is a family of skin care treatments for the face, including steam, exfoliation, extraction, creams, lotions, facial masks, peels, and massage. They are normally performed in beauty salons, but are also a common spa treatment. They are used for general skin health as well as for specific skin conditions.</h5>
                     </div>
                 </div>
 
@@ -34,7 +34,7 @@ const Facialcleanup = () => {
                        
                     </ul>
                     </div>
-                    <div className='list-facialcleanups'>
+                    <div className='list-facialcleanup'>
 
                    
 
@@ -51,7 +51,7 @@ const Facialcleanup = () => {
                     </ul>
                     </div>
 
-                    <div className='list-facialcleanup'>
+                    <div className='list-facialcleanup1'>
 
                    
 

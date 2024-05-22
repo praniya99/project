@@ -1,5 +1,6 @@
 
-import Bridal from './Pages/Bridal/Bridal'
+//import Bridal from './Pages/Bridal/Bridal'
+import Facialcleanup from './Pages/Facialclenup/Facialcleanup'
 
 function App() {
   
@@ -7,7 +8,7 @@ function App() {
   return (
     
       <div>
-       <Bridal/> 
+       <Facialcleanup/> 
    </div>
   )
 }

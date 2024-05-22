@@ -1,4 +1,4 @@
-.big-rect16 {
+.big-rect12 {
   display: flex;
   overflow-x: hidden;
   flex-direction: column;
@@ -10,7 +10,7 @@
   background-color: white;
 }
 
-.small-rect16 {
+.small-rect12 {
   display: flex;
   flex-direction: row;
   width: 90%;
@@ -49,19 +49,19 @@ margin-left: 20px;
 
 .main-heading-facialcleanup{
   margin-top: 30px;
-  margin-left: 100px;
+  margin-left: 150px;
 }
 
 .main-heading-facialcleanup1{
   margin-top: 30px;
-  margin-left: 30px;
+  margin-left: 80px;
 }
 
 .li-facialcleanup{
   font-size: 20px;
   font-weight: 500;
   margin-top: 18px;
-  margin-left: 85px;
+  margin-left: 135px;
 }
 
 .heading-facialcleanup{
@@ -72,6 +72,11 @@ margin-top: 30px;
 }
 
 .list-facialcleanup{
-  margin-left: 80px;
+  margin-left: 60px;
+
+}
+
+.list-facialcleanup1{
+  margin-left: 40px;
 
 }
