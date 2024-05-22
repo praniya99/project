@@ -6,7 +6,7 @@ const Haircolour = () => {
     <div>
       <Subheader/>
       <div className="big-rect13">
-            <div> <h2 className='heading-Haircolour'><b>Haircolour</b></h2></div>
+            <div> <h2 className='heading-Haircolour'><b>Hair Colour</b></h2></div>
                 <div className="small-rect13">
                      <div >
                         <img src="../src/assets/Haircolour/T8.jpg"
@@ -52,7 +52,7 @@ const Haircolour = () => {
                     </ul>
                     </div>
 
-                    <div className='list-Haircolour'>
+                    <div className='list-Haircolour1'>
 
                    
 

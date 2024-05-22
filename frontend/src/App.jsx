@@ -1,6 +1,6 @@
 
 //import Bridal from './Pages/Bridal/Bridal'
-import Facialcleanup from './Pages/Facialclenup/Facialcleanup'
+import Haircolour from './Pages/Haircolour/Haircolour'
 
 function App() {
   
@@ -8,7 +8,7 @@ function App() {
   return (
     
       <div>
-       <Facialcleanup/> 
+       <Haircolour/> 
    </div>
   )
 }

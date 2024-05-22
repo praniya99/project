@@ -1,78 +1,77 @@
 .big-rect13 {
-      display: flex;
-      overflow-x: hidden;
-      flex-direction: column;
-      height: 130vh;
-      margin-top: -130.7vh;
-      margin-left: 18%;
-      width: 82%;
-      padding-bottom: 100px;
-      background-color: white;
-    }
-  
-    .small-rect13 {
-      display: flex;
-      flex-direction: row;
-      width: 90%;
-      height: 55%;
-      margin-left: 4.3%;
-      margin-top: 2%;
-    background-color: white;
-    }
-  
-    .rect-image-Haircolour {
-      display: flex;
-    width: 100;
-    height: 100%;
-    margin-bottom: 10px;
-  }
-  
-  .main-photo-Haircolour {
-      width: 100%;
-      height: 90%;
-      background-color: white;
-    }
-  
-  .rect-heading-Haircolour {
-    color: black; 
-    text-align: center; 
-    margin-top: 25px;
-    margin-left: 20px;
-  }
-  
-  .rect-head-Haircolour{
-      font-weight: 600;
-      margin-top: 25px;
-      font-size: 23px;
-      text-align: left;
-  }
-  
-  .main-heading-Haircolour{
-      margin-top: 30px;
-      margin-left: 100px;
-  }
-  
-  .main-heading-Haircolour{
-    margin-top: 30px;
-    margin-left: 30px;
-  }
-  .li-Haircolour{
-      font-size: 20px;
-      font-weight: 500;
-      margin-top: 18px;
-      margin-left: 85px;
-  }
-  
-  .heading-Haircolour{
-    font-size: 40px;
-    margin-left: 50px;
-    margin-top: 30px;
-  
-  }
-  
-  .list-Haircolour{
-      margin-left: 80px;
-  
-  }
-  
-   
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  height: 130vh;
+  margin-top: -130.7vh;
+  margin-left: 18%;
+  width: 82%;
+  padding-bottom: 100px;
+  background-color: white;
+}
+
+.small-rect13 {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 55%;
+  margin-left: 4.3%;
+  margin-top: 2%;
+background-color: white;
+}
+
+.rect-image-Haircolour{
+  display: flex;
+width: 100;
+height: 100%;
+margin-bottom: 10px;
+}
+
+.main-photo-Haircolour {
+  width: 100%;
+  height: 90%;
+  background-color: white;
+}
+
+.rect-heading-Haircolour {
+color: black; 
+text-align: center; 
+margin-top: 25px;
+margin-left: 30px;
+}
+
+.rect-head-Haircolour{
+  font-weight: 600;
+  margin-top: 25px;
+  font-size: 23px;
+  text-align: left;
+}
+
+.main-heading-Haircolour{
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.main-heading-Haircolour1{
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.li-Haircolour{
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 18px;
+  margin-left: 85px;
+}
+
+.heading-Haircolour{
+font-size: 40px;
+margin-left: 50px;
+margin-top: 30px;
+
+}
+
+.list-Haircolour{
+  margin-left: 80px;
+
+}
