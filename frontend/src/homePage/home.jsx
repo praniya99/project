@@ -24,25 +24,25 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <img src="/image/2.jpg" className="img-fluid" alt="Service Image" />
+      <img src="../src/assets/2.jpg" className="img-fluid" alt="Service Image" />
 
       <ServiceSection title="Services" />
       <div className="service-cards">
-        <ServiceCard imageSrc="/image/4.jpeg" altText="Treading Service" title="Treading"  />
-        <ServiceCard imageSrc="/image/3.jpeg" altText="Bridal Service" title="Bridal" />
-        <ServiceCard imageSrc="/image/5.jpeg" altText="Makeup Service" title="Makeup" />
-        <ServiceCard imageSrc="/image/14.jpeg" altText="Nails Service" title="Nails" />
+        <ServiceCard imageSrc="../src/assets/4.jpeg" altText="Treading Service" title="Treading"  />
+        <ServiceCard imageSrc="../src/assets/3.jpeg" altText="Bridal Service" title="Bridal" />
+        <ServiceCard imageSrc="../src/assets/5.jpeg" altText="Makeup Service" title="Makeup" />
+        <ServiceCard imageSrc="../src/assets/14.jpeg" altText="Nails Service" title="Nails" />
       </div>
 
       <ServiceSection title="Staff" />
       <div className="staff-cards">
-        <ServiceCard imageSrc="/image/6.jpeg" altText="MS. Kumudika" title="MS. Kumudika"/>
-        <ServiceCard imageSrc="/image/7.png" altText="MS. Anuththara" title="MS. Anuththara"/>
-        <ServiceCard imageSrc="/image/8.jpeg" altText="MS. Gaweshika" title="MS. Gaweshika"/>
-        <ServiceCard imageSrc="/image/15.jpeg" altText= "Miss.Amanda" title="Miss.Amanda "/>
+        <ServiceCard imageSrc="../src/assets/6.jpeg" altText="MS. Kumudika" title="MS. Kumudika"/>
+        <ServiceCard imageSrc="../src/assets/7.png" altText="MS. Anuththara" title="MS. Anuththara"/>
+        <ServiceCard imageSrc="../src/assets/8.jpeg" altText="MS. Gaweshika" title="MS. Gaweshika"/>
+        <ServiceCard imageSrc="../src/assets/15.jpeg" altText= "Miss.Amanda" title="Miss.Amanda "/>
       </div>
        
-      <img src="/image/1.png" className="img2" alt="Service Image" />
+      <img src="../src/assets/1.png" className="img2" alt="Service Image" />
     </div>
   );
 };

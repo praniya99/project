@@ -1,3 +1,4 @@
+import Header from "../component/header";
 import Sidebar from "../component/sidebar";
 import './allProduct.css' 
 import LocalMallIcon from '@mui/icons-material/LocalMall';
@@ -6,6 +7,7 @@ import LocalMallIcon from '@mui/icons-material/LocalMall';
 const Allproduct= () => {
   return (
     <div>
+      <Header/>
       <Sidebar/>
       <div className="bigRect1">
         <div className="smallRect1">
@@ -59,7 +61,7 @@ const Allproduct= () => {
               />
               </a>
               <div className="rectHeading">
-              <h5 className="rect-head-head">Bpdy Scrub</h5>
+              <h5 className="rect-head-head">Body Scrub</h5>
             </div>
             <div className="buyNow">
             <button className="buy-button">Buy now</button>
