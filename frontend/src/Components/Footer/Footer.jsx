@@ -35,7 +35,7 @@ const Footer = () => {
           <button type="button">Reviews</button>
         </div>
       </form>
-    </div>
+   </div>
 </div></div>
     
   
