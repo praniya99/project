@@ -105,7 +105,7 @@ margin-left: 50px;
   margin-left: 10px;
   background-color: black;
   color: white;
-  padding: 10px; /* Added padding for better touch targets */
+  padding: 10px; 
   border-radius: 50%;
   
 }
@@ -185,22 +185,22 @@ button {
 
 @media (max-width: 768px) {
   .small-rect10 {
-    flex-direction: column; /* Stack sections vertically on smaller screens */
-    height: auto; /* Adjust height to fit content */
+    flex-direction: column;
+    height: auto; 
   }
 
   .small-rect10-1, .small-rect10-2 {
-    width: 90%; /* Take more width on smaller screens */
-    margin: 10px auto; /* Center align sections */
+    width: 90%; 
+    margin: 10px auto; 
   }
 
   .form-buttons {
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 10px; /* Adjust gap for better spacing */
-    align-items: center; /* Center align buttons */
+    flex-direction: row; 
+    gap: 10px; 
+    align-items: center; 
   }
 
   .contact-info, .contact-form {
-    margin: 0 10px; /* Adjust margin for better spacing */
+    margin: 0 10px; 
   }
 }
