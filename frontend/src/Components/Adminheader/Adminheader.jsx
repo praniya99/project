@@ -1,7 +1,7 @@
 import  { useState } from 'react';
 import './Adminheader.css'; 
-import pic01 from './Adminheader/pic01.jpg'
-import se from './Adminheader/se.png'
+import Ah1 from '../../assets/Adminheader/Ah1.jpg'
+import Ah2 from '../../assets/Adminheader/Ah2.png'
 
 const Adminheader = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -28,8 +28,8 @@ const Adminheader = () => {
           </div></div>
       </div>
       <div className="Admin-icons">
-      <span><img className='Admin-img05' src={se} alt="" /></span>
-        <span><img className='Admin-img05' src={pic01} alt="" /></span>
+      <span><img className='Admin-img05' src={Ah2} alt="" /></span>
+        <span><img className='Admin-img05' src={Ah1} alt="" /></span>
       </div>
     </div>
   );

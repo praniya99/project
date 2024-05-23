@@ -1,5 +1,6 @@
 import './Threading.css'
-import Subheader from "../../components/Subheader/Subheader"
+import Subheader from "../../Components/Subheader/Subheader"
+import Footer from '../../Components/Footer/Footer'
 
 const Threading = () => {
   return (
@@ -9,7 +10,7 @@ const Threading = () => {
             <div> <h2 className='heading-Thread'><b>Threading</b></h2></div>
                 <div className="small-rect17">
                      <div >
-                        <img src="../src/assets/S1.jpg"
+                        <img src="../src/assets/Threading/S1.jpg"
                              alt="Description 1" 
                              className="rect-image-Thread"/>
                         
@@ -71,6 +72,7 @@ const Threading = () => {
                     </div>
                 </div>
         </div>
+        <Footer/>
     </div>
   )
 }

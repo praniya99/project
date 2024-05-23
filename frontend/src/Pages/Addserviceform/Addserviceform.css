@@ -22,8 +22,7 @@
     min-height: 100vh;
     padding: 20px;
 margin-top: -30px;
-    margin-left: 5px;
-    margin-right: 50px;
+   
     
   }
   
@@ -70,21 +69,25 @@ margin-top: -30px;
   }
   
   .button {
-    width: 100%;
+    width: 25%;
     padding: 10px;
-    background-color: #F1A4BD;
+    background-color:  #c3689F;
     color: black;
-    border: 1px solid black;
+    border: 1px solid #c3689F;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    
   }
 
  
   
   .button:hover {
     background-color: #974f7a;
-    border-color:#c3689f
+    border-color:#c3689f;
+    color: black;
   }
   
   @media (max-width: 800px) {
