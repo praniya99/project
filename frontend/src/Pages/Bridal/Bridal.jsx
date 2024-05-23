@@ -1,5 +1,6 @@
 import Subheader from "../../Components/Subheader/Subheader"
 import './Bridal.css'
+import Footer from '../../Components/Footer/Footer.jsx'
 const bridal = () => {
   return (
     <div>
@@ -66,6 +67,7 @@ const bridal = () => {
 </ul>
                       </div>
         </div>
+        <Footer/>
     </div>
      
     

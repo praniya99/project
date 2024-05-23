@@ -2,8 +2,8 @@
   display: flex;
   overflow-x: hidden;
   flex-direction: column;
-  min-height: 55vh;
-  margin-top: 50.7vh;
+  
+ 
   width: 98.9vw;
  
 }
@@ -102,7 +102,8 @@ margin-left: 50px;
 .social-icons i {
   font-size: 15px;
   cursor: pointer;
-  margin-left: 10px;
+  margin-left: -10px;
+  margin-right: 25px;
   background-color: black;
   color: white;
   padding: 10px; 
@@ -140,9 +141,7 @@ form {
   
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
+.inputs {
   padding: 10px;
   margin-bottom: 10px;
   background-color:#C3689F;

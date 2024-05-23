@@ -1,5 +1,6 @@
 import './Makeup.css'
-import Subheader from "../../components/Subheader/Subheader"
+import Subheader from '../../Components/Subheader/Subheader.jsx'
+import Footer from '../../Components/Footer/Footer.jsx'
 
 const Makeup = () => {
   return (
@@ -9,7 +10,7 @@ const Makeup = () => {
             <div> <h2 className='heading-Makeup'><b>Makeup</b></h2></div>
                 <div className="small-rect15">
                      <div >
-                        <img src="../src/assets/T7.jpg"
+                        <img src="../src/assets/Makeup/S5.jpg"
                              alt="Description 1" 
                              className="rect-image-Makeup"/>
                         
@@ -77,6 +78,7 @@ Airbrush Makeup: Lightweight and long-lasting, applied with an airbrush gun</h5>
                     </div>
                 </div>
         </div>
+        <Footer/>
     </div>
   )
 }

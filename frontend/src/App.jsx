@@ -1,6 +1,7 @@
 
 //import Bridal from './Pages/Bridal/Bridal'
-import Footer from './Components/Footer/Footer'
+//import Bridal from './Pages/Bridal/Bridal'
+import Nails from './Pages/Nails/Nails'
 
 function App() {
   
@@ -8,7 +9,7 @@ function App() {
   return (
     
       <div>
-       <Footer/> 
+       <Nails/> 
    </div>
   )
 }

@@ -1,5 +1,6 @@
 import './Facialcleanup.css'
 import Subheader from "../../Components/Subheader/Subheader"
+import Footer from '../../Components/Footer/Footer'
 
 const Facialcleanup = () => {
   return (
@@ -70,6 +71,7 @@ const Facialcleanup = () => {
                     </div>
                 </div>
         </div>
+        <Footer/>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import './Nails.css'
-import Subheader from "../../Components/Subheader/Subheader"
+import Subheader from '../../Components/Subheader/Subheader'
+import Footer from '../../Components/Footer/Footer'
 
 const Nails = () => {
   return (
@@ -70,6 +71,7 @@ const Nails = () => {
                     </div>
                 </div>
         </div>
+        <Footer/>
     </div>
   )
 }

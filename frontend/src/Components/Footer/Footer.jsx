@@ -25,11 +25,11 @@ const Footer = () => {
       <h2><b>Leave a comment</b></h2>
       <form>
         <div className="form-group">
-          <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Name" required className='inputs'/>
+          <input type="email" placeholder="Email" required className='inputs' />
         </div>
-        <input type="text" placeholder="Subject" required />
-        <textarea placeholder="Message" required></textarea>
+        <input type="text" placeholder="Subject" required className='inputs'/>
+        <textarea placeholder="Message" required className='inputs'></textarea>
         <div className="form-buttons">
           <button type="submit">Send Message</button>
           <button type="button">Reviews</button>

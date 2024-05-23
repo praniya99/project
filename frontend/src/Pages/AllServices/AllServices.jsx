@@ -1,5 +1,6 @@
-import Subheader from "../../components/Subheader/Subheader";
+import Subheader from "../../Components/Subheader/Subheader";
 import "./AllServices.css";
+import Footer from '../../Components/Footer/Footer.jsx'
 
 const bridal = () => {
   return (
@@ -10,7 +11,7 @@ const bridal = () => {
           <div className="small-rect2">
             <div className="main-photo">
               <a href="#"><img
-                src="../src/assets/T3.jpg"
+                src="../src/assets/AllServices/T3.jpg"
                 alt="Description 1"
                 className="rect-image"
               />
@@ -25,7 +26,7 @@ const bridal = () => {
             <div className="main-photo">
             <a href="#">
               <img
-                src="../src/assets/T6.jpg"
+                src="../src/assets/AllServices/T6.jpg"
                 alt="Description 1"
                 className="rect-image"
               />
@@ -40,7 +41,7 @@ const bridal = () => {
             <div className="main-photo">
             <a href="#">
               <img
-                src="../src/assets/T7.jpg"
+                src="../src/assets/AllServices/T7.jpg"
                 alt="Description 1"
                 className="rect-image"
               />
@@ -57,7 +58,7 @@ const bridal = () => {
             <div className="main-photo">
             <a href="#">
               <img
-                src="../src/assets/T8.jpg"
+                src="../src/assets/AllServices/T8.jpg"
                 alt="Description 1"
                 className="rect-image"
               />
@@ -72,7 +73,7 @@ const bridal = () => {
             <div className="main-photo">
             <a href="#">
               <img
-                src="../src/assets/T8.jpg"
+                src="../src/assets/AllServices/T81.jpg"
                 alt="Description 1"
                 className="rect-image"
               />
@@ -87,7 +88,7 @@ const bridal = () => {
             <div className="main-photo">
             <a href="#">
               <img
-                src="../src/assets/T5.jpg"
+                src="../src/assets/AllServices/T5.jpg"
                 alt="Description 1"
                 className="rect-image"
               />
@@ -104,7 +105,7 @@ const bridal = () => {
             <div className="main-photo">
             <a href="#">
               <img
-                src="../src/assets/T1.jpg"
+                src="../src/assets/AllServices/T1.jpg"
                 alt="Description 1"
                 className="rect-image"
               />
@@ -119,7 +120,7 @@ const bridal = () => {
             <div className="main-photo">
             <a href="#">
               <img
-                src="../src/assets/T4.jpg"
+                src="../src/assets/AllServices/T4.jpg"
                 alt="Description 1"
                 className="rect-image"
               />
@@ -133,7 +134,9 @@ const bridal = () => {
          
         </div>
       </div>
+      <Footer/>
     </div>
+  
   );
 };
 
