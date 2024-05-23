@@ -1,6 +1,6 @@
 import React from 'react'
 import './name.css'
-import pic01 from './images/pic01.jpg'
+import pic01 from '../assests/images/name/pic01.jpg'
 
 export default function Name() {
   return (

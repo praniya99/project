@@ -23,7 +23,10 @@ export default function Regform() {
   return (
     <div className='fulform'>
         <div className='form'> 
-        <p className='topic'>Registration Form for Cashier Assistant</p><Form noValidate validated={validated} onSubmit={handleSubmit}>
+          <p className='topic'>Registration Form for Cashier Assistant</p>
+ 
+        <div className='formcont'>
+        <Form noValidate validated={validated} onSubmit={handleSubmit}>
             <Form.Label>Name :</Form.Label>
              <Row className="mb-3">
            <Form.Group as={Col} md="4" controlId="validationCustom01">
@@ -166,7 +169,8 @@ export default function Regform() {
         
          <Button className='btnreg' type="submit">Register</Button>
        </Form>
-       </div>
+</div>
+               </div>
        
     </div>
   )

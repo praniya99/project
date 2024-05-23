@@ -11,6 +11,9 @@ border-width: 10px;
  
     
 }
+.formcont{
+    margin-left: 10%;
+}
 .btnreg{
     width:25%;
     padding: auto;

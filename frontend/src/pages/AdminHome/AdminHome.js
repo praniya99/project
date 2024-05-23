@@ -1,11 +1,10 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import banner3 from '../components/images/banner3.jpg'
+import Navbar from '../../components/Navbar'
+import banner3 from '../../assests/images/adminhome/banner3.jpg'
 import './adminhome.css'
-import Footer from '../components/Footer'
+import Footer from '../../components/Footer'
 import Card from 'react-bootstrap/Card';
 
- 
 
 export default function AdminHome() {
   return (

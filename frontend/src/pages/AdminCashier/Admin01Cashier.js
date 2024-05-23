@@ -1,9 +1,9 @@
 import React from 'react'
-import Topicbox from '../components/Topicbox'
-import Plus from '../components/Plus'
-import Sort from '../components/Sort'
-import Name from '../components/Name'
-import Footer from '../components/Footer'
+import Topicbox from '../../components/Topicbox'
+import Plus from '../../components/Plus'
+import Sort from '../../components/Sort'
+import Name from '../../components/Name'
+import Footer from '../../components/Footer'
 
 
 
