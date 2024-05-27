@@ -2,6 +2,7 @@
     padding-top: 10px;
     display: flex;
     justify-content: center;
+    
     }
 .Admin-img02{
         width: 30px;
@@ -46,4 +47,6 @@
 
 .Admin-fulfooter{
          background-color: #C3689F;
+         width:98.9vw;
+         margin-left: -12px;
          }

@@ -8,6 +8,7 @@
   box-sizing: border-box;
   width: 100%;
   overflow-x: hidden;
+  
   }
 
   *,
@@ -23,6 +24,7 @@
     min-height: 100vh;
     padding: 20px;
 margin-top: -30px;
+margin-left: 80px;
    
     
   }

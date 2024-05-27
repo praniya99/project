@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    width: 99vw;
+    margin-left: -11.5px;
+    margin-top: 10px;
   }
   .main-head-serviceform{
     display: flex;

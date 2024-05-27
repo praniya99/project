@@ -1,8 +1,7 @@
 import  { useState } from 'react';
 import './Addserviceform.css';
 import Adminsubheaderservice from '../../Components/Adminsubheaderservice/Adminsubheaderservice'
-import Adminheader from '../../Components/Adminheader/Adminheader';
-import Adminfooter from '../../Components/Adminfooter/Adminfooter';
+
 
 function Addserviceform() {
   const [hours, setHours] = useState('');
@@ -15,7 +14,7 @@ function Addserviceform() {
   };
   return (
     <div>
-      <Adminheader/>
+      
       <Adminsubheaderservice/>
             <div className="form-container">
                  <form onSubmit={handleSubmit} className="product-form">
@@ -53,7 +52,7 @@ function Addserviceform() {
                     <center><button type="submit"className='button'>ADD SERVICE</button></center>
                   </form>
           </div>
-<Adminfooter/>
+
     </div>
   );
 }
