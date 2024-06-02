@@ -7,7 +7,7 @@ import LocalMallIcon from '@mui/icons-material/LocalMall';
 const Allproduct= () => {
   return (
     <div>
-      <Header/>
+      
       <Sidebar/>
       <div className="bigRect1">
         <div className="smallRect1">

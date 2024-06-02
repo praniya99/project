@@ -25,7 +25,6 @@ const AddItemForm = () => {
       additionalDetails,
       productImage,
     });
-    // Add your form submission logic here
   };
 
   return (

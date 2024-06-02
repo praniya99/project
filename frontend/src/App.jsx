@@ -11,6 +11,8 @@ import SkinCare from './page/skinCare';
 import MakeUp from './page/makeUp';
 import HairCare from './page/hairCare';
 import BpdyCare from './page/bodyCare';
+import ItemHeder from './component/itemHeder';
+import Item from './page/item'
 
 function App() {
   
@@ -18,10 +20,9 @@ function App() {
   return (
     <>
       <div>
-        <Header/>
+        
     
-     
-
+    <Item/>
     
         
       </div>
