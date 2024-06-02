@@ -1,17 +1,13 @@
 import React from 'react'
-import Navbar from '../../components/Navbar'
 import banner3 from '../../assests/images/adminhome/banner3.jpg'
 import './adminhome.css'
-import Footer from '../../components/Footer'
 import Card from 'react-bootstrap/Card';
 
 
 export default function AdminHome() {
   return (
     <div >
-      <div>
-              <Navbar />
-      </div>
+      
       <div className='image-container'>
         <div><Card className="card-no-border-radius text-white">
       <Card.Img src={banner3} alt="Card image" />
@@ -24,9 +20,7 @@ export default function AdminHome() {
       </Card.ImgOverlay>
     </Card></div>
       </div>
-      <div>
-        <Footer/>
-      </div>
+      
     </div>
   );
 }

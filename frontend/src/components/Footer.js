@@ -14,7 +14,7 @@ export default function Footer() {
     <div className='footer'><div>
        <a href=''>      <img className='img02' src={facebook} alt="" /></a>
         <a href=''><img className='img02' src={whatsapp} alt="" /></a>
-        <a href=''> <img className='img02' src={twitter} alt="" /></a>
+        <a href=''><img className='img02' src={twitter} alt="" /></a>
         <a href=''><img className='img02' src={instagram} alt="" /></a>
         </div>
     </div>

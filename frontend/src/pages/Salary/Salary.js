@@ -1,14 +1,12 @@
 import React from 'react'
 import '../Salary/salary.css'
-import Navbar from '../../components/Navbar'
-import Footer from '../../components/Footer'
+
 import Table from 'react-bootstrap/Table';
 
 
 export default function Salary() {
   return (
     <div>
-      <Navbar/>
       <div className='topicBox'>
         <p>Salary</p>
      </div>
@@ -54,7 +52,6 @@ export default function Salary() {
 </Table>
 
      </div>
-     <Footer/>
     </div>
   )
 }

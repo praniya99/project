@@ -10,8 +10,8 @@
     margin-bottom: 0px;
     padding-top:5px;
     padding-bottom: 5px;
-    font-size: 25px;
-    background-color: rgb(243, 155, 224);
+    font-size: 20px;
+    border: 1px solid;
     width: 50%;
     text-decoration: none;
     color: #000;
@@ -20,7 +20,7 @@
 .btn02{
  background-color: red;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 10px;
     width:100px;
 
