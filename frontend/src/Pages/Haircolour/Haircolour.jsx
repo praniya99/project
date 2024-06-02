@@ -1,6 +1,6 @@
 import './Haircolour.css'
 import Subheader from "../../Components/Subheader/Subheader"
-import Footer from  '../../Components/Footer/Footer'
+
 const Haircolour = () => {
   return (
     <div>
@@ -16,7 +16,7 @@ const Haircolour = () => {
                     </div>
 
                     <div className="rect-heading-Haircolour">
-                       <h3><b>Let's make the most beautiful day of your life even more beautiful.</b></h3>
+                         <h3><b>s make the most beautiful day of your life even more beautiful.</b></h3>
                         <h5 className="rect-head-Haircolour">A hairstyle, hairdo, haircut or coiffure refers to the styling of hair, usually on the human scalp. Sometimes, this could also mean an editing of facial or body hair. The fashioning of hair can be considered an aspect of personal grooming, fashion, and cosmetics, although practical, cultural, and popular considerations also influence some hairstyles.</h5>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ const Haircolour = () => {
 
                     <div className='list-Haircolour'>
                         <ul type='none'>
-                        <b><h3 className="main-heading-Haircolour1">Time Duration</h3></b>
+                           <b><h3 className="main-heading-Haircolour1">Time Duration</h3></b>
                             <li className="li-Haircolour">30 min </li>
                             <li className="li-Haircolour">30 min </li>
                             <li className="li-Haircolour">30 min </li>
@@ -51,7 +51,7 @@ const Haircolour = () => {
 
                     <div className='list-Haircolour1'>
                         <ul type='none'>
-                        <b><h3 className="main-heading-Haircolour">Price</h3></b>
+                           <b><h3 className="main-heading-Haircolour">Price</h3></b>
                             <li className="li-Haircolour">Rs.100.00 </li>
                             <li className="li-Haircolour">Rs.100.00 </li>
                             <li className="li-Haircolour">Rs.100.00 </li>
@@ -65,7 +65,7 @@ const Haircolour = () => {
                       </div>
                 </div>
         </div>
-        <Footer/>
+       
     </div>
   )
 }
