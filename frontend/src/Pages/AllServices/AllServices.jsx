@@ -2,7 +2,7 @@ import Subheader from "../../Components/Subheader/Subheader";
 import "./AllServices.css";
 
 
-const bridal = () => {
+const AllServices = () => {
   return (
     <div>
       <Subheader />
@@ -142,4 +142,4 @@ const bridal = () => {
   );
 };
 
-export default bridal;
+export default AllServices;
