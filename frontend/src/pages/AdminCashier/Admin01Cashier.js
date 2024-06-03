@@ -1,8 +1,8 @@
 import React from 'react'
-import Topicbox from '../../components/Topicbox'
-import Plus from '../../components/Plus'
-import Sort from '../../components/Sort'
-import Name from '../../components/Name'
+import Topicbox from '../../components/CashierTopic/Topicbox'
+import Plus from '../../components/PlusMark/Plus'
+import Sort from '../../components/Sort/Sort'
+import Name from '../../components/Name/Name'
 
 
 
@@ -14,6 +14,8 @@ export default function Admin01Cashier() {
      <Plus/> 
      <Sort/>
      <Name/>
+     <Name/>
+
     </div>
   )
 }

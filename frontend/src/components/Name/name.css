@@ -2,7 +2,7 @@
     display: flex;
     margin-left: 40px;
     margin-top: 10px;
-    margin-bottom: 150px;
+    margin-bottom: 10px;
 }
 .name{ 
     border-radius: 10px;
@@ -18,7 +18,7 @@
     
 }
 .btn02{
- background-color: red;
+ background-color: rgb(219, 2, 2);
     border-radius: 10px;
     font-size: 20px;
     margin-left: 10px;

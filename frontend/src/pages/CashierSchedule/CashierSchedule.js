@@ -8,7 +8,7 @@ export default function CashierSchedule() {
     <div>
       <div>
       <div className='topicBox'>
-        <p>Booking Details</p>
+        <p>Schedule</p>
      </div>
      <div >
      <Table striped bordered hover className="rounded-table">
