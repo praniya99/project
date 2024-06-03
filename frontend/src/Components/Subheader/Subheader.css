@@ -1,0 +1,72 @@
+.BIg-main-main-rect{
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.main-head{
+  display: flex;
+  width: 100%;
+  min-height: 150px;
+  flex-direction: row;
+  background-color: #F1A4BD;
+  text-align: center;
+  align-items: center;
+}
+
+.main-head-services{
+  margin-left: 10%;
+  color: black;
+  font-family: 'Arial';
+  font-size: 35px;
+  font-family: 'Kaushan Script' ,cursive
+}
+
+.admin{
+  margin-left: 55vw;
+  color: black;
+  font-family: 'Arial';
+  font-size: 16px;
+}
+
+.side-panel{
+  display: flex;
+  width: 18%;
+  min-height: 130vh;
+  flex-direction: column;
+  background-color: rgb(227, 227, 227);
+  text-align: center;
+}
+
+.search-btn{
+ 
+  margin-top: 20px;
+   margin-left: 10px;
+   margin-right: 20px;
+   color: black;
+  
+ }
+
+.side-topic{
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+  
+}
+.topic-btn {
+  width: 90%;
+  background-color: transparent;
+  color: black;
+  font-size: large;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 50px;
+}
+.fot-tag{
+  text-align: center;
+  font-size: 10px;
+  margin-top: 40px;
+}
