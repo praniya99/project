@@ -19,7 +19,7 @@ const Beauticians = () => {
                 <div className="small-rect-Beauticians2">
                     <div className="main-photo-Beauticians">
                         <a href="#"><img
-                        src="../src/assets/F4.jpg"
+                        src="../src/assets/Beauticians/F4.jpg"
                         alt="Description 1"
                         className="rect-image-Beauticians"/>
                         </a>
@@ -32,7 +32,7 @@ const Beauticians = () => {
                 <div className="small-rect-Beauticians2">
                     <div className="main-photo-Beauticians">
                         <a href="#"><img
-                        src="../src/assets/F5.jpg"
+                        src="../src/assets/Beauticians/F5.jpg"
                         alt="Description 1"
                         className="rect-image-Beauticians"/>
                         </a>
@@ -45,7 +45,7 @@ const Beauticians = () => {
                 <div className="small-rect-Beauticians2">
                     <div className="main-photo-Beauticians">
                         <a href="#"><img
-                        src="../src/assets/F1.jpg"
+                        src="../src/assets/Beauticians/F1.jpg"
                         alt="Description 1"
                         className="rect-image-Beauticians"/>
                         </a>
@@ -58,7 +58,7 @@ const Beauticians = () => {
                 <div className="small-rect-Beauticians2">
                     <div className="main-photo-Beauticians">
                         <a href="#"><img
-                        src="../src/assets/F3.jpg"
+                        src="../src/assets/Beauticians/F3.jpg"
                         alt="Description 1"
                         className="rect-image-Beauticians"/>
                         </a>
@@ -73,7 +73,7 @@ const Beauticians = () => {
                 <div className="small-rect-Beauticians2">
                     <div className="main-photo-Beauticians">
                         <a href="#"><img
-                        src="../src/assets/F2.jpg"
+                        src="../src/assets/Beauticians/F2.jpg"
                         alt="Description 1"
                         className="rect-image-Beauticians"/>
                         </a>

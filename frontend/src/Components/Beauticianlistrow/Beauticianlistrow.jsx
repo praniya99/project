@@ -5,7 +5,7 @@ const Beauticianlistrow = () => {
   return (
     <div className='borderrow'>
         
-      <a className='row' href=""><img className='imgage' src={image01}/>Name</a>
+      <a className='row1' href=""><img className='imgage' src={image01}/>Name</a>
       <button className='buttonrow'> Delete</button>
       
     </div>

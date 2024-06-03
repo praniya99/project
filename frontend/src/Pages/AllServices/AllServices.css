@@ -1,66 +1,69 @@
-.big-rect1 {
+.big-rect1-AllServices {
   display: flex;
   overflow-x: hidden;
   flex-direction: column;
   height: 130vh;
   margin-top: -130.7vh;
   margin-left: 18%;
-  width: 83%;
+  width: 99vw;
   padding-bottom: 100px;
 }
 
-.small-rect1 {
+.small-rect1-AllServices {
   display: flex;
   flex-direction: row;
-  width: 90%;
-  height: 35%;
-  margin-left: 4.3%;
-  margin-top: 8%;
-  
+  width: 60%;
+  height: 60%;
+  margin-left: 7.3%;
+  margin-top: 7%;
+  margin-bottom: -8%;
 
 }
 
-.small-rect1-1 {
+.small-rect1-1-AllServices {
     display: flex;
     flex-direction: row;
-    width: 90%;
-    height: 35%;
-    margin-left: 4.3%;
-    margin-top: 8%;
+    width: 35%;
+    height: 60%;
+    margin-left: 20.3%;
+  margin-top: 8%;
+   
     
   }
 
-.small-rect2 {
+.small-rect2-AllServices {
   display: flex;
   flex-direction: column;
-  width: 25%;
-  height: 150%;
-  margin-left: 5%;
+  width: 45%;
+  height: 100%;
+  margin-left: 10%;
   align-items: center;
   margin-right: 10px;
   
+  
 }
 
-.main-photo {
+.main-photo-AllServices {
   width: 100%;
   height: 70%;
+  margin-bottom: 10px;
   background-color: aliceblue;
 }
 
-.rect-image {
+.rect-image-AllServices {
     display: flex;
   width: 100%;
   height: 100%;
   margin-bottom: 50px;
 }
 
-.rect-heading {
-  color: black; /* Text color */
+.rect-heading-AllServices {
+  color: black; 
   text-align: center;
-  font-size: 1rem; /* Adjust as needed */
+  font-size: 1rem; 
   margin-top: 2px;
 }
 
-.rect-head-head{
+.rect-head-head-AllServices{
     font-weight: 700;
 }
