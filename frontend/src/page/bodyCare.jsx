@@ -8,7 +8,7 @@ const Allproduct= () => {
   return (
     <div>
       
-      <Sidebar/>
+      
       <div className="bigRect1">
         <div className="smallRect1">
           <div className="smallRect2">
