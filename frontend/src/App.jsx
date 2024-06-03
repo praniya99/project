@@ -13,7 +13,7 @@ import Beauticians from './Pages/Beauticians/Beauticians'
 
 {/*import Servicelist from './Pages/Servicelist/Servicelist'*/}
 import Addserviceform from './Pages/Addserviceform/Addserviceform'
-
+import Servicelist from "./Pages/Servicelist/Servicelist";
 import AddBeauticians from './Pages/AddBeauticians/AddBeauticians'
 import Beauticianlist from './Pages/Beauticianlist/Beauticianlist'
 import BeauticianProfile from './Pages/BeauticianProfile/BeauticianProfile'
@@ -41,7 +41,7 @@ function App() {
 
                <Route path="/" element={<AdminLayout />}>
                   <Route path="Addserviceform" element={<Addserviceform />} />
-                  
+                  <Route path="Servicelist" element={<Servicelist />} />
                  
                   <Route path="AddBeauticians" element={<AddBeauticians />} />
                   <Route path="Beauticianlist" element={<Beauticianlist />} />

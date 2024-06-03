@@ -1,0 +1,36 @@
+.service-borderrow{
+    display: flex;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.service-row1{ 
+    border-radius: 10px;
+    border-color: black;
+    margin-bottom: 0px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    font-size: 20px;
+    border: 1px solid;
+    width: 50%;
+    text-decoration: none;
+    color: #000;
+    
+}
+.service-buttonrow{
+ background-color: rgb(219, 2, 2);
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+    width:100px;
+
+
+}
+.service-imgage{
+width: 40px;
+height: 40px;
+margin-left: 15px;
+margin-right: 10px;
+border-radius: 50%;
+}
