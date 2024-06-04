@@ -1,5 +1,6 @@
 import './Facialcleanup.css'
 import Subheader from "../../Components/Subheader/Subheader"
+import T5 from '../../assets/Facialcleanup/T5.jpg'
 
 
 const Facialcleanup = () => {
@@ -10,7 +11,7 @@ const Facialcleanup = () => {
                     <div> <h2 className='heading-facialcleanup'><b>Facialcleanup</b></h2></div>
                         <div className="small-rect12">
                             <div >
-                                <img src="../src/assets/Facialcleanup/T5.jpg"
+                                <img src={T5}
                                     alt="Description 1" 
                                     className="rect-image-facialcleanup"/>
                                 

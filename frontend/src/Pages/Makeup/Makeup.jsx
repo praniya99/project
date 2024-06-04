@@ -1,6 +1,6 @@
 import './Makeup.css'
 import Subheader from '../../Components/Subheader/Subheader.jsx'
-
+import S5 from '../../assets/Makeup/S5.jpg'
 const Makeup = () => {
   return (
     <div>
@@ -9,7 +9,7 @@ const Makeup = () => {
             <div> <h2 className='heading-Makeup'><b>Makeup</b></h2></div>
                 <div className="small-rect15">
                      <div >
-                        <img src="../src/assets/Makeup/S5.jpg"
+                        <img src={S5}
                              alt="Description 1" 
                              className="rect-image-Makeup"/>
                         

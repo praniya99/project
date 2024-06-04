@@ -1,5 +1,6 @@
 import './Haircolour.css'
 import Subheader from "../../Components/Subheader/Subheader"
+import T8 from '../../assets/Haircolour/T8.jpg'
 
 const Haircolour = () => {
   return (
@@ -9,7 +10,7 @@ const Haircolour = () => {
             <div> <h2 className='heading-Haircolour'><b>Hair Colour</b></h2></div>
                 <div className="small-rect13">
                      <div >
-                        <img src="../src/assets/Haircolour/T8.jpg"
+                        <img src={T8}
                              alt="Description 1" 
                              className="rect-image-Haircolour"/>
                         

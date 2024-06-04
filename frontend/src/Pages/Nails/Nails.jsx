@@ -1,6 +1,6 @@
 import './Nails.css'
 import Subheader from '../../Components/Subheader/Subheader'
-
+import T6 from '../../assets/Nails/T6.jpg'
 
 const Nails = () => {
   return (
@@ -10,7 +10,7 @@ const Nails = () => {
             <div> <h2 className='heading-Nails'><b>Nails</b></h2></div>
                 <div className="small-rect16">
                      <div >
-                        <img src="../src/assets/Nails/T6.jpg"
+                        <img src={T6}
                              alt="Description 1" 
                              className="rect-image-Nails"/>
                         
