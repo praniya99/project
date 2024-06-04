@@ -93,4 +93,21 @@ margin-left: 80px;
     color: black;
   }
   
+.field {
+  background-color: white;
+  width: 10%;
+}
+
+.field1 {
+  background-color: white;
+  color: black;
+  max-width: 100%;
+}
   
+@media screen and (max-width: 400px) {
+  .product-form {
+    width: 60%; 
+    margin-left: -180px;
+    margin-top: 38px;
+  }
+}

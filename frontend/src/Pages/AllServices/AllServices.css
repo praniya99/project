@@ -67,3 +67,23 @@
 .rect-head-head-AllServices{
     font-weight: 700;
 }
+
+@media screen and (max-width: 400px) {
+ 
+  
+  .small-rect1-AllServices {
+    width: 80%; 
+    margin-left: 2%; 
+  }
+  
+  .small-rect1-1-AllServices {
+    width: 50%; 
+    margin-left: 15%; 
+  }
+  
+  .small-rect2-AllServices {
+    width: 80%; 
+    margin-left: 2%;
+    margin-right: 0; 
+  }
+}

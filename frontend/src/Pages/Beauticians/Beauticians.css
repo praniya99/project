@@ -78,9 +78,9 @@
   }
   
   .rect-heading-Beauticians {
-    color: black; /* Text color */
+    color: black; 
     text-align: center;
-    font-size: 1rem; /* Adjust as needed */
+    font-size: 1rem; 
     margin-top: 2px;
   }
   
@@ -92,6 +92,29 @@
   .space-Beautician{
     margin-top: -7vh;
 
+  }
+
+  @media screen and (max-width: 400px) {
+    .main-head-Beauticians {
+      font-size: 20px; 
+    }
+  
+    .rect-head-head-Beauticians{
+      font-size:10px;
+    }
+    .admin-Beauticians {
+      margin-left: 30vw; 
+    }
+  
+    .small-rect-Beauticians2 {
+     
+      width: 15%;
+    }
+    .rect-image-Beauticians {
+      width:150%;
+      height: 90%;
+      margin-left: -18px;
+    }
   }
  
 
