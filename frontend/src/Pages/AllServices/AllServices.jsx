@@ -1,5 +1,13 @@
 import Subheader from "../../Components/Subheader/Subheader"
 import "./AllServices.css";
+import T3 from '../../assets/AllServices/T3.jpg'
+import T1 from '../../assets/AllServices/T1.jpg'
+import T5 from '../../assets/AllServices/T5.jpg'
+import T4 from '../../assets/AllServices/T4.jpg'
+import T6 from '../../assets/AllServices/T6.jpg'
+import T7 from '../../assets/AllServices/T7.jpg'
+import T8 from '../../assets/AllServices/T8.jpg'
+import T81 from '../../assets/AllServices/T81.jpg'
 
 
 
@@ -12,7 +20,7 @@ const AllServices = () => {
                           <div className="small-rect2-AllServices">
                                   <div className="main-photo-AllServices">
                                         <a href="#"><img
-                                          src="../src/assets/AllServices/T3.jpg"
+                                          src={T3}
                                           alt="Description 1"
                                           className="rect-image-AllServices"
                                         />
@@ -27,7 +35,7 @@ const AllServices = () => {
                                  <div className="main-photo-AllServices">
                                         <a href="#">
                                           <img
-                                            src="../src/assets/AllServices/T6.jpg"
+                                            src={T6}
                                             alt="Description 1"
                                             className="rect-image-AllServices"
                                           />
@@ -42,7 +50,7 @@ const AllServices = () => {
                                     <div className="main-photo-AllServices">
                                           <a href="#">
                                             <img
-                                              src="../src/assets/AllServices/T7.jpg"
+                                              src={T7}
                                               alt="Description 1"
                                               className="rect-image-AllServices"
                                             />
@@ -59,7 +67,7 @@ const AllServices = () => {
                                 <div className="main-photo-AllServices">
                                       <a href="#">
                                         <img
-                                          src="../src/assets/AllServices/T8.jpg"
+                                          src={T8}
                                           alt="Description 1"
                                           className="rect-image-AllServices"
                                         />
@@ -74,7 +82,7 @@ const AllServices = () => {
                                 <div className="main-photo-AllServices">
                                       <a href="#">
                                         <img
-                                          src="../src/assets/AllServices/T81.jpg"
+                                          src={T81}
                                           alt="Description 1"
                                           className="rect-image-AllServices"
                                         />
@@ -89,7 +97,7 @@ const AllServices = () => {
                                 <div className="main-photo-AllServices">
                                       <a href="#">
                                         <img
-                                          src="../src/assets/AllServices/T5.jpg"
+                                          src={T5}
                                           alt="Description 1"
                                           className="rect-image-AllServices"
                                         />
@@ -106,7 +114,7 @@ const AllServices = () => {
                                       <div className="main-photo-AllServices">
                                             <a href="#">
                                               <img
-                                                src="../src/assets/AllServices/T1.jpg"
+                                                src={T1}
                                                 alt="Description 1"
                                                 className="rect-image-AllServices"
                                               />
@@ -122,7 +130,7 @@ const AllServices = () => {
                                         <div className="main-photo-AllServices">
                                                 <a href="#">
                                                   <img
-                                                    src="../src/assets/AllServices/T4.jpg"
+                                                    src={T4}
                                                     alt="Description 1"
                                                     className="rect-image-AllServices"
                                                   />

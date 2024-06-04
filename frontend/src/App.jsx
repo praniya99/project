@@ -11,12 +11,14 @@ import Nails from './Pages/Nails/Nails'
 import Threading from './Pages/Threading/Threading'
 import Beauticians from './Pages/Beauticians/Beauticians'
 
-{/*import Servicelist from './Pages/Servicelist/Servicelist'*/}
+
 import Addserviceform from './Pages/Addserviceform/Addserviceform'
 import Servicelist from "./Pages/Servicelist/Servicelist";
 import AddBeauticians from './Pages/AddBeauticians/AddBeauticians'
 import Beauticianlist from './Pages/Beauticianlist/Beauticianlist'
 import BeauticianProfile from './Pages/BeauticianProfile/BeauticianProfile'
+
+
 
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
         <Routes>
 {/*
               <Route path="/" element={<MainLayout />}>*/}
+                    
                   <Route path="Allservices" element={<AllServices />} />
                   <Route path="Bridal" element={<Bridal />} />
                   <Route path="Facialcleanup" element={<Facialcleanup />} />

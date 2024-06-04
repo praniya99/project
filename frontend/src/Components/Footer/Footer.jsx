@@ -32,7 +32,7 @@ const Footer = () => {
         <textarea placeholder="Message" required className='inputs'></textarea>
         <div className="form-buttons">
           <button type="submit">Send Message</button>
-          <button type="button">Reviews</button>
+          <button type="button" >Reviews</button>
         </div>
       </form>
    </div>

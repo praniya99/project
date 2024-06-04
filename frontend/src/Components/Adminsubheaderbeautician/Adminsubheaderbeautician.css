@@ -23,3 +23,10 @@
     font-size: 35px;
     font-family: 'Idran' ,
   }
+
+  @media screen and (max-width: 400px) {
+    .main-head-beauticianform1-1 {
+      margin-left: 5%;
+      font-size: 20px;
+    }
+  }

@@ -6,3 +6,10 @@
     border-color: black;
     width: 100px;
 }
+
+@media screen and (max-width: 400px) {
+    .beauticiansort {
+      margin-left: 10px;
+      width: 80px;
+    }
+  }

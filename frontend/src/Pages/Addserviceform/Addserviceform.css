@@ -93,32 +93,4 @@ margin-left: 80px;
     color: black;
   }
   
-  @media (max-width: 800px) {
-  .form-container {
-    padding: 10px;
-  }
-
-  .product-form {
-    padding: 15px;
-  }
-}
-
-@media (max-width: 400px) {
-  .form-container {
-    padding: 5px;
-  }
-}
-
-  .field{
-    background-color: white;
-    width: 10%;
-    
-  }
-
   
-  .field1{
-    background-color: white;
-    color: black;
-    max-width: 100%;
-    
-  }

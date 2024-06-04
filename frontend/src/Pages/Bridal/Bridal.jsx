@@ -1,5 +1,6 @@
 import Subheader from "../../Components/Subheader/Subheader"
 import './Bridal.css'
+import T3 from '../../assets/Bridal/T3.jpg'
 
 const bridal = () => {
   return (
@@ -9,7 +10,7 @@ const bridal = () => {
                   <div> <h2 className='heading-Bride'><b>Bridal</b></h2></div>
                         <div className="small-rect1">
                                 <div >
-                                         <img src="../src/assets/Bridal/T3.jpg"
+                                         <img src={T3}
                                               alt="Description 1" 
                                               className="rect-image-Bride"/>
                                         

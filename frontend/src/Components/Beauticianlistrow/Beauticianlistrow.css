@@ -33,3 +33,22 @@ margin-left: 15px;
 margin-right: 10px;
 border-radius: 50%;
 }
+
+@media screen and (max-width: 400px) {
+    .borderrow {
+      margin-left: 10px;
+    }
+    
+    .row1 {
+      width: 80%;
+    }
+  
+    .buttonrow {
+      width: 80px;
+    }
+  
+    .imgage {
+      width: 20px;
+      height: 20px;
+    }
+  }
