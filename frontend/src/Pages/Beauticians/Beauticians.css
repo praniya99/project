@@ -1,0 +1,124 @@
+.BIg-main-main-Beauticians{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    margin-bottom: 300px;
+  }
+  .main-Beauticians{
+    display: flex;
+    width: 100vw;
+    min-height: 150px;
+    flex-direction: row;
+    background-color: #F1A4BD;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .main-head-Beauticians{
+    margin-left: 10%;
+    color: black;
+    font-family: 'Arial';
+    font-size: 35px;
+    font-family: 'Kaushan Script' ,cursive
+  }
+
+  .admin-Beauticians{
+    margin-left: 55vw;
+    color: black;
+    font-family: 'Arial';
+    font-size: 16px;
+  }
+  .big-rect-Beauticians {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    height: 130vh;
+    margin-top: -50vh;
+    width: 100%;
+    padding-bottom: 100px;
+    
+  }
+  
+  .small-rect-Beauticians1 {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 55vh;
+    margin-left: 4.3%;
+    margin-top: 7%;
+ 
+  }
+  
+ 
+  
+  .small-rect-Beauticians2 {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 50vh;
+    margin-left: 7.5%;
+    align-items: center;
+    margin-right: 10px;
+   
+    margin-top: 10px;
+  }
+
+
+  .main-photo-Beauticians {
+    width: 100%;
+    height: 70%;
+    background-color: aliceblue;
+  }
+  
+  .rect-image-Beauticians {
+      display: flex;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+  }
+  
+  .rect-heading-Beauticians {
+    color: black; 
+    text-align: center;
+    font-size: 1rem; 
+    margin-top: 2px;
+  }
+  
+  .rect-head-head-Beauticians{
+      font-weight: 500;
+      display: flex;
+  }
+  
+  .space-Beautician{
+    margin-top: -7vh;
+
+  }
+
+  @media screen and (max-width: 400px) {
+    .main-head-Beauticians {
+      font-size: 20px; 
+      
+    }
+  
+    .rect-head-head-Beauticians{
+      font-size:10px;
+      
+    }
+    .admin-Beauticians {
+      margin-left: 30vw; 
+    }
+  
+    .small-rect-Beauticians2 {
+     
+      width: 15%;
+    }
+    .rect-image-Beauticians {
+      width:150%;
+      height: 90%;
+      margin-left: -18px;
+      
+    }
+  }
+ 
+
+  
