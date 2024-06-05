@@ -1,5 +1,3 @@
-
-
 import Sidebar from "../component/sidebar";
 import './allProduct.css' 
 import LocalMallIcon from '@mui/icons-material/LocalMall';
@@ -14,13 +12,13 @@ const Allproduct= () => {
           <div className="smallRect2">
             <div className="mainPhoto">
               <a href="#"><img
-                src="../src/assets/9.jpeg"
+                src="../src/assets/Haircare22.jpeg"
                 alt="Description 1"
                 className="rectImage"
               />
               </a>
               <div className="rectHeading">
-              <h5 className="rect-head-head">Herbal Foot Cream</h5>
+              <h5 className="rect-head-head">Herbal Conditioner</h5>
             </div>
             <div className="buyNow">
             <button className="buy-button">Buy now</button>
@@ -55,13 +53,13 @@ const Allproduct= () => {
             <div className="mainPhoto">
             <a href="#">
               <img
-                src="../src/assets/11.jpeg"
+                src="../src/assets/23.jpeg"
                 alt="Description 1"
                 className="rectImage"
               />
               </a>
               <div className="rectHeading">
-              <h5 className="rect-head-head">Eye Shadow</h5>
+              <h5 className="rect-head-head">Herbal Hair Oil</h5>
             </div>
             <div className="buyNow">
             <button className="buy-button">Buy now</button>
@@ -77,13 +75,13 @@ const Allproduct= () => {
             <div className="mainPhoto">
             <a href="#">
               <img
-                src="../src/assets/12.png"
+                src="../src/assets/31.jpeg"
                 alt="Description 1"
                 className="rectImage"
               />
               </a>
               <div className="rectHeading">
-              <h5 className="rect-head-head">Gold cleanser</h5>
+              <h5 className="rect-head-head">Hair Growth Oil</h5>
             </div>
             <div className="buyNow">
             <button className="buy-button">Buy now</button>
@@ -97,13 +95,13 @@ const Allproduct= () => {
             <div className="mainPhoto">
             <a href="#">
               <img
-                src="../src/assets/16.png"
+                src="../src/assets/26.jpeg"
                 alt="Description 1"
                 className="rectImage"
               />
               </a>
               <div className="rectHeading">
-              <h5 className="rect-head-head">Lip Barm</h5>
+              <h5 className="rect-head-head">Hair Moisturiser</h5>
             </div>
             <div className="buyNow">
             <button className="buy-button">Buy now</button>
@@ -117,13 +115,13 @@ const Allproduct= () => {
             <div className="mainPhoto">
             <a href="#">
               <img
-                src="../src/assets/19.jpeg"
+                src="../src/assets/24.jpeg"
                 alt="Description 1"
                 className="rectImage"
               />
               </a>
               <div className="rectHeading">
-              <h5 className="rect-head-head">Lip Stick</h5>
+              <h5 className="rect-head-head">Herbal Shower Gel</h5>
             </div>
             <div className="buyNow">
             <button className="buy-button">Buy now</button>
