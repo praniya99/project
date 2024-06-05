@@ -22,7 +22,6 @@ function App() {
       <div>
         
     
-    <Item/>
     
         
       </div>
