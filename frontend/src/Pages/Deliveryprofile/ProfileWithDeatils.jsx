@@ -2,9 +2,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Image, Button, ListGroup } from 'react-bootstrap';
+import subheaderD from '../../Components/subheaderD';
 
 const ProfileWithDetails = () => {
+  
   return (
+    <div>
+      <subheaderD/>
+      
     <Container fluid className="d-flex justify-content-center align-items-center min-vh-100">
       <Row className="w-75">
         <Col xs={12} md={4} lg={3} className="bg-light p-3">
@@ -34,6 +39,7 @@ const ProfileWithDetails = () => {
         </Col>
       </Row>
     </Container>
+    </div>
   );
 };
 
