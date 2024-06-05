@@ -110,4 +110,8 @@ margin-left: 80px;
     margin-left: -180px;
     margin-top: 38px;
   }
+
+  .button{
+    width:50%
+  }
 }

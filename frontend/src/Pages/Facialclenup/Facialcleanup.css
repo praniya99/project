@@ -49,19 +49,19 @@ margin-left: 20px;
 
 .main-heading-facialcleanup{
   margin-top: 30px;
-  margin-left: 150px;
+  margin-left: 150px auto;
 }
 
 .main-heading-facialcleanup1{
   margin-top: 30px;
-  margin-left: 80px;
+  margin-left: 80px auto;
 }
 
 .li-facialcleanup{
   font-size: 20px;
   font-weight: 500;
   margin-top: 18px;
-  margin-left: 135px;
+  margin-left: 135px auto;
 }
 
 .heading-facialcleanup{
@@ -77,7 +77,8 @@ margin-top: 30px;
 }
 
 .list-facialcleanup1{
-  margin-left: 40px;
+  margin-left: 0px;
+  
 
 }
 
@@ -109,7 +110,8 @@ margin-top: 30px;
   }
 
   .rect-head-facialcleanup {
-    text-align:center;
+    text-align:left;
+    font-size: 10px;
 
   }
 

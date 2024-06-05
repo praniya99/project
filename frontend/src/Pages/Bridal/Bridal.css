@@ -84,7 +84,7 @@
 
 .list-Bride{
   display: flex;
-  margin-left: 85px auto;
+  margin-left: 85px ;
   
 
 }
@@ -107,22 +107,34 @@
       height: 40%;
   }
   
+  .heading-Bride{
+    font-size: 28px;
+    margin-left: 15px;
+  }
   .rect-head-Bride {
       font-size: 14px;
+  }
+
+  .paragraph-Bride{
+    font-size: 15px;
+    margin-top: -29px;
+    text-align: left;
   }
   
   .main-heading-Bride {
       margin-top: 10px;
-      font-size: 20px;
+      font-size: 18px;
   }
 
   .main-heading-Bride1{
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 15px;
 }
   
   .li-Bride, .li-Bride1 {
       font-size: 14px;
       margin-top: 5px;
   }
+
+
 }

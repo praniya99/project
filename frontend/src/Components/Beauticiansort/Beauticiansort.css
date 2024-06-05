@@ -2,14 +2,16 @@
     display: flex;
     background-color: white;
     color: black;
-    margin-left: 40px;
+    margin-left: 63px;
     border-color: black;
     width: 100px;
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 400px) {
     .beauticiansort {
       margin-left: 10px;
+      margin-top: 10px;
       width: 80px;
     }
   }

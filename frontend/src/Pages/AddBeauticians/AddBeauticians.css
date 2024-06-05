@@ -25,6 +25,7 @@
          border-color: #C3689F;
       display: flex;
       justify-content: center;
+      margin-top: 25px;
     }
     .beautician-btnreg:hover{
         background-color: #974f7a; 

@@ -16,7 +16,7 @@ const bridal = () => {
                                         
                                 </div>
                                 <div className="rect-heading-Bride">
-                                    <h3><b>s make the most beautiful day of your life even more beautiful.</b></h3>
+                                    <h3 className='paragraph-Bride'><b>s make the most beautiful day of your life even more beautiful.</b></h3>
                                     <h5 className="rect-head-Bride">Bridal services encompass a range of offerings to prepare a bride for her wedding day. 
                                     This includes traditional hair and makeup styling, intricate henna designs, 
                                     dressing in traditional attire, and sometimes jewelry rental or styling. 

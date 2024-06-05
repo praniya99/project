@@ -97,10 +97,12 @@
   @media screen and (max-width: 400px) {
     .main-head-Beauticians {
       font-size: 20px; 
+      
     }
   
     .rect-head-head-Beauticians{
       font-size:10px;
+      
     }
     .admin-Beauticians {
       margin-left: 30vw; 
@@ -114,6 +116,7 @@
       width:150%;
       height: 90%;
       margin-left: -18px;
+      
     }
   }
  
