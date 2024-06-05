@@ -88,3 +88,41 @@
   
 
 }
+
+@media (max-width: 400px) {
+ 
+  
+  .small-rect1 {
+      height: auto;
+      margin-top: 5%;
+  }
+  
+  .rect-image-Bride {
+      height: auto;
+      margin-bottom: 3px;
+      width:150px;
+  }
+  
+  .main-photo-Bride {
+      height: 40%;
+  }
+  
+  .rect-head-Bride {
+      font-size: 14px;
+  }
+  
+  .main-heading-Bride {
+      margin-top: 10px;
+      font-size: 20px;
+  }
+
+  .main-heading-Bride1{
+    margin-top: 10px;
+    font-size: 20px;
+}
+  
+  .li-Bride, .li-Bride1 {
+      font-size: 14px;
+      margin-top: 5px;
+  }
+}
