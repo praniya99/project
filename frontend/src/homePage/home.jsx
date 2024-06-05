@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import Header from '../component/header';
 import Card from 'react-bootstrap/Card';
 import './home.css';

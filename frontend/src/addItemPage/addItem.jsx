@@ -69,7 +69,7 @@ const AddItemForm = () => {
             <textarea
               value={additionalDetails}
               onChange={(e) => setAdditionalDetails(e.target.value)}
-              style={{ width: '95%', height: '90px',border:'none',border:'none' }}
+              style={{ width: '95%', height: '90px',border:'none' }}
             />
           </div><br/>
           <div style={{ marginBottom: '10px' }}>
