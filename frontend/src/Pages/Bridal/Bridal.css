@@ -1,0 +1,86 @@
+.big-rect1 {
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+    height: 130vh;
+    margin-top: -130.7vh;
+    margin-left: 18%;
+    width: 83%;
+    padding-bottom: 100px;
+    background-color: white;
+  }
+
+  .small-rect1 {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 55%;
+    margin-left: 4.3%;
+    margin-top: 2%;
+  background-color: white;
+ 
+
+  }
+
+  .rect-image-Bride {
+    display: flex;
+  width: 100;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.main-photo-Bride {
+    width: 100%;
+    height: 90%;
+    background-color: white;
+  }
+
+.rect-heading-Bride {
+  color: black; 
+  text-align: center; 
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+.rect-head-Bride{
+    font-weight: 600;
+    margin-top: 25px;
+    font-size: 23px;
+    text-align: left;
+}
+.main-heading-Bride{
+  margin-top: 30px;
+  margin-left: 70px;
+}
+
+.main-heading-Bride1{
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.li-Bride{
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 18px;
+  margin-left: 60px;
+}
+
+
+.li-Bride1{
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 18px;
+  margin-left: 60px;
+  color: red;
+}
+
+.heading-Bride{
+  font-size: 40px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.list-Bride{
+  margin-left: 85px;
+
+}
