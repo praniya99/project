@@ -21,9 +21,9 @@ import Beauticianlist from './Pages/Beauticianlist/Beauticianlist'
 import BeauticianProfile from './Pages/BeauticianProfile/BeauticianProfile'
 
 
-import { useState } from 'react'
 
-import './App.css'
+
+
 
 
 
