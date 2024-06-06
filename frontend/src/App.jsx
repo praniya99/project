@@ -1,16 +1,16 @@
 
-import './App.css'
 import React from 'react'
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Home from './homePage/home';
-import Cart from './CartPage/cart';
-import AllProduct from './AllItem/allProduct';
-import AddItem from './AddItemPage/addItem';
-import SkinCare from './SkinCare/skinCare';
-import MakeUp from './MakeUp/makeUp';
-import HairCare from './HairCre/hairCare';
-import BodyCare from './BodyCare/bodyCare';
-import Item from './Item/item'
+import Home from './Pages/homePage/home';
+import Cart from './Pages/CartPage/cart';
+import AllProduct from './Pages/AllItem/allProduct';
+
+import AddItem from './Pages/AddItemPage/addItem';
+import SkinCare from './Pages/SkinCare/skinCare';
+import MakeUp from './Pages/MakeUp/makeUp';
+import HairCare from './Pages/HairCare/hairCare';
+import BodyCare from './Pages/BodyCare/bodyCare';
+import Item from './Pages/Item/item';
 
 function App() {
   
@@ -36,3 +36,4 @@ function App() {
 }
 
 export default App
+
