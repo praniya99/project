@@ -1,6 +1,6 @@
 
 
-import Sidebar from "../component/sidebar";
+import Sidebar from "./.././../Components/Sidebar/sidebar";
 import './allProduct.css' 
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 

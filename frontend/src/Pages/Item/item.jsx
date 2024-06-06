@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import './item.css';
-import ItemHeder from '../component/itemHeder';
+import ItemHeder from './../../Components/ItemHeader/itemHeder';
 
 const Product = () => {
   const [quantity, setQuantity] = useState(1);
@@ -16,10 +16,10 @@ const Product = () => {
     <div className="product-container">
         
       <div className="product-images">
-        <img src="../src/assets/16.png" alt="Glowy Lip Balm Peach" className="main-image" />
+        <img src="../src/assets/ItemPhoto/16.png" alt="Glowy Lip Balm Peach" className="main-image" />
         <div className="small-images">
-          <img src="../src/assets/27.png" alt="Glowy Lip Balm Peach" />
-          <img src="../src/assets/28.png" alt="Glowy Lip Balm Peach Back" />
+          <img src="../src/assets/ItemPhoto/27.png" alt="Glowy Lip Balm Peach" />
+          <img src="../src/assets/ItemPhoto/28.png" alt="Glowy Lip Balm Peach Back" />
         </div>
       </div>
       <div className="product-details">

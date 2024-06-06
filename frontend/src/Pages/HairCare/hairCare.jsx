@@ -1,24 +1,24 @@
-import Sidebar from "../component/sidebar";
-import './allProduct.css' 
+import Sidebar from "./../../Components/Sidebar/sidebar";
+import './hairCare.css' 
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 
 
 const Allproduct= () => {
   return (
     <div>
-      <Sidebar/> 
+      <Sidebar/>
       <div className="bigRect1">
         <div className="smallRect1">
           <div className="smallRect2">
             <div className="mainPhoto">
               <a href="#"><img
-                src="../src/assets/18.png"
+                src="../src/assets/HaircarePhoto/22.jpeg"
                 alt="Description 1"
                 className="rectImage"
               />
               </a>
               <div className="rectHeading">
-              <h5 className="rect-head-head">Gold facial serum</h5>
+              <h5 className="rect-head-head">Herbal Conditioner</h5>
             </div>
             <div className="buyNow">
             <button className="buy-button">Buy now</button>
@@ -33,13 +33,13 @@ const Allproduct= () => {
             <div className="mainPhoto">
             <a href="#">
               <img
-                src="../src/assets/17.png"
+                src="../src/assets/HaircarePhoto/10.jpeg"
                 alt="Description 1"
                 className="rectImage"
               />
               </a>
               <div className="rectHeading">
-              <h5 className="rect-head-head">Anti acne toner</h5>
+              <h5 className="rect-head-head">Herbal Shampoo</h5>
             </div>
             <div className="buyNow">
             <button className="buy-button">Buy now</button>
@@ -53,13 +53,13 @@ const Allproduct= () => {
             <div className="mainPhoto">
             <a href="#">
               <img
-                src="../src/assets/27.png"
+                src="../src/assets/HaircarePhoto/23.jpeg"
                 alt="Description 1"
                 className="rectImage"
               />
               </a>
               <div className="rectHeading">
-              <h5 className="rect-head-head">Lip Barm</h5>
+              <h5 className="rect-head-head">Herbal Hair Oil</h5>
             </div>
             <div className="buyNow">
             <button className="buy-button">Buy now</button>
@@ -75,13 +75,13 @@ const Allproduct= () => {
             <div className="mainPhoto">
             <a href="#">
               <img
-                src="../src/assets/29.jpg"
+                src="../src/assets/HaircarePhoto/31.jpeg"
                 alt="Description 1"
                 className="rectImage"
               />
               </a>
               <div className="rectHeading">
-              <h5 className="rect-head-head">Day Cream</h5>
+              <h5 className="rect-head-head">Hair Growth Oil</h5>
             </div>
             <div className="buyNow">
             <button className="buy-button">Buy now</button>
@@ -95,13 +95,13 @@ const Allproduct= () => {
             <div className="mainPhoto">
             <a href="#">
               <img
-                src="../src/assets/30.jpg"
+                src="../src/assets/HaircarePhoto/26.jpeg"
                 alt="Description 1"
                 className="rectImage"
               />
               </a>
               <div className="rectHeading">
-              <h5 className="rect-head-head">Night Cream</h5>
+              <h5 className="rect-head-head">Hair Moisturiser</h5>
             </div>
             <div className="buyNow">
             <button className="buy-button">Buy now</button>
@@ -115,13 +115,13 @@ const Allproduct= () => {
             <div className="mainPhoto">
             <a href="#">
               <img
-                src="../src/assets/12.png"
+                src="../src/assets/HaircarePhoto/24.jpeg"
                 alt="Description 1"
                 className="rectImage"
               />
               </a>
               <div className="rectHeading">
-              <h5 className="rect-head-head">Gold cleanser</h5>
+              <h5 className="rect-head-head">Herbal Shower Gel</h5>
             </div>
             <div className="buyNow">
             <button className="buy-button">Buy now</button>

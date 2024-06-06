@@ -1,80 +1,150 @@
-import './Makeup.css'
-import Subheader from '../../Components/Subheader/Subheader.jsx'
+import Sidebar from "./../../Components/Sidebar/sidebar";
+import './makeUp.css' 
+import LocalMallIcon from '@mui/icons-material/LocalMall';
 
-const Makeup = () => {
+
+const Allproduct= () => {
   return (
     <div>
-      <Subheader/>
-      <div className="big-rect15">
-            <div> <h2 className='heading-Makeup'><b>Makeup</b></h2></div>
-                <div className="small-rect15">
-                     <div >
-                        <img src="../src/assets/Makeup/S5.jpg"
-                             alt="Description 1" 
-                             className="rect-image-Makeup"/>
-                        
-                    </div>
+      <Sidebar/>
+      <div className="bigRect1">
+        <div className="smallRect1">
+          <div className="smallRect2">
+            <div className="mainPhoto">
+              <a href="#"><img
+                src="../src/assets/MakeupPhoto/33.jpg"
+                alt="Description 1"
+                className="rectImage"
+              />
+              </a>
+              <div className="rectHeading">
+              <h5 className="rect-head-head">Eye Shadow</h5>
+            </div>
+            <div className="buyNow">
+            <button className="buy-button">Buy now</button>
+            <button className="cart-button"><LocalMallIcon/></button>
+            
+            </div>
+            </div>
+            
+          </div>
 
-                    <div className="rect-heading-Makeup">
-                        <h3><b> make the most beautiful day of your life even more beautiful.</b></h3>
-                        <h5 className="rect-head-Makeup">Natural Makeup: Enhances features subtly for a fresh, flawless look.
-                        Glam Makeup: Dramatic with bold colors and contouring for special events.
-                        Bridal Makeup: Tailored for weddings, ranging from soft to glamorous.
-                        Fashion/Editorial Makeup: Artistic and experimental, seen on runways and in magazines.
-                        Theatrical/Stage Makeup: Exaggerates features for visibility under stage lighting.
-                        Special Effects Makeup: Creates illusions like aging or wounds for film and theater.
-                        Everyday Makeup: Simple, daily wear for a polished look.
-                        Airbrush Makeup: Lightweight and long-lasting, applied with an airbrush gun</h5>
-                    </div>
-                </div>
+          <div className="smallRect2">
+            <div className="mainPhoto">
+            <a href="#">
+              <img
+                src="../src/assets/MakeupPhoto/32.jpg"
+                alt="Description 1"
+                className="rectImage"
+              />
+              </a>
+              <div className="rectHeading">
+              <h5 className="rect-head-head">Lip Stick</h5>
+            </div>
+            <div className="buyNow">
+            <button className="buy-button">Buy now</button>
+            <button className="cart-button"><LocalMallIcon/></button>
+            </div>
+            </div>
+           
+          </div>
 
+          <div className="smallRect2">
+            <div className="mainPhoto">
+            <a href="#">
+              <img
+                src="../src/assets/MakeupPhoto/11.jpeg"
+                alt="Description 1"
+                className="rectImage"
+              />
+              </a>
+              <div className="rectHeading">
+              <h5 className="rect-head-head">Eye Shadow</h5>
+            </div>
+            <div className="buyNow">
+            <button className="buy-button">Buy now</button>
+            <button className="cart-button"><LocalMallIcon/></button>
+            </div>
+            </div>
+           
+          </div>
+        </div>
 
-                <div className="small-rect15">
-                    <div>
-                        <ul>
-                            <b><h3 className="main-heading-Makeup">Service</h3></b>
-                            <li className="li-Makeup">Eyebrows </li>
-                            <li className="li-Makeup">Upper Lip</li>
-                            <li className="li-Makeup">Chin</li>
-                            <li className="li-Makeup">Neck</li>
-                            <li className="li-Makeup">Eyebrows </li>
-                            <li className="li-Makeup">Upper Lip</li>
-                            <li className="li-Makeup">Chin</li>
-                            <li className="li-Makeup">Neck</li>
-                     </ul>
-                    </div>
+        <div className="smallRect1-1">
+          <div className="smallRect2">
+            <div className="mainPhoto">
+            <a href="#">
+              <img
+                src="../src/assets/MakeupPhoto/21.jpeg"
+                alt="Description 1"
+                className="rectImage"
+              />
+              </a>
+              <div className="rectHeading">
+              <h5 className="rect-head-head">Mascara</h5>
+            </div>
+            <div className="buyNow">
+            <button className="buy-button">Buy now</button>
+            <button className="cart-button"><LocalMallIcon/></button>
+            </div>
+            </div>
+           
+          </div>
 
-                    <div className='list-Makeup'>
-                        <ul type='none'>
-                            <b><h3 className="main-heading-Makeup1">Time Duration</h3></b>
-                            <li className="li-Makeup">30 min </li>
-                            <li className="li-Makeup">30 min </li>
-                            <li className="li-Makeup">30 min </li>
-                            <li className="li-Makeup">30 min </li>
-                            <li className="li-Makeup">30 min </li>
-                            <li className="li-Makeup">30 min </li>
-                        
-                         </ul>
-                    </div>
+          <div className="smallRect2">
+            <div className="mainPhoto">
+            <a href="#">
+              <img
+                src="../src/assets/MakeupPhoto/34.jpg"
+                alt="Description 1"
+                className="rectImage"
+              />
+              </a>
+              <div className="rectHeading">
+              <h5 className="rect-head-head">Faundation Cream</h5>
+            </div>
+            <div className="buyNow">
+            <button className="buy-button">Buy now</button>
+            <button className="cart-button"><LocalMallIcon/></button>
+            </div>
+            </div>
+            
+          </div>
 
-                    <div className='list-Makeup'>
-                             <ul type='none'>
-                                   <b><h3 className="main-heading-Makeup">Price</h3></b>
-                                    <li className="li-Makeup">Rs.100.00 </li>
-                                    <li className="li-Makeup">Rs.100.00 </li>
-                                    <li className="li-Makeup">Rs.100.00 </li>
-                                    <li className="li-Makeup">Rs.100.00 </li>
-                                    <li className="li-Makeup">Rs.100.00 </li>
-                                    <li className="li-Makeup">Rs.100.00 </li>
-                                    <li className="li-Makeup">Rs.100.00 </li>
-                                    <li className="li-Makeup">Rs.100.00 </li>
-                            </ul>
-                    </div>
-                </div>
-         </div>
-       
+          <div className="smallRect2">
+            <div className="mainPhoto">
+            <a href="#">
+              <img
+                src="../src/assets/MakeupPhoto/19.jpeg"
+                alt="Description 1"
+                className="rectImage"
+              />
+              </a>
+              <div className="rectHeading">
+              <h5 className="rect-head-head">Lip Stick</h5>
+            </div>
+            <div className="buyNow">
+            <button className="buy-button">Buy now</button>
+            <button className="cart-button"><LocalMallIcon/></button>
+            </div>
+            </div>
+            
+          </div>
+
+         
+            
+          
+        
+
+        
+
+          
+
+         
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Makeup
+export default Allproduct; 
