@@ -4,12 +4,12 @@ import Adminsubheaderservice from '../../Components/Adminsubheaderservice/Admins
 
 
 function Addserviceform() {
-  const [hours, setHours] = useState('');
+ 
   const [minutes, setMinutes] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const duration = { hours, minutes };
+    const duration = {  minutes };
     console.log(duration);
   };
   return (
@@ -40,9 +40,7 @@ function Addserviceform() {
                      </div>
 
                     <div className="form-group">
-                        <label>Hours:
-                              <input type="number" value={hours} onChange={(e) => setHours(e.target.value)} min="0" required  placeholder="Hours"  className='field1'/>
-                        </label><br />
+                       
                         <label>Minutes: 
                               <input type="number"  value={minutes}  onChange={(e) => setMinutes(e.target.value)} min="0" max="59" required placeholder="Minutes"className='field1'/>
                        </label>

@@ -19,6 +19,7 @@ import Beauticianlist from './Pages/Beauticianlist/Beauticianlist'
 import BeauticianProfile from './Pages/BeauticianProfile/BeauticianProfile'
 
 
+import Form from './Pages/Deliveryform/Form'
 
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
 {/*
               <Route path="/" element={<MainLayout />}>*/}
                     
-                  <Route path="Allservices" element={<AllServices />} />
+                  <Route path="AllServices" element={<AllServices />} />
                   <Route path="Bridal" element={<Bridal />} />
                   <Route path="Facialcleanup" element={<Facialcleanup />} />
                   <Route path="Haircolour" element={<Haircolour />} />
@@ -49,6 +50,12 @@ function App() {
                   <Route path="AddBeauticians" element={<AddBeauticians />} />
                   <Route path="Beauticianlist" element={<Beauticianlist />} />
                   <Route path="BeauticianProfile" element={<BeauticianProfile />} />
+
+              
+                  <Route path="Form" element={<Form />} />
+                  
+                  
+
               </Route>
 
                 

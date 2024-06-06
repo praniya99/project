@@ -1,4 +1,4 @@
-import React from 'react';
+{/*import React from 'react';
 import { Button } from 'react-bootstrap';
 
 const RectangleComponent = ({ name, profilePicture, onDelete }) => {
@@ -17,4 +17,4 @@ const RectangleComponent = ({ name, profilePicture, onDelete }) => {
   );
 };
 
-export default RectangleComponent;
+export default RectangleComponent;*/}
