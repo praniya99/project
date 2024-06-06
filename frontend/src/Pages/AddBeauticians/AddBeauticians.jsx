@@ -4,7 +4,8 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-import Adminsubheaderservice from '../../Components/Adminsubheaderservice/Adminsubheaderservice.jsx'
+import './AddBeauticians.css'
+import Adminsubheaderbeautician from '../../Components/Adminsubheaderbeautician/Adminsubheaderbeautician'
 
 
 const AddBeauticians = () => {
@@ -22,14 +23,14 @@ const AddBeauticians = () => {
 
       return (
           <div>
-              <Adminsubheaderservice/>
-              <div className='fulform'>
-                  <div className='form'> 
-                        <p className='topic'>Registration Form for Cashier Assistant</p><Form noValidate validated={validated} onSubmit={handleSubmit}>
+              <Adminsubheaderbeautician/>
+              <div className='beautician-fulform'>
+                  <div className='beautician-form'> 
+                        <p className='beautician-topic'>Registration Form for Beautician</p><Form noValidate validated={validated} onSubmit={handleSubmit}>
                        <Form.Label>Name :</Form.Label>
-                        <Row className="mb-3">
+                        <Row className="beautician-mb-3">
 
-                              <Form.Group as={Col} md="4" controlId="validationCustom01">
+                              <Form.Group as={Col} md="4" controlId="validationbeautician-01">
               
                                   <Form.Control required
                                     type="text"
@@ -40,7 +41,7 @@ const AddBeauticians = () => {
                                   <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                               </Form.Group>
 
-                              <Form.Group as={Col} md="4" controlId="validationCustom02">
+                              <Form.Group as={Col} md="4" controlId="validationbeautician-02">
                   
                                   <Form.Control
                                     required
@@ -52,8 +53,8 @@ const AddBeauticians = () => {
                 
                         </Row>
 
-                       <Row className="mb-3">
-                               <Form.Group as={Col} md="4" controlId="validationCustom03">
+                       <Row className="beautician-mb-3">
+                               <Form.Group as={Col} md="4" controlId="validationbeautician-03">
                                      <Form.Label>Date of birth :</Form.Label>
                                       <Form.Control type="text" placeholder="DD/MM/YYYY" required />
                                       <Form.Control.Feedback type="invalid">
@@ -61,11 +62,11 @@ const AddBeauticians = () => {
                                       </Form.Control.Feedback>
                                 </Form.Group>
            
-                               <Form.Group as={Col} md="3" controlId="validationCustom04">
+                               <Form.Group as={Col} md="3" controlId="validationbeautician-04">
                                       <Form.Label>Gender :</Form.Label>
                             
-                         <Row className="mb-3">
-                               <Form.Group as={Col} md="4" controlId="validationCustom01">
+                         <Row className="beautician-mb-3">
+                               <Form.Group as={Col} md="4" controlId="validationbeautician-01">
          
                                   <Form.Check 
                                     type="radio"
@@ -78,7 +79,7 @@ const AddBeauticians = () => {
 
                                </Form.Group>
 
-                                <Form.Group as={Col} md="4" controlId="validationCustom02">
+                                <Form.Group as={Col} md="4" controlId="validationbeautician-02">
             
                                   <Form.Check 
                                     type="radio"
@@ -98,8 +99,8 @@ const AddBeauticians = () => {
            
                       </Row>
 
-                      <Row className='mb-3'>
-                          <Form.Group as={Col} md="4" controlId="validationCustom01">
+                      <Row className='beautician-mb-3'>
+                          <Form.Group as={Col} md="4" controlId="validationbeautician-01">
                                 <Form.Label>Mobile No :</Form.Label>
 
                                 <Form.Control
@@ -113,8 +114,8 @@ const AddBeauticians = () => {
                            </Form.Group>
                        </Row>
 
-                       <Row className='mb-3'>
-                          <Form.Group as={Col} md="8" controlId="validationCustomEmail">
+                       <Row className='beautician-mb-3'>
+                          <Form.Group as={Col} md="8" controlId="validationbeautician-Email">
                                 <Form.Label>E-mail :</Form.Label>
                                 <Form.Control
                                     required
@@ -125,8 +126,8 @@ const AddBeauticians = () => {
                             </Form.Group>
                         </Row>
 
-                        <Row className='mb-3'>
-                              <Form.Group as={Col} md="8" controlId="validationCustom01">
+                        <Row className='beautician-mb-3'>
+                              <Form.Group as={Col} md="8" controlId="validationbeautician-01">
                                     <Form.Label>Address :</Form.Label>
 
                                     <Form.Control
@@ -140,8 +141,8 @@ const AddBeauticians = () => {
                                </Form.Group>
                           </Row>
 
-                          <Row className='mb-3'>
-                                <Form.Group as={Col} md="8"  controlId="validationCustom01">
+                          <Row className='beautician-mb-3'>
+                                <Form.Group as={Col} md="8"  controlId="validationbeautician-01">
                                       <Form.Label>Education Qualifications :</Form.Label>
 
                                       <Form.Control as="textarea"  rows={3}
@@ -154,8 +155,8 @@ const AddBeauticians = () => {
                                   </Form.Group>
                             </Row>
 
-                            <Row className='mb-3'>
-                                  <Form.Group as={Col} md="8" controlId="validationCustom01">
+                            <Row className='beautician-mb-3'>
+                                  <Form.Group as={Col} md="8" controlId="validationbeautician-01">
                                         <Form.Label>How experienced are you ?</Form.Label>
 
                                         <Form.Control as="textarea"  rows={2}
@@ -168,8 +169,8 @@ const AddBeauticians = () => {
                                    </Form.Group>
                               </Row>
 
-                              <Row className='mb-5'>
-                                    <Form.Group as={Col} md="8" controlId="validationCustom01">
+                              <Row className='beautician-mb-5'>
+                                    <Form.Group as={Col} md="8" controlId="validationbeautician-01">
                                           <Form.Label>Additional Details :</Form.Label>
 
                                           <Form.Control as="textarea"  rows={3}
@@ -183,7 +184,7 @@ const AddBeauticians = () => {
                                 </Row>
                   
         
-                                <Button className='btnreg' type="submit">Register</Button>
+                                <Button className='beautician-btnreg' type="submit">Register</Button>
                       </Form>
              </div>
        

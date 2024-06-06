@@ -1,6 +1,6 @@
 import './Nails.css'
 import Subheader from '../../Components/Subheader/Subheader'
-import Footer from '../../Components/Footer/Footer'
+import T6 from '../../assets/Nails/T6.jpg'
 
 const Nails = () => {
   return (
@@ -10,13 +10,13 @@ const Nails = () => {
             <div> <h2 className='heading-Nails'><b>Nails</b></h2></div>
                 <div className="small-rect16">
                      <div >
-                        <img src="../src/assets/Nails/T6.jpg"
+                        <img src={T6}
                              alt="Description 1" 
                              className="rect-image-Nails"/>
                         
                     </div>
                     <div className="rect-heading-Nails">
-                    <h3><b>Let's make the most beautiful day of your life even more beautiful.</b></h3>
+                    <h3><b>s make the most beautiful day of your life even more beautiful.</b></h3>
                     <h5 className="rect-head-Nails">A facial is a family of skin care treatments for the face, including steam, exfoliation, extraction, creams, lotions, facial masks, peels, and massage. They are normally performed in beauty salons, but are also a common spa treatment. They are used for general skin health as well as for specific skin conditions.</h5>
                     </div>
                 </div>
@@ -71,7 +71,7 @@ const Nails = () => {
                     </div>
                 </div>
         </div>
-        <Footer/>
+        
     </div>
   )
 }

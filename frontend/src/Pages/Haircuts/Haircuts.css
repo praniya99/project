@@ -34,8 +34,8 @@ margin-bottom: 10px;
 }
 
 .rect-heading-Haircuts {
-color: black; /* Text color */
-text-align: center; /* Adjust as needed */
+color: black; 
+text-align: center; 
 margin-top: 25px;
 margin-left: 20px;
 }
@@ -74,4 +74,87 @@ margin-top: 30px;
 .list-Haircuts{
   margin-left: 80px;
 
+}
+
+@media (max-width: 400px) {
+  .small-rect14 {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 5%;
+  }
+
+  .main-heading-Haircuts,
+  .main-heading-Haircuts1,
+  .li-Haircuts {
+    margin-left: 0;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .heading-Haircuts {
+    margin-left: 15px;
+    font-size: 20px;
+  }
+
+  .rect-head-Haircuts {
+    text-align: center;
+   font-size: 10px;
+  }
+ 
+ .paragraph-Haircuts{
+  font-size:15px;
+  margin-top: -29px;
+
+  }
+  .list-Haircuts {
+    margin-left: 0;
+  }
+
+  .rect-image-Haircuts {
+    width: 150px;
+    height: auto;
+    margin-bottom: 5px;
+    margin-left: 15px;
+  }
+}
+
+
+@media (min-width: 708px) {
+  .main-heading-Haircuts,
+  .main-heading-Haircuts1,
+  .li-Haircuts {
+    font-size: 18px;
+    margin-left: 18px;
+   
+  }
+  .rect-image-Haircuts
+  {
+    height: auto;
+    margin-bottom: 3px;
+    width:200px;
+  }
+
+  .rect-head-Haircuts {
+    text-align: left;
+   font-size: 19px;
+  }
+ 
+ .paragraph-Haircuts{
+  font-size:20px;
+  margin-top: -29px;
+
+  }
+
+  .heading-Haircuts {
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .list-Haircuts {
+    margin-left: -10px;
+    
+  }
 }

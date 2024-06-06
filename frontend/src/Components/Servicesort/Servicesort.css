@@ -1,0 +1,8 @@
+.service-sort{
+    display: flex;
+    background-color: white;
+    color: black;
+    margin-left: 40px;
+    border-color: black;
+    width: 100px;
+}
