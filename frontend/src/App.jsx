@@ -1,4 +1,4 @@
-<<<<<<<<< Temporary merge branch 1
+
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AdminLayout from './Layout/AdminLayout'
@@ -20,17 +20,17 @@ import AddBeauticians from './Pages/AddBeauticians/AddBeauticians'
 import Beauticianlist from './Pages/Beauticianlist/Beauticianlist'
 import BeauticianProfile from './Pages/BeauticianProfile/BeauticianProfile'
 
-=========
+
 import { useState } from 'react'
 
 import './App.css'
-import Salary from './pages/Salary/Salary'
->>>>>>>>> Temporary merge branch 2
+
+
 
 function App() {
   return (
     
-<<<<<<<<< Temporary merge branch 1
+
     <Router>
         <Routes>
 
@@ -65,12 +65,10 @@ function App() {
 
 
      </Router>
-=========
-      <div>
-        <Salary/>
-      </div>
+
+     
     
->>>>>>>>> Temporary merge branch 2
+
   )
 }
 
