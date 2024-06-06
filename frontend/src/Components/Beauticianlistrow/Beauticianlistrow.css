@@ -1,0 +1,54 @@
+.borderrow{
+    display: flex;
+    margin-left: 63px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.row1{ 
+    border-radius: 10px;
+    border-color: black;
+    margin-bottom: 0px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    border: 1px solid;
+    width: 50%;
+    text-decoration: none;
+    color: #000;
+    
+}
+.buttonrow{
+ background-color: rgb(219, 2, 2);
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+    width:100px;
+
+
+}
+.imgage{
+width: 40px;
+height: 40px;
+margin-left: 15px;
+margin-right: 10px;
+border-radius: 50%;
+}
+
+@media screen and (max-width: 400px) {
+    .borderrow {
+      margin-left: 10px;
+    }
+    
+    .row1 {
+      width: 80%;
+    }
+  
+    .buttonrow {
+      width: 80px;
+    }
+  
+    .imgage {
+      width: 20px;
+      height: 20px;
+    }
+  }
