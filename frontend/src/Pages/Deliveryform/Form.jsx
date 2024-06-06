@@ -53,7 +53,7 @@ const RegistrationForm = () => {
 
   return (
     <div>
-        <Deliveryagents/>
+        <subheaderD/>
       <Container className="my-5" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)', padding: '20px', borderRadius: '10px' }}>
         <h1 style={{ textAlign: 'center' }}>Registration Form for Delivery Agents</h1>
         <BootstrapForm noValidate validated={validated} onSubmit={handleSubmit} style={{
