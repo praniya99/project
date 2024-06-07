@@ -6,6 +6,9 @@
     display: grid;
     align-content: center;
     font-family: Kaushan Script,cursive;
+    width:100vw;
+    margin-top: 20px;
+    margin-left: -11.9px;
 }
 .content{
     display: flex;

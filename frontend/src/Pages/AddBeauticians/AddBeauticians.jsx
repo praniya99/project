@@ -1,198 +1,202 @@
-
-import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import './AddBeauticians.css'
-import Adminsubheaderbeautician from '../../Components/Adminsubheaderbeautician/Adminsubheaderbeautician'
+import  { useState } from 'react';
+import { Form as BootstrapForm, Button, Container, Row, Col } from 'react-bootstrap';
 
 
 const AddBeauticians = () => {
-        const [validated, setValidated] = useState(false);
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [dob, setDob] = useState('');
+  const [gender, setGender] = useState('');
+  const [mobile, setMobile] = useState('');
+  const [email, setEmail] = useState('');
+  const [address, setAddress] = useState('');
+  const [studyPlace, setStudyPlace] = useState(''); // New state for study place
+  const [qualificationYear, setQualificationYear] = useState(''); // New state for qualification year
+  const [experience, setExperience] = useState(''); // New state for experience
+  const [additionalDetails, setAdditionalDetails] = useState(''); // New state for additional details
+  const [validated, setValidated] = useState(false);
 
-       const handleSubmit = (event) => {
-       const form = event.currentTarget;
-            if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false || !isDobValid(dob)) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    setValidated(true);
+  };
 
-             setValidated(true);
-        };
+  const isAgeValid = (dob) => {
+    const birthDate = new Date(dob);
+    const age = new Date().getFullYear() - birthDate.getFullYear();
+    return age >= 18 && age <= 100;
+  };
 
-      return (
-          <div>
-              <Adminsubheaderbeautician/>
-              <div className='beautician-fulform'>
-                  <div className='beautician-form'> 
-                        <p className='beautician-topic'>Registration Form for Beautician</p><Form noValidate validated={validated} onSubmit={handleSubmit}>
-                       <Form.Label>Name :</Form.Label>
-                        <Row className="beautician-mb-3">
+  const isPhoneNumberValid = (number) => /^\d{10}$/.test(number);
+  const isEmailValid = (email) => /\S+@\S+\.\S+/.test(email);
+  const isNameValid = (name) => /^[a-zA-Z]*$/.test(name);
+  const isDobValid = (dob) => dob && isAgeValid(dob);
 
-                              <Form.Group as={Col} md="4" controlId="validationbeautician-01">
-              
-                                  <Form.Control required
-                                    type="text"
-                                    placeholder="First name"
-                                    defaultValue=""
-                                  />
+  const handleFirstNameChange = (e) => {
+    if (isNameValid(e.target.value)) {
+      setFirstName(e.target.value);
+    }
+  };
 
-                                  <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                              </Form.Group>
+  const handleLastNameChange = (e) => {
+    if (isNameValid(e.target.value)) {
+      setLastName(e.target.value);
+    }
+  };
 
-                              <Form.Group as={Col} md="4" controlId="validationbeautician-02">
-                  
-                                  <Form.Control
-                                    required
-                                    type="text"
-                                    placeholder="Last name"
-                                    defaultValue=""
-                                  />
-                            </Form.Group>
-                
-                        </Row>
+  const handlePhoneNumberChange = (e) => {
+    const value = e.target.value;
+    if (/^\d*$/.test(value)) {
+      setMobile(value);
+    }
+  };
 
-                       <Row className="beautician-mb-3">
-                               <Form.Group as={Col} md="4" controlId="validationbeautician-03">
-                                     <Form.Label>Date of birth :</Form.Label>
-                                      <Form.Control type="text" placeholder="DD/MM/YYYY" required />
-                                      <Form.Control.Feedback type="invalid">
-                                        Please provide a valid birthday.
-                                      </Form.Control.Feedback>
-                                </Form.Group>
-           
-                               <Form.Group as={Col} md="3" controlId="validationbeautician-04">
-                                      <Form.Label>Gender :</Form.Label>
-                            
-                         <Row className="beautician-mb-3">
-                               <Form.Group as={Col} md="4" controlId="validationbeautician-01">
-         
-                                  <Form.Check 
-                                    type="radio"
-                                    label="Male"
-                                    name="gender"
-                                    id="genderMale"
-                                    required
-                                  />
-                                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-
-                               </Form.Group>
-
-                                <Form.Group as={Col} md="4" controlId="validationbeautician-02">
-            
-                                  <Form.Check 
-                                    type="radio"
-                                    label="Female"
-                                    name="gender"
-                                    id="genderMale"
-                                    required
-                                 />
-                               </Form.Group>
-           
-                          </Row>
-                            
-                                <Form.Control.Feedback type="invalid">
-                                       Please select a gender.
-                                 </Form.Control.Feedback>
-                               </Form.Group>
-           
-                      </Row>
-
-                      <Row className='beautician-mb-3'>
-                          <Form.Group as={Col} md="4" controlId="validationbeautician-01">
-                                <Form.Label>Mobile No :</Form.Label>
-
-                                <Form.Control
-                                  required
-                                  type="text"
-                                  placeholder="07X XXXX XXX"
-                                  defaultValue=""
-                                />
-
-                              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                           </Form.Group>
-                       </Row>
-
-                       <Row className='beautician-mb-3'>
-                          <Form.Group as={Col} md="8" controlId="validationbeautician-Email">
-                                <Form.Label>E-mail :</Form.Label>
-                                <Form.Control
-                                    required
-                                    type="email"
-                                    placeholder="abc@gmail.com"
-                                />
-                                <Form.Control.Feedback type="invalid">Please provide a valid email </Form.Control.Feedback>
-                            </Form.Group>
-                        </Row>
-
-                        <Row className='beautician-mb-3'>
-                              <Form.Group as={Col} md="8" controlId="validationbeautician-01">
-                                    <Form.Label>Address :</Form.Label>
-
-                                    <Form.Control
-                                      required
-                                      type="text"
-                                      placeholder="address"
-                                      defaultValue=""
-                                    />
-
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                               </Form.Group>
-                          </Row>
-
-                          <Row className='beautician-mb-3'>
-                                <Form.Group as={Col} md="8"  controlId="validationbeautician-01">
-                                      <Form.Label>Education Qualifications :</Form.Label>
-
-                                      <Form.Control as="textarea"  rows={3}
-                                        required
-                                        type="text"
-                                        placeholder=" "
-                                        defaultValue=""
-                                      />
-                                      <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                  </Form.Group>
-                            </Row>
-
-                            <Row className='beautician-mb-3'>
-                                  <Form.Group as={Col} md="8" controlId="validationbeautician-01">
-                                        <Form.Label>How experienced are you ?</Form.Label>
-
-                                        <Form.Control as="textarea"  rows={2}
-                                          required
-                                          type="text"
-                                          placeholder=" "
-                                          defaultValue=""
-                                        />
-                                        <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                   </Form.Group>
-                              </Row>
-
-                              <Row className='beautician-mb-5'>
-                                    <Form.Group as={Col} md="8" controlId="validationbeautician-01">
-                                          <Form.Label>Additional Details :</Form.Label>
-
-                                          <Form.Control as="textarea"  rows={3}
-                                            required
-                                            type="text"
-                                            placeholder=" "
-                                            defaultValue=""
-                                          />
-                                          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                      </Form.Group>
-                                </Row>
-                  
+  return (
+    <div>
         
-                                <Button className='beautician-btnreg' type="submit">Register</Button>
-                      </Form>
-             </div>
-       
-         </div>
-     
-     </div>
- );
-  
+      <Container className="my-5" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)', padding: '20px', borderRadius: '10px' }}>
+        <h1 style={{ textAlign: 'center' }}>Registration Form for Beauticians</h1>
+        <BootstrapForm noValidate validated={validated} onSubmit={handleSubmit} style={{
+           height: '100vh',
+           width: '100vh',
+           backgroundPosition: 'center',
+           backgroundRepeat: 'no-repeat',
+           backgroundColor: 'rgba(204, 205, 206)',
+           padding: '25px',
+           margin: 'Auto'
+        }}>
+          <Row className="mb-3">
+            <Col xs={12} md={6}>
+              <BootstrapForm.Group controlId="formFirstName">
+                <BootstrapForm.Label>First Name</BootstrapForm.Label>
+                <BootstrapForm.Control
+                  type="text"
+                  placeholder="Enter first name"
+                  value={firstName}
+                  onChange={handleFirstNameChange}
+                  required
+                />
+                <BootstrapForm.Control.Feedback type="invalid">Please enter a valid first name (only letters).</BootstrapForm.Control.Feedback>
+              </BootstrapForm.Group>
+            </Col>
+            <Col xs={12} md={6}>
+              <BootstrapForm.Group controlId="formLastName">
+                <BootstrapForm.Label>Last Name</BootstrapForm.Label>
+                <BootstrapForm.Control
+                  type="text"
+                  placeholder="Enter last name"
+                  value={lastName}
+                  onChange={handleLastNameChange}
+                  required
+                />
+                <BootstrapForm.Control.Feedback type="invalid">Please enter a valid last name (only letters).</BootstrapForm.Control.Feedback>
+              </BootstrapForm.Group>
+            </Col>
+          </Row>
+          <BootstrapForm.Group controlId="formDob" className="mb-3">
+            <BootstrapForm.Label>Date of Birth</BootstrapForm.Label>
+            <BootstrapForm.Control
+              type="date"
+              value={dob}
+              onChange={(e) => setDob(e.target.value)}
+              required
+              isInvalid={!isDobValid(dob)}
+            />
+            <BootstrapForm.Control.Feedback type="invalid">Please enter a valid date of birth (18-100 years old).</BootstrapForm.Control.Feedback>
+          </BootstrapForm.Group>
+          <BootstrapForm.Group controlId="formGender" className="mb-3">
+            <BootstrapForm.Label>Gender</BootstrapForm.Label>
+            <div>
+              <BootstrapForm.Check inline type="radio" label="Male" name="gender" id="genderMale" value="Male" onChange={(e) => setGender(e.target.value)} required />
+              <BootstrapForm.Check inline type="radio" label="Female" name="gender" id="genderFemale" value="Female" onChange={(e) => setGender(e.target.value)} required />
+              <BootstrapForm.Check inline type="radio" label="Other" name="gender" id="genderOther" value="Other" onChange={(e) => setGender(e.target.value)} required />
+            </div>
+          </BootstrapForm.Group>
+          <BootstrapForm.Group controlId="formMobile" className="mb-3">
+            <BootstrapForm.Label>Mobile Number</BootstrapForm.Label>
+            <BootstrapForm.Control
+              type="tel"
+              placeholder="Enter mobile number"
+              value={mobile}
+              onChange={handlePhoneNumberChange}
+              required
+              isInvalid={!isPhoneNumberValid(mobile)}
+            />
+            <BootstrapForm.Control.Feedback type="invalid">Please enter a valid mobile number (10 digits).</BootstrapForm.Control.Feedback>
+          </BootstrapForm.Group>
+          <BootstrapForm.Group controlId="formEmail" className="mb-3">
+            <BootstrapForm.Label>Email</BootstrapForm.Label>
+            <BootstrapForm.Control
+              type="email"
+              placeholder="Enter email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              isInvalid={!isEmailValid(email)}
+            />
+            <BootstrapForm.Control.Feedback type="invalid">Please enter a valid email.</BootstrapForm.Control.Feedback>
+          </BootstrapForm.Group>
+          <BootstrapForm.Group controlId="formAddress" className="mb-3">
+            <BootstrapForm.Label>Address</BootstrapForm.Label>
+            <BootstrapForm.Control as="textarea" rows={3} placeholder="Enter address" value={address} onChange={(e) => setAddress(e.target.value)} required />
+            <BootstrapForm.Control.Feedback type="invalid">Please enter your address.</BootstrapForm.Control.Feedback>
+          </BootstrapForm.Group>
+          <BootstrapForm.Group controlId="formStudyPlace" className="mb-3">
+        <BootstrapForm.Label>Where did you study?</BootstrapForm.Label>
+        <BootstrapForm.Control
+          type="text"
+          placeholder="Enter study place"
+          value={studyPlace}
+          onChange={(e) => setStudyPlace(e.target.value)}
+          required
+        />
+        <BootstrapForm.Control.Feedback type="invalid">Please enter where you studied.</BootstrapForm.Control.Feedback>
+      </BootstrapForm.Group>
+      <BootstrapForm.Group controlId="formQualificationYear" className="mb-3">
+        <BootstrapForm.Label>What year did you qualify?</BootstrapForm.Label>
+        <BootstrapForm.Control
+          type="text"
+          placeholder="Enter qualification year"
+          value={qualificationYear}
+          onChange={(e) => setQualificationYear(e.target.value)}
+          required
+        />
+        <BootstrapForm.Control.Feedback type="invalid">Please enter your qualification year.</BootstrapForm.Control.Feedback>
+      </BootstrapForm.Group>
+      <BootstrapForm.Group controlId="formExperience" className="mb-3">
+        <BootstrapForm.Label>How experienced are you?</BootstrapForm.Label>
+        <BootstrapForm.Control
+          type="text"
+          placeholder="Enter your experience"
+          value={experience}
+          onChange={(e) => setExperience(e.target.value)}
+          required
+        />
+        <BootstrapForm.Control.Feedback type="invalid">Please enter your experience.</BootstrapForm.Control.Feedback>
+      </BootstrapForm.Group>
+      <BootstrapForm.Group controlId="formAdditionalDetails" className="mb-3">
+        <BootstrapForm.Label>Additional details</BootstrapForm.Label>
+        <BootstrapForm.Control
+          as="textarea"
+          rows={3}
+          placeholder="Enter additional details"
+          value={additionalDetails}
+          onChange={(e) => setAdditionalDetails(e.target.value)}
+        />
+      </BootstrapForm.Group>
+          <div className="d-flex justify-content-end">
+            <Button variant="primary" type="submit" style={{backgroundColor:'pink',borderColor:'pink'}}>
+              Register
+            </Button>
+          </div>
+        </BootstrapForm>
+      </Container>
+    </div>
+  );
 };
 
 export default AddBeauticians;

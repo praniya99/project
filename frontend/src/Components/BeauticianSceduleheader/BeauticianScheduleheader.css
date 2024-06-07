@@ -1,4 +1,4 @@
-.BIg-main-main-rect-beauticianform{
+.BIg-main-main-rect-beauticianschedule{
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -6,7 +6,7 @@
     margin-left: -11.9px;
     margin-top: 20px;
   }
-  .main-head-beauticianform{
+  .main-head-beauticianschedule{
     display: flex;
     width: 99vw;
     min-height: 120px;
@@ -16,7 +16,7 @@
     align-items: center;
   }
   
-  .main-head-beauticianform1-1{
+  .main-head-beauticianschedule1-1{
     margin-left: 10%;
     color: black;
     font-family: 'Arial';
@@ -25,7 +25,7 @@
   }
 
   @media screen and (max-width: 400px) {
-    .main-head-beauticianform1-1 {
+    .main-head-beauticianschedule1-1 {
       margin-left: 5%;
       font-size: 20px;
     }

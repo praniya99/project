@@ -1,8 +1,8 @@
 import React from 'react'
-import Topicbox from '../../components/CashierTopic/Topicbox'
-import Plus from '../../components/PlusMark/Plus'
-import Sort from '../../components/Sort/Sort'
-import Name from '../../components/Name/Name'
+import Topicbox from '../../Components/CashierTopic/Topicbox'
+import Plus from '../../Components/PlusMark/Plus'
+import Sort from '../../Components/Sort/Sort'
+import Name from '../../Components/Name/Name'
 
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
-import Regform from '../../components/RegisterForm/Regform';
-import Topicbox from '../../components/CashierTopic/Topicbox';
+import Regform from '../../Components/RegisterForm/Regform';
+import Topicbox from '../../Components/CashierTopic/Topicbox';
 
 export default function Admin01cashierReg() {
   

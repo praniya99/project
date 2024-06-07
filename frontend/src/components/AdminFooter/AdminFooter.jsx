@@ -1,5 +1,5 @@
-import React from 'react'
-import './footer.css'
+
+import './adminfooter.css'
 import facebook from '../../assets/images/footer/facebook.png'
 import whatsapp from '../../assets/images/footer/whatsapp.png'
 import twitter from '../../assets/images/footer/twitter.png'
