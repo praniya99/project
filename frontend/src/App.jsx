@@ -47,7 +47,7 @@ function App() {
          <Route path="/bodyCare" element={<BodyCare />} />
          <Route path="/hairCare" element={<HairCare/>} />
          <Route path="/skinCare" element={<SkinCare/>} />
-         <Route path="/makeUp" element={<Makeup/>} />
+         <Route path="MakeupItem" element={<MakeUpItem />} />
          <Route path="/item" element={<Item/>} />
        
 
@@ -58,7 +58,7 @@ function App() {
                   <Route path="Facialcleanup" element={<Facialcleanup />} />
                   <Route path="Haircolour" element={<Haircolour />} />
                   <Route path="Haircuts" element={< Haircuts/>} />
-                  <Route path="MakeupItem" element={<MakeUpItem />} />
+                  <Route path="makeUp" element={<Makeup/>} />
                   <Route path="Nails" element={<Nails/>} />
                   <Route path="Threading" element={<Threading/>} />
                   <Route path="Beauticians" element={<Beauticians/>} />
