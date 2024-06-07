@@ -1,14 +1,13 @@
 
 
-<<<<<<< HEAD
+
 import React from 'react'
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from './Pages/homePage/home';
 import Cart from './Pages/CartPage/cart';
 import AllProduct from './Pages/AllItem/allProduct';
-=======
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
->>>>>>> 1f860f23cd3f041540377afeaf7294e7e4d84232
+
+
 import AdminLayout from './Layout/AdminLayout'
 import AdminCashierLayout from './Layout/AdminCashierLayout'
 import MainLayout from './Layout/MainLayout' 
@@ -17,11 +16,11 @@ import Bridal from './Pages/Bridal/Bridal'
 import Facialcleanup from './Pages/Facialclenup/Facialcleanup'
 import Haircolour from './Pages/Haircolour/Haircolour'
 import Haircuts from './Pages/Haircuts/Haircuts'
-<<<<<<< HEAD
+
 import MakeUpItem from './Pages/makeUpItem/makeUpItem';
-=======
+
 import Makeup from './Pages/Haircuts/Haircuts'
->>>>>>> 1f860f23cd3f041540377afeaf7294e7e4d84232
+
 import Nails from './Pages/Nails/Nails'
 import Threading from './Pages/Threading/Threading'
 import Beauticians from './Pages/Beauticians/Beauticians'
@@ -42,7 +41,7 @@ import Item from './Pages/Item/item';
 
 
 
-<<<<<<< HEAD
+
 function App() {
   
  
@@ -62,39 +61,25 @@ function App() {
        
 
 
-                    
-=======
-
-
-
-
-function App() {
-  return (
-    
-
-    <Router>
-        <Routes>
-
               <Route path="/" element={<MainLayout />}>
->>>>>>> 1f860f23cd3f041540377afeaf7294e7e4d84232
+
                   <Route path="Allservices" element={<AllServices />} />
                   <Route path="Bridal" element={<Bridal />} />
                   <Route path="Facialcleanup" element={<Facialcleanup />} />
                   <Route path="Haircolour" element={<Haircolour />} />
                   <Route path="Haircuts" element={< Haircuts/>} />
-<<<<<<< HEAD
+
                   <Route path="makeUp" element={<Makeup/>} />
                   <Route path="Nails" element={<Nails/>} />
                   <Route path="Threading" element={<Threading/>} />
                   <Route path="Beauticians" element={<Beauticians/>} />
 
-=======
+
                   <Route path="Makeup" element={<Makeup />} />
                   <Route path="Nails " element={<Nails />} />
                   <Route path="Threading " element={<Threading />} />
                   <Route path="Beauticians" element={<Beauticians />} />
               </Route>
->>>>>>> 1f860f23cd3f041540377afeaf7294e7e4d84232
 
                <Route path="/" element={<AdminLayout />}/>
                   <Route path="Addserviceform" element={<Addserviceform />} />
@@ -105,29 +90,22 @@ function App() {
                   <Route path="BeauticianProfile" element={<BeauticianProfile />} />
              
 
-              <Route path="/" element={<AdminCashierLayout />}>
+              <Route path="/" element={<AdminCashierLayout />}/>
                 
-<<<<<<< HEAD
-=======
-              </Route>
->>>>>>> 1f860f23cd3f041540377afeaf7294e7e4d84232
 
          </Routes>
 
 
-<<<<<<< HEAD
 
     
     </Router>
   );
-=======
-     </Router>
+   
 
      
     
 
-  )
->>>>>>> 1f860f23cd3f041540377afeaf7294e7e4d84232
+  
 }
 
 export default App

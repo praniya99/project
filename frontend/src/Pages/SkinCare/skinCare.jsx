@@ -3,148 +3,69 @@ import './skinCare.css'
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 
 
-const Allproduct= () => {
+const Allproduct = () => {
   return (
     <div>
-      <Sidebar/> 
+      
+      <Sidebar />
       <div className="bigRect1">
         <div className="smallRect1">
-          <div className="smallRect2">
-            <div className="mainPhoto">
-              <a href="#"><img
-                src='../src/assets/SkincarePhoto/18.png'
-                alt="Description 1"
-                className="rectImage"
-              />
-              </a>
-              <div className="rectHeading">
-              <h5 className="rect-head-head">Gold facial serum</h5>
+          {products.map((product, index) => (
+            <div className="smallRect2" key={index}>
+              <div className="mainPhoto">
+                <a href="#"><img
+                  src={product.image}
+                  alt={product.description}
+                  className="rectImage"
+                />
+                </a>
+                <div className="rectHeading">
+                  <h5 className="rect-head-head">{product.title}</h5>
+                </div>
+                <div className="buyNow">
+                  <button className="buy-button">Buy now</button>
+                  <button className="cart-button"><LocalMallIcon /></button>
+                </div>
+              </div>
             </div>
-            <div className="buyNow">
-            <button className="buy-button">Buy now</button>
-            <button className="cart-button"><LocalMallIcon/></button>
-            
-            </div>
-            </div>
-            
-          </div>
-
-          <div className="smallRect2">
-            <div className="mainPhoto">
-            <a href="#">
-              <img
-                src="../src/assets/SkincarePhoto/17.png"
-                alt="Description 1"
-                className="rectImage"
-              />
-              </a>
-              <div className="rectHeading">
-              <h5 className="rect-head-head">Anti acne toner</h5>
-            </div>
-            <div className="buyNow">
-            <button className="buy-button">Buy now</button>
-            <button className="cart-button"><LocalMallIcon/></button>
-            </div>
-            </div>
-           
-          </div>
-
-          <div className="smallRect2">
-            <div className="mainPhoto">
-            <a href="#">
-              <img
-                src="../src/assets/SkincarePhoto/27.png"
-                alt="Description 1"
-                className="rectImage"
-              />
-              </a>
-              <div className="rectHeading">
-              <h5 className="rect-head-head">Lip Barm</h5>
-            </div>
-            <div className="buyNow">
-            <button className="buy-button">Buy now</button>
-            <button className="cart-button"><LocalMallIcon/></button>
-            </div>
-            </div>
-           
-          </div>
-        </div>
-
-        <div className="smallRect1-1">
-          <div className="smallRect2">
-            <div className="mainPhoto">
-            <a href="#">
-              <img
-                src="../src/assets/SkincarePhoto/29.jpg"
-                alt="Description 1"
-                className="rectImage"
-              />
-              </a>
-              <div className="rectHeading">
-              <h5 className="rect-head-head">Day Cream</h5>
-            </div>
-            <div className="buyNow">
-            <button className="buy-button">Buy now</button>
-            <button className="cart-button"><LocalMallIcon/></button>
-            </div>
-            </div>
-           
-          </div>
-
-          <div className="smallRect2">
-            <div className="mainPhoto">
-            <a href="#">
-              <img
-                src="../src/assets/SkincarePhoto/30.jpg"
-                alt="Description 1"
-                className="rectImage"
-              />
-              </a>
-              <div className="rectHeading">
-              <h5 className="rect-head-head">Night Cream</h5>
-            </div>
-            <div className="buyNow">
-            <button className="buy-button">Buy now</button>
-            <button className="cart-button"><LocalMallIcon/></button>
-            </div>
-            </div>
-            
-          </div>
-
-          <div className="smallRect2">
-            <div className="mainPhoto">
-            <a href="#">
-              <img
-                src="../src/assets/SkincarePhoto/12.png"
-                alt="Description 1"
-                className="rectImage"
-              />
-              </a>
-              <div className="rectHeading">
-              <h5 className="rect-head-head">Gold cleanser</h5>
-            </div>
-            <div className="buyNow">
-            <button className="buy-button">Buy now</button>
-            <button className="cart-button"><LocalMallIcon/></button>
-            </div>
-            </div>
-            
-          </div>
-
-         
-            
-          
-        
-
-        
-
-          
-
-         
+          ))}
         </div>
       </div>
     </div>
   );
 };
 
-export default Allproduct; 
+const products = [
+  {
+    image: "../src/assets/SkincarePhoto/18.png",
+    description: "Description 1",
+    title: "Gold facial serum"
+  },
+  {
+    image: "../src/assets/SkincarePhoto/17.png",
+    description: "Description 1",
+    title: "Anti acne toner"
+  },
+  {
+    image: "../src/assets/SkincarePhoto/27.png",
+    description: "Description 1",
+    title: "Lip Barm"
+  },
+  {
+    image: "../src/assets/SkincarePhoto/12.png",
+    description: "Description 1",
+    title: "Gold Cleanser"
+  },
+  {
+    image: "../src/assets/SkincarePhoto/29.jpg",
+    description: "Description 1",
+    title: "Day Cream"
+  },
+  {
+    image: "../src/assets/SkincarePhoto/30.jpg",
+    description: "Description 1",
+    title: "Night Cream"
+  }
+];
+
+export default Allproduct;
