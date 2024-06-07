@@ -1,0 +1,114 @@
+.image-container {
+
+    height:600px; /* Set the desired height for cropping */
+    overflow: hidden; /* Hide the overflowing part of the image */
+    position: relative;
+  }
+  .card-no-border-radius {
+    --bs-card-inner-border-radius: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+  }
+ 
+  .title{
+    margin-top: 250px;
+    
+  }
+  .text{
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+  }
+.Title{
+  font-size: 80px;
+  font-family: Kaushan Script,cursive;
+  color: #c24891;
+}
+
+  .img06 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+  }
+  .Box{
+    background-color: #eca8d1;
+    height: 50px;
+    margin-top: 10px;
+   margin-bottom: 10px;
+}
+@media (max-width: 1200px) {
+    .image-container {
+      height: 500px; /* Adjust height for smaller screens */
+    }
+    .title{
+      margin-top: 50px;
+      
+    }
+    .text{
+      font-size: 30px;
+      font-family:'Times New Roman', Times, serif;
+      color: black;
+    }
+  .Title{
+    font-size: 60px;
+    font-family: Kaushan Script,cursive;
+    color: #c24891;
+  }
+  
+    
+  }
+  
+  @media (max-width: 992px) {
+    .image-container {
+      height: 400px;
+    }
+    .title{
+      margin-top: 60px;
+      
+    }
+  
+   
+  }
+  @media (max-width: 768px) {
+    .image-container {
+      height: 300px; 
+    }
+  
+    
+  }
+  
+  @media (max-width: 576px) {
+    .image-container {
+      height: 200px; 
+    }
+  
+   
+   
+  }
+  @media (max-width: 768px) {
+    .card-no-border-radius .card-img-overlay {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card-no-border-radius .card-img-overlay {
+      justify-content: center;
+    }
+    .text{
+      font-size: 20px;
+      font-family:'Times New Roman', Times, serif;
+      color: black;
+    }
+  .Title{
+    font-size: 40px;
+    font-family: Kaushan Script,cursive;
+    color: #c24891;
+  }
+  .title{
+    margin-top: 0px;
+    
+  }
+  }

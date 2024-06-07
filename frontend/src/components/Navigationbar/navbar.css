@@ -1,0 +1,95 @@
+/* src/components/NavBar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.logo {
+  flex: 1;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links-container {
+  flex: 2;
+  display: flex;
+  justify-content:center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+    margin-right: 10%;
+  
+  
+
+}
+
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+  margin-right: 10%;
+
+}
+
+.dropdown-menu {
+  position:absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  color: rgb(255, 255, 255);
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.dropdown-menu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 5px 5px;
+}
+.dropdown-menu a:hover{
+ background-color: #e0e0e0;
+}
+.icons {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.icons span {
+  cursor: pointer;
+}
+.img05{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction:column;
+    padding: 10px 10px;
+  }
+  
+  .nav-links-container{
+    padding: 10px;
+
+
+  }
+ 
+  
+}
