@@ -1,0 +1,31 @@
+/* src/Header.css */
+.hed {
+    background-color: #F1A4BD;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    min-height: 150px;
+    padding: 1rem;
+  }
+  
+  .shop-title {
+    font-size: 2rem;
+    margin-left: 10%;
+    color: black;
+    font-family: 'Arial';
+    font-size: 35px;
+    font-family: 'Kaushan Script' ,cursive
+
+  
+  }
+  
+  .breadcrumb {
+    font-size: 1rem;
+    margin-left: 55vw;
+    color: black;
+    font-family: 'Arial';
+    font-size: 16px;
+    margin-top:2% ;
+    margin-right: 10%;
+  }
+  
