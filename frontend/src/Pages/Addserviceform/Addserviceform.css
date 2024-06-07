@@ -93,32 +93,25 @@ margin-left: 80px;
     color: black;
   }
   
-  @media (max-width: 800px) {
-  .form-container {
-    padding: 10px;
-  }
-
-  .product-form {
-    padding: 15px;
-  }
+.field {
+  background-color: white;
+  width: 10%;
 }
 
-@media (max-width: 400px) {
-  .form-container {
-    padding: 5px;
-  }
+.field1 {
+  background-color: white;
+  color: black;
+  max-width: 100%;
 }
-
-  .field{
-    background-color: white;
-    width: 10%;
-    
-  }
-
   
-  .field1{
-    background-color: white;
-    color: black;
-    max-width: 100%;
-    
+@media screen and (max-width: 400px) {
+  .product-form {
+    width: 60%; 
+    margin-left: -180px;
+    margin-top: 38px;
   }
+
+  .button{
+    width:50%
+  }
+}

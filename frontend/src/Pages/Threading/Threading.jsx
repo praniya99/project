@@ -1,6 +1,6 @@
 import './Threading.css'
 import Subheader from "../../Components/Subheader/Subheader"
-
+import S1 from '../../assets/Threading/S1.jpg'
 
 const Threading = () => {
   return (
@@ -10,7 +10,7 @@ const Threading = () => {
             <div> <h2 className='heading-Thread'><b>Threading</b></h2></div>
                 <div className="small-rect17">
                      <div >
-                        <img src="../src/assets/Threading/S1.jpg"
+                        <img src={S1}
                              alt="Description 1" 
                              className="rect-image-Thread"/>
                         

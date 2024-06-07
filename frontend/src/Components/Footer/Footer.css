@@ -2,7 +2,7 @@
   display: flex;
   overflow-x: hidden;
   flex-direction: column;
-  
+
  
   width: 98.9vw;
  
@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 55vh;
+  height: 75vh;
   overflow-y: hidden;
   background-color:#C3689F;
 
@@ -164,9 +164,10 @@ textarea {
 .form-buttons {
   display: flex;
   flex-wrap: wrap; 
-  gap: 180px;
+  gap: 50px;
   margin-left: 3px;
-  margin-top: 20px;
+margin-top: 40px;
+
 }
 
 button {
@@ -179,6 +180,8 @@ button {
   font-size: 16px;
   width: 180px;
 }
+
+
 
 
 

@@ -1,9 +1,9 @@
 
 
 import { Container, Row, Col } from "react-bootstrap";
-import Adminheader from "../Components/Adminheader/Adminheader";
+
 import { Outlet } from "react-router-dom";
-import Adminfooter from "../Components/Adminfooter/Adminfooter";
+
 
 
 const AdminLayout = () => {
@@ -12,7 +12,7 @@ const AdminLayout = () => {
     <Container>
     <Row>
     <Col>
-      <Adminheader />
+     
     </Col>
   </Row>
   <Row style={{ minHeight: "100vh", marginTop: "-20px" }}>
@@ -22,7 +22,7 @@ const AdminLayout = () => {
   </Row>
   <Row>
     <Col>
-      <Adminfooter />
+      
     </Col>
   </Row>
   </Container>

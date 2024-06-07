@@ -30,6 +30,7 @@
 }
 
 .main-photo-Bride {
+  display: flex;
     width: 100%;
     height: 90%;
     background-color: white;
@@ -38,8 +39,8 @@
 .rect-heading-Bride {
   color: black; 
   text-align: center; 
-  margin-top: 25px;
-  margin-left: 20px;
+  margin-top: 25px ;
+  margin-left: 20px ;
 }
 
 .rect-head-Bride{
@@ -50,37 +51,90 @@
 }
 .main-heading-Bride{
   margin-top: 30px;
-  margin-left: 70px;
+  margin-left: 70px auto;
 }
 
 .main-heading-Bride1{
+  display: flex;
   margin-top: 30px;
-  margin-left: 10px;
+  margin-left: 10px auto;
 }
 
 .li-Bride{
   font-size: 20px;
   font-weight: 500;
-  margin-top: 18px;
-  margin-left: 60px;
+  margin-top: 18px ;
+  margin-left: 60px auto;
 }
 
 
 .li-Bride1{
   font-size: 20px;
   font-weight: 500;
-  margin-top: 18px;
-  margin-left: 60px;
+  margin-top: 18px ;
+  margin-left: 60px auto;
   color: red;
 }
 
 .heading-Bride{
   font-size: 40px;
   margin-left: 50px;
-  margin-top: 30px;
+  margin-top: 30px ;
 }
 
 .list-Bride{
-  margin-left: 85px;
+  display: flex;
+  margin-left: 85px ;
+  
+
+}
+
+@media (max-width: 400px) {
+ 
+  
+  .small-rect1 {
+      height: auto;
+      margin-top: 5%;
+  }
+  
+  .rect-image-Bride {
+      height: auto;
+      margin-bottom: 3px;
+      width:150px;
+  }
+  
+  .main-photo-Bride {
+      height: 40%;
+  }
+  
+  .heading-Bride{
+    font-size: 28px;
+    margin-left: 15px;
+  }
+  .rect-head-Bride {
+      font-size: 14px;
+  }
+
+  .paragraph-Bride{
+    font-size: 15px;
+    margin-top: -29px;
+    text-align: left;
+  }
+  
+  .main-heading-Bride {
+      margin-top: 10px;
+      font-size: 18px;
+  }
+
+  .main-heading-Bride1{
+    margin-top: 10px;
+    font-size: 15px;
+}
+  
+  .li-Bride, .li-Bride1 {
+      font-size: 14px;
+      margin-top: 5px;
+  }
+
 
 }

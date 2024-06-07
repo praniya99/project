@@ -1,5 +1,6 @@
 import './Haircuts.css'
 import Subheader from "../../Components/Subheader/Subheader"
+import H1 from '../../assets/Haircuts/H1.jpg'
 
 
 const Haircuts = () => {
@@ -13,13 +14,13 @@ const Haircuts = () => {
                       
                       <div className="small-rect14">
                           <div >
-                                <img src="../src/assets/Haircuts/H1.jpg"
+                                <img src={H1}
                                 alt="Description 1" 
                                 className="rect-image-Haircuts"/>
                           </div>
 
                           <div className="rect-heading-Haircuts">
-                              <h3><b>s make the most beautiful day of your life even more beautiful.</b></h3>
+                              <h3 className='paragraph-Haircuts'><b>s make the most beautiful day of your life even more beautiful.</b></h3>
                               <h5 className="rect-head-Haircuts">A hairstyle, hairdo, haircut or coiffure refers to the styling of hair, usually on the human scalp. Sometimes, this could also mean an editing of facial or body hair. The fashioning of hair can be considered an aspect of personal grooming, fashion, and cosmetics, although practical, cultural, and popular considerations also influence some hairstyles.</h5>
                           </div>
                       </div>

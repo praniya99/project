@@ -1,86 +1,78 @@
-.bigRect1 {
+
+.big-rect15 {
   display: flex;
   overflow-x: hidden;
   flex-direction: column;
   height: 130vh;
-  margin-top: -135.7vh;
+  margin-top: -130.7vh;
   margin-left: 18%;
-  width: 82%;
+  width: 83%;
   padding-bottom: 100px;
+  background-color: white;
 }
 
-.smallRect1 {
+.small-rect15 {
   display: flex;
   flex-direction: row;
   width: 90%;
-  height: 35%;
+  height: 55%;
   margin-left: 4.3%;
-  margin-top: 8%;
-  margin-bottom: 50px;
-
+  margin-top: 2%;
+background-color: white;
 }
 
-.smallRect1-1 {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    height: 35%;
-    margin-left: 4.3%;
-    margin-top: 8%;
-  }
-
-.smallRect2 {
+.rect-image-Makeup{
   display: flex;
-  flex-direction: column;
-  width: 25%;
-  height: 150%;
-  margin-left: 5%;
-  align-items: center;
-  margin-right: 10px;
-  margin-top: 10px;
+width: 100;
+height: 100%;
+margin-bottom: 10px;
 }
 
-.mainPhoto {
+.main-photo-Makeup {
   width: 100%;
   height: 90%;
-  background-color:rgba(217, 217, 217, 1);
-  box-shadow: 0 0 5px;
+  background-color: white;
 }
 
-.rectImage {
-    display: flex;
-  width: 100%;
-  height: 65%;
-  margin-bottom: 25px;
+.rect-heading-Makeup {
+color: black;
+text-align: center;
+margin-top: 25px;
+margin-left: 20px;
 }
 
-.rectHeading {
-  color: black; /* Text color */
-  text-align: center;
-  font-size: 1rem; /* Adjust as needed */
-  margin-top: 2px;
+.rect-head-Makeup{
+  font-weight: 600;
+  margin-top: 25px;
+  font-size: 23px;
+  text-align: left;
 }
 
-.rectHead-head{
-    font-weight: 700;
+.main-heading-Makeup{
+  margin-top: 30px;
+  margin-left: 100px;
 }
-.buy-button{
-  background-color:rgba(187, 68, 106, 1);
-  color: black;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  width: 150px;
-  height:40px ;
-  margin-left: 10px;
-  margin-top: px;
-}
-.cart-button{
-  background-color:rgba(187, 68, 106, 1);
-  border: none;
+
+.main-heading-Makeup1{
+  margin-top: 30px;
   margin-left: 30px;
-  height:40px ;
-  border-radius: 5px;
+}
+
+.li-Makeup{
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 18px;
+  margin-left: 85px;
+}
+
+.heading-Makeup{
+font-size: 40px;
+margin-left: 50px;
+margin-top: 30px;
+
+}
+
+.list-Makeup{
+  margin-left: 80px;
 
 }
