@@ -1,0 +1,8 @@
+.topicBox{
+    background:linear-gradient(to right,#bb446a,#953050,#7c2343);
+    height: 150px;
+    padding-left: 50px;
+    font-size:60px;
+    display: grid;
+    align-content: center;
+}
