@@ -34,8 +34,8 @@ function App() {
 
     <Router>
         <Routes>
-{/*
-              <Route path="/" element={<MainLayout />}>*/}
+      
+              <Route path="/" element={<MainLayout />}>
                     
                   <Route path="Allservices" element={<AllServices />} />
                   <Route path="Bridal" element={<Bridal />} />
@@ -46,7 +46,7 @@ function App() {
                   <Route path="Nails " element={<Nails />} />
                   <Route path="Threading " element={<Threading />} />
                   <Route path="Beauticians" element={<Beauticians />} />
-              </Route>
+                  </Route>
 
                <Route path="/" element={<AdminLayout />}>
                   <Route path="Addserviceform" element={<Addserviceform />} />
