@@ -16,7 +16,7 @@
 }
 .table01{
     min-height: 300px;
-    margin-top: 8%;
+    margin-top: 5%;
     border: 1px solid;
     border-radius: 15px;
     
@@ -30,7 +30,9 @@
 table{
     min-height: 300px;
   display: grid;
-   margin: 10px;
+   margin: 0px !important;
+   width: 100% !important;
+   height: 100%;
    
 
 }
@@ -43,9 +45,31 @@ table{
     margin: 5%;
     width: 90%;
     border-radius: 20px !important;
+   
+    align-items: center;
+    
+}
+.dropdown button{
+   background-color: #b8325d !important;
+    border-color: #bb446a !important;
+}
+.dropdown button{
+  background-color: #7c2343;
+  border-color: #7c2343;
 }
 
-
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover,
+.btn-primary.active{
+    background-color:#7c2343 !important;
+    border-color:#7c2343  !important;
+  
+}
+.dropdown button:hover{
+  background-color: #7c2343;
+  border-color: #7c2343;
+}
 .Menu{
     text-align: center;
 }
@@ -76,9 +100,14 @@ table{
   
   @media (max-width: 480px) {
     .topicBox p {
+      font-size: 30px;
+      align-content: center;
+
+
+    }
+    .content{
       font-size: 10px;
     }
-   
   
     .dropdown-section {
       text-align: center;

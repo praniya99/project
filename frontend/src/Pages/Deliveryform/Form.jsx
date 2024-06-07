@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Form as BootstrapForm, Button, Container, Row, Col } from 'react-bootstrap';
-import subheaderD from '../../Components/subheaderD/Deliveryagents'
+import subheaderD from '../../components/subheaderD/Deliveryagents'
 
 const RegistrationForm = () => {
   const [firstName, setFirstName] = useState('');

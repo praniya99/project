@@ -1,5 +1,5 @@
 import './Nails.css'
-import Subheader from '../../Components/Subheader/Subheader'
+import Subheader from '../../components/Subheader/Subheader'
 import T6 from '../../assets/Nails/T6.jpg'
 
 const Nails = () => {

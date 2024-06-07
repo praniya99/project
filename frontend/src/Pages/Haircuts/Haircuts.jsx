@@ -1,5 +1,5 @@
 import './Haircuts.css'
-import Subheader from "../../Components/Subheader/Subheader"
+import Subheader from "../../components/Subheader/Subheader"
 import H1 from '../../assets/Haircuts/H1.jpg'
 
 

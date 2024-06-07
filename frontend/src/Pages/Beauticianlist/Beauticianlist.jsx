@@ -1,7 +1,7 @@
-import Adminsubheaderbeautician from '../../Components/Adminsubheaderbeautician/Adminsubheaderbeautician'
-import BeauticianPlus from '../../Components/BeauticianPlus/BeauticianPlus'
-import Beauticiansort from '../../Components/Beauticiansort/Beauticiansort'
-import  Beauticianlistrow from '../../Components/Beauticianlistrow/Beauticianlistrow'
+import Adminsubheaderbeautician from '../../components/Adminsubheaderbeautician/Adminsubheaderbeautician'
+import BeauticianPlus from '../../components/BeauticianPlus/BeauticianPlus'
+import Beauticiansort from '../../components/Beauticiansort/Beauticiansort'
+import  Beauticianlistrow from '../../components/Beauticianlistrow/Beauticianlistrow'
 
 
 const Beauticianlist = () => {

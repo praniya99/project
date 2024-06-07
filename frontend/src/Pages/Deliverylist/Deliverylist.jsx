@@ -1,7 +1,7 @@
 import React from 'react'
-import Names from '../../Components/Names';
-import Add from '../../Components/Add';
-import Deliveryagents from '../../Components/Deliveryagents';
+import Names from '../../components/Names/Names';
+import Add from '../../components/Add/Add';
+import Deliveryagents from '../../components/Deliveryagents';
 
 function Deliverylist() {
   return (

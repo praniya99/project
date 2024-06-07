@@ -2,7 +2,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Image, Button, ListGroup } from 'react-bootstrap';
-import subheaderD from '../../Components/subheaderD';
 
 const ProfileWithDetails = () => {
   

@@ -1,4 +1,4 @@
-import Subheader from "../../Components/Subheader/Subheader"
+import Subheader from "../../components/Subheader/Subheader"
 import './Bridal.css'
 import T3 from '../../assets/Bridal/T3.jpg'
 
