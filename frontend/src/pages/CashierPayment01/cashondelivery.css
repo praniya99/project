@@ -1,0 +1,21 @@
+.topicBox{
+    background:linear-gradient(to right,#bb446a,#953050,#7c2343);
+    height: 150px;
+    padding-left: 50px;
+    font-size:60px;
+    display: grid;
+    align-content: center;
+    font-family: Kaushan Script,cursive;
+}
+table{
+    width:80%;
+    margin: 5%;
+    background-color: rgb(218, 220, 221);
+    border-radius: 15px;
+    text-align: center;
+   
+}
+table th,table td{
+ padding: 10px;
+ 
+}
