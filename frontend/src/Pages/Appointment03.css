@@ -1,0 +1,26 @@
+.appointment-container {
+  padding: 0;
+}
+
+.appointment-header {
+  background-color: #e27bb1;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appointment-contact-section {
+  background-color: #bb437e;
+  padding: 20px;
+  margin-top: 40px;
+  color: white;
+  /* Adjust the height of the footer */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.social-icons i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
