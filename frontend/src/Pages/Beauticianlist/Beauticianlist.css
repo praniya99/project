@@ -1,0 +1,69 @@
+
+.table {
+    margin-top: 40px;
+    margin-left: 250px;
+    width: auto; /* Ensure the table takes only necessary width */
+    overflow-x: hidden; /* Add horizontal scroll if needed */
+    width:100;
+  }
+  
+  .table th, .table td {
+    vertical-align: middle;
+  }
+  
+  .table td button {
+    margin-right: 10px;
+  }
+  
+  .btn-list{
+    width:100px;
+    padding: auto;
+    color: black;
+    font-size: 120%;
+    font-weight: 500;
+   margin-right: 185px;
+     background-color: red;
+     border-color: black  ;
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  }
+  
+  
+  
+  .btn-list:hover{
+    background-color: #974f7a; 
+          color: red;
+          
+  
+  }
+  
+  
+  .btn-list1{
+    width:100px;
+    padding: auto;
+    color: black;
+    font-size: 120%;
+    font-weight: 500;
+   margin-right: 185px;
+     background-color:  #C3689F;
+     border-color: black  ;
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  }
+  
+  
+  
+  .btn-list1:hover{
+    background-color: #974f7a; 
+          color: black;
+          border-color: #C3689F;
+  
+  }
+  
+  .heading1 {
+    text-align: center; /* Center the heading */
+    margin-left: 60px; /* Remove the left margin */
+  }
+  

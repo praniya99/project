@@ -1,42 +1,45 @@
-.beautician-form{
-    border-width: 10px;
-        width: 60%;
-       margin: auto;
-       margin-top: 50px;
-       border: 2px solid rgb(204, 205, 206);
-      padding: 20px;
-      border-radius: 5px;
-      background-color: rgb(204, 205, 206);
-      margin-bottom: 50px;
-     margin-left: 350px;
+.heading7{
+    text-align: center;
+    margin-left:120px;
+   
+   }
+   
+   
+   .form {
+     border-width: 10px;
+           width: 40vw;
+         margin-top: 40px;
+          
+          border: 2px solid rgb(204, 205, 206);
+         padding: 20px;
+         border-radius: 5px;
+         background-color: rgb(204, 205, 206);
+       margin-left: 400px;
+       margin-bottom: 40px;
         
-    }
-    .beautician-formcont{
-        margin-left: 10%;
-    }
-    .beautician-btnreg{
-        width:25%;
-        padding: auto;
-        color: black;
-        font-size: 120%;
-        font-weight: 500;
-        margin-left:0% ;
-         background-color: #C3689F;
-         border-color: #C3689F;
-      display: flex;
-      justify-content: center;
-      margin-top: 25px;
-    }
-    .beautician-btnreg:hover{
-        background-color: #974f7a; 
-        color: black;
-        border-color: #C3689F;
-    }
-    .beautician-topic{
-        text-align: center;
-        font-size: 40px;
-        font-weight: 400;
-        margin-bottom:30px;
-       
-        
-    }
+   }
+   
+   .form-label{
+     margin-top: 8px;
+   }
+   
+   .btn-register {
+     width:40%;
+           padding: auto;
+           color: black;
+           font-size: 120%;
+           font-weight: 500;
+          margin-right: 185px;
+            background-color: #C3689F;
+            border-color: black  ;
+         display: flex;
+         justify-content: center;
+         margin-top: 35px;
+   }
+   
+   .btn-register:hover {
+     background-color: #974f7a; 
+           color: black;
+           border-color: #C3689F;
+   }
+   

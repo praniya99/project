@@ -1,29 +1,28 @@
-import  { useState } from 'react';
-import { Form as BootstrapForm, Button, Container, Row, Col } from 'react-bootstrap';
+import { useState, useEffect } from "react";
+import axios from "axios";
+import { Container, Form, Button, Row, Col } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./AddBeauticians.css";
 
-
-const AddBeauticians = () => {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [dob, setDob] = useState('');
-  const [gender, setGender] = useState('');
-  const [mobile, setMobile] = useState('');
-  const [email, setEmail] = useState('');
-  const [address, setAddress] = useState('');
-  const [studyPlace, setStudyPlace] = useState(''); // New state for study place
-  const [qualificationYear, setQualificationYear] = useState(''); // New state for qualification year
-  const [experience, setExperience] = useState(''); // New state for experience
-  const [additionalDetails, setAdditionalDetails] = useState(''); // New state for additional details
+function App() {
+  const [beauticians, setBeauticians] = useState([]);
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    dateofbirth: "",
+    gender: "",
+    mobileno: "",
+    email: "",
+    address: "",
+  });
   const [validated, setValidated] = useState(false);
 
-  const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false || !isDobValid(dob)) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-    setValidated(true);
-  };
+  useEffect(() => {
+    axios
+      .get("http://localhost:3000/beauticians")
+      .then((response) => setBeauticians(response.data.beauticians))
+      .catch((error) => console.error(error));
+  }, []);
 
   const isAgeValid = (dob) => {
     const birthDate = new Date(dob);
@@ -33,170 +32,188 @@ const AddBeauticians = () => {
 
   const isPhoneNumberValid = (number) => /^\d{10}$/.test(number);
   const isEmailValid = (email) => /\S+@\S+\.\S+/.test(email);
-  const isNameValid = (name) => /^[a-zA-Z]*$/.test(name);
+  const isNameValid = (name) => /^[a-zA-Z]+$/.test(name);
   const isDobValid = (dob) => dob && isAgeValid(dob);
 
-  const handleFirstNameChange = (e) => {
-    if (isNameValid(e.target.value)) {
-      setFirstName(e.target.value);
-    }
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
   };
 
-  const handleLastNameChange = (e) => {
-    if (isNameValid(e.target.value)) {
-      setLastName(e.target.value);
-    }
-  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.currentTarget;
 
-  const handlePhoneNumberChange = (e) => {
-    const value = e.target.value;
-    if (/^\d*$/.test(value)) {
-      setMobile(value);
+    if (
+      form.checkValidity() === false ||
+      !isDobValid(formData.dateofbirth) ||
+      !isPhoneNumberValid(formData.mobileno) ||
+      !isEmailValid(formData.email) ||
+      !isNameValid(formData.firstname) ||
+      !isNameValid(formData.lastname)
+    ) {
+      e.stopPropagation();
+      setValidated(true);
+    } else {
+      try {
+        const response = await axios.post("http://localhost:3001/beauticians", formData);
+        setBeauticians([...beauticians, response.data.beautician]);
+        setFormData({
+          firstname: "",
+          lastname: "",
+          dateofbirth: "",
+          gender: "",
+          mobileno: "",
+          email: "",
+          address: "",
+        });
+        setValidated(false);
+      } catch (error) {
+        console.error(error);
+      }
     }
   };
 
   return (
-    <div>
-        
-      <Container className="my-5" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)', padding: '20px', borderRadius: '10px' }}>
-        <h1 style={{ textAlign: 'center' }}>Registration Form for Beauticians</h1>
-        <BootstrapForm noValidate validated={validated} onSubmit={handleSubmit} style={{
-           height: '100vh',
-           width: '100vh',
-           backgroundPosition: 'center',
-           backgroundRepeat: 'no-repeat',
-           backgroundColor: 'rgba(204, 205, 206)',
-           padding: '25px',
-           margin: 'Auto'
-        }}>
-          <Row className="mb-3">
-            <Col xs={12} md={6}>
-              <BootstrapForm.Group controlId="formFirstName">
-                <BootstrapForm.Label>First Name</BootstrapForm.Label>
-                <BootstrapForm.Control
-                  type="text"
-                  placeholder="Enter first name"
-                  value={firstName}
-                  onChange={handleFirstNameChange}
+    <Container className="mt-5">
+      <h2 className="heading7">Registration Form for Beauticians</h2>
+      <Form noValidate validated={validated} onSubmit={handleSubmit} className="form">
+        <Row>
+          <Col md={6}>
+            <Form.Group controlId="formFirstname">
+              <Form.Label>First Name</Form.Label>
+              <Form.Control
+                type="text"
+                name="firstname"
+                placeholder="First name"
+                value={formData.firstname}
+                onChange={handleChange}
+                required
+                isInvalid={!isNameValid(formData.firstname)}
+              />
+              <Form.Control.Feedback type="invalid">
+                Please enter a valid first name (only letters).
+              </Form.Control.Feedback>
+            </Form.Group>
+          </Col>
+          <Col md={6}>
+            <Form.Group controlId="formLastname">
+              <Form.Label>Last Name</Form.Label>
+              <Form.Control
+                type="text"
+                name="lastname"
+                placeholder="Last name"
+                value={formData.lastname}
+                onChange={handleChange}
+                required
+                isInvalid={!isNameValid(formData.lastname)}
+              />
+              <Form.Control.Feedback type="invalid">
+                Please enter a valid last name (only letters).
+              </Form.Control.Feedback>
+            </Form.Group>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={6}>
+            <Form.Group controlId="formDateOfBirth">
+              <Form.Label>Date of Birth</Form.Label>
+              <Form.Control
+                type="date"
+                name="dateofbirth"
+                value={formData.dateofbirth}
+                onChange={handleChange}
+                required
+                isInvalid={!isDobValid(formData.dateofbirth)}
+              />
+              <Form.Control.Feedback type="invalid">
+                Please enter a valid date of birth (18-100 years old).
+              </Form.Control.Feedback>
+            </Form.Group>
+          </Col>
+          <Col md={6}>
+            <Form.Group controlId="formGender">
+              <Form.Label>Gender</Form.Label>
+              <div>
+                <Form.Check
+                  inline
+                  type="radio"
+                  name="gender"
+                  label="Male"
+                  value="Male"
+                  checked={formData.gender === "Male"}
+                  onChange={handleChange}
                   required
                 />
-                <BootstrapForm.Control.Feedback type="invalid">Please enter a valid first name (only letters).</BootstrapForm.Control.Feedback>
-              </BootstrapForm.Group>
-            </Col>
-            <Col xs={12} md={6}>
-              <BootstrapForm.Group controlId="formLastName">
-                <BootstrapForm.Label>Last Name</BootstrapForm.Label>
-                <BootstrapForm.Control
-                  type="text"
-                  placeholder="Enter last name"
-                  value={lastName}
-                  onChange={handleLastNameChange}
+                <Form.Check
+                  inline
+                  type="radio"
+                  name="gender"
+                  label="Female"
+                  value="Female"
+                  checked={formData.gender === "Female"}
+                  onChange={handleChange}
                   required
                 />
-                <BootstrapForm.Control.Feedback type="invalid">Please enter a valid last name (only letters).</BootstrapForm.Control.Feedback>
-              </BootstrapForm.Group>
-            </Col>
-          </Row>
-          <BootstrapForm.Group controlId="formDob" className="mb-3">
-            <BootstrapForm.Label>Date of Birth</BootstrapForm.Label>
-            <BootstrapForm.Control
-              type="date"
-              value={dob}
-              onChange={(e) => setDob(e.target.value)}
-              required
-              isInvalid={!isDobValid(dob)}
-            />
-            <BootstrapForm.Control.Feedback type="invalid">Please enter a valid date of birth (18-100 years old).</BootstrapForm.Control.Feedback>
-          </BootstrapForm.Group>
-          <BootstrapForm.Group controlId="formGender" className="mb-3">
-            <BootstrapForm.Label>Gender</BootstrapForm.Label>
-            <div>
-              <BootstrapForm.Check inline type="radio" label="Male" name="gender" id="genderMale" value="Male" onChange={(e) => setGender(e.target.value)} required />
-              <BootstrapForm.Check inline type="radio" label="Female" name="gender" id="genderFemale" value="Female" onChange={(e) => setGender(e.target.value)} required />
-              <BootstrapForm.Check inline type="radio" label="Other" name="gender" id="genderOther" value="Other" onChange={(e) => setGender(e.target.value)} required />
-            </div>
-          </BootstrapForm.Group>
-          <BootstrapForm.Group controlId="formMobile" className="mb-3">
-            <BootstrapForm.Label>Mobile Number</BootstrapForm.Label>
-            <BootstrapForm.Control
-              type="tel"
-              placeholder="Enter mobile number"
-              value={mobile}
-              onChange={handlePhoneNumberChange}
-              required
-              isInvalid={!isPhoneNumberValid(mobile)}
-            />
-            <BootstrapForm.Control.Feedback type="invalid">Please enter a valid mobile number (10 digits).</BootstrapForm.Control.Feedback>
-          </BootstrapForm.Group>
-          <BootstrapForm.Group controlId="formEmail" className="mb-3">
-            <BootstrapForm.Label>Email</BootstrapForm.Label>
-            <BootstrapForm.Control
-              type="email"
-              placeholder="Enter email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              isInvalid={!isEmailValid(email)}
-            />
-            <BootstrapForm.Control.Feedback type="invalid">Please enter a valid email.</BootstrapForm.Control.Feedback>
-          </BootstrapForm.Group>
-          <BootstrapForm.Group controlId="formAddress" className="mb-3">
-            <BootstrapForm.Label>Address</BootstrapForm.Label>
-            <BootstrapForm.Control as="textarea" rows={3} placeholder="Enter address" value={address} onChange={(e) => setAddress(e.target.value)} required />
-            <BootstrapForm.Control.Feedback type="invalid">Please enter your address.</BootstrapForm.Control.Feedback>
-          </BootstrapForm.Group>
-          <BootstrapForm.Group controlId="formStudyPlace" className="mb-3">
-        <BootstrapForm.Label>Where did you study?</BootstrapForm.Label>
-        <BootstrapForm.Control
-          type="text"
-          placeholder="Enter study place"
-          value={studyPlace}
-          onChange={(e) => setStudyPlace(e.target.value)}
-          required
-        />
-        <BootstrapForm.Control.Feedback type="invalid">Please enter where you studied.</BootstrapForm.Control.Feedback>
-      </BootstrapForm.Group>
-      <BootstrapForm.Group controlId="formQualificationYear" className="mb-3">
-        <BootstrapForm.Label>What year did you qualify?</BootstrapForm.Label>
-        <BootstrapForm.Control
-          type="text"
-          placeholder="Enter qualification year"
-          value={qualificationYear}
-          onChange={(e) => setQualificationYear(e.target.value)}
-          required
-        />
-        <BootstrapForm.Control.Feedback type="invalid">Please enter your qualification year.</BootstrapForm.Control.Feedback>
-      </BootstrapForm.Group>
-      <BootstrapForm.Group controlId="formExperience" className="mb-3">
-        <BootstrapForm.Label>How experienced are you?</BootstrapForm.Label>
-        <BootstrapForm.Control
-          type="text"
-          placeholder="Enter your experience"
-          value={experience}
-          onChange={(e) => setExperience(e.target.value)}
-          required
-        />
-        <BootstrapForm.Control.Feedback type="invalid">Please enter your experience.</BootstrapForm.Control.Feedback>
-      </BootstrapForm.Group>
-      <BootstrapForm.Group controlId="formAdditionalDetails" className="mb-3">
-        <BootstrapForm.Label>Additional details</BootstrapForm.Label>
-        <BootstrapForm.Control
-          as="textarea"
-          rows={3}
-          placeholder="Enter additional details"
-          value={additionalDetails}
-          onChange={(e) => setAdditionalDetails(e.target.value)}
-        />
-      </BootstrapForm.Group>
-          <div className="d-flex justify-content-end">
-            <Button variant="primary" type="submit" style={{backgroundColor:'pink',borderColor:'pink'}}>
-              Register
-            </Button>
-          </div>
-        </BootstrapForm>
-      </Container>
-    </div>
+              </div>
+              <Form.Control.Feedback type="invalid">
+                Please select a gender.
+              </Form.Control.Feedback>
+            </Form.Group>
+          </Col>
+        </Row>
+        <Form.Group controlId="formMobileNo">
+          <Form.Label>Mobile No</Form.Label>
+          <Form.Control
+            type="text"
+            name="mobileno"
+            placeholder="07X XXXX XXX"
+            value={formData.mobileno}
+            onChange={handleChange}
+            required
+            isInvalid={!isPhoneNumberValid(formData.mobileno)}
+          />
+          <Form.Control.Feedback type="invalid">
+            Please enter a valid mobile number (10 digits).
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group controlId="formEmail">
+          <Form.Label>Email</Form.Label>
+          <Form.Control
+            type="email"
+            name="email"
+            placeholder="e-mail"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            isInvalid={!isEmailValid(formData.email)}
+          />
+          <Form.Control.Feedback type="invalid">
+            Please enter a valid email.
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group controlId="formAddress">
+          <Form.Label className="form-label">Address</Form.Label>
+          <Form.Control
+            type="text"
+            name="address"
+            placeholder="Address"
+            value={formData.address}
+            onChange={handleChange}
+            required
+          />
+          <Form.Control.Feedback type="invalid">
+            Please enter your address.
+          </Form.Control.Feedback>
+        </Form.Group>
+        <div className="d-flex justify-content-end">
+          <Button variant="primary" type="submit" className="btn-register">
+            Register
+          </Button>
+        </div>
+      </Form>
+    </Container>
   );
-};
+}
 
-export default AddBeauticians;
+export default App;
