@@ -1,5 +1,4 @@
 import React from 'react'
-import Topicbox from '../CashierTopic/Topicbox'
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
