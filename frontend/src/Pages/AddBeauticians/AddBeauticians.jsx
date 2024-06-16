@@ -56,7 +56,7 @@ function App() {
       setValidated(true);
     } else {
       try {
-        const response = await axios.post("http://localhost:3001/beauticians", formData);
+        const response = await axios.post("http://localhost:3000/beauticians", formData);
         setBeauticians([...beauticians, response.data.beautician]);
         setFormData({
           firstname: "",

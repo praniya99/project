@@ -10,14 +10,14 @@ function BeauticianList() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/beauticians")
+      .get("http://localhost:3000/beauticians")
       .then((response) => setBeauticians(response.data.beauticians))
       .catch((error) => console.error(error));
   }, []);
 
   const handleDelete = (id) => {
     axios
-      .delete(`http://localhost:3001/beauticians/${id}`)
+      .delete(`http://localhost:3000/beauticians/${id}`)
       .then(() => {
         // Remove the deleted beautician from the state
         setBeauticians(beauticians.filter((beautician) => beautician._id !== id));

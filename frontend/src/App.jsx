@@ -14,12 +14,15 @@ import Threading from './Pages/Threading/Threading'
 import Beauticians from './Pages/Beauticians/Beauticians'
 import Servicelist from './Pages/Servicelist/Servicelist'
 import Addserviceform from "./Pages/Addserviceform/Addserviceform"
+import ServicesTable from "./Pages/ServiceTable/ServicesTable"
+
 
 import AddBeauticians from './Pages/AddBeauticians/AddBeauticians'
 import Beauticianlist from './Pages/Beauticianlist/Beauticianlist'
 import BeauticianProfile from './Pages/BeauticianProfile/BeauticianProfile'
 import BeauticianSchedule from "./Pages/BeauticianSchedule/BeauticianSchedule"
 import BeauticianSalary from './Pages/BeauticianSalary/BeauticianSalary'
+import UpdateBeautician from './Pages/UpdateBeautician/UpdateBeautician'
 
 import AdminCashier from './Pages/AdminCashier/Admin01Cashier'
 import CashierPayment01 from './Pages/CashierPayment01/CashOnDelivery'
@@ -64,7 +67,11 @@ function App() {
                   <Route path="AddBeauticians" element={<AddBeauticians />} />
                   <Route path="Beauticianlist" element={<Beauticianlist />} />
                   <Route path="BeauticianProfile" element={<BeauticianProfile />} />
-                 
+                 <Route path="/update/:id" element={<UpdateBeautician/>}/>
+                 <Route path="ServiceTable" element={<ServicesTable />} />
+
+
+
                   <Route path='AdminCashier'element={<AdminCashier/>}/>
                   <Route path='CashierRegister'element={<CashierRegister/>}/>
                  
