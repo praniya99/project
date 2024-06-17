@@ -98,12 +98,11 @@ function Addserviceform() {
     }
 
     try {
-      const url = `http://localhost:3000/services`;
-      const formattedPrice = `Rs.${parseFloat(formData.serviceprice).toFixed(2)}`;
+      const url = `http://localhost:3000/services/service`; // Ensure the port matches your backend server port
 
       const response = await axios.post(url, {
         servicename: formData.servicename,
-        serviceprice: formattedPrice,
+        serviceprice: formData.serviceprice,
         category: formData.category,
         hours: parseInt(hours, 10),
         minutes: parseInt(minutes, 10),

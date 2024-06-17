@@ -1,8 +1,37 @@
 import Subheader from "../../Components/Subheader/Subheader"
 import './Bridal.css'
 import T3 from '../../assets/Bridal/T3.jpg'
+import  { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const bridal = () => {
+  const [services, setServices] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
+
+  useEffect(() => {
+    const fetchServices = async () => {
+      try {
+        const response = await axios.get('http://localhost:3000/services/all');
+        const bridalServices = response.data.filter(service => service.category === 'Bridal');
+        setServices(bridalServices);
+      } catch (error) {
+        setError('Failed to fetch services');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchServices();
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>{error}</div>;
+  }
   return (
     <div>
       <Subheader/>
@@ -26,43 +55,28 @@ const bridal = () => {
                                 </div>
                         </div>
 
-
-                          <div className="small-rect1">
-                                 <div>
-                                      <ul>
-                                          <b><h3 className="main-heading-Bride">Service</h3></b>
-                                          <li className="li-Bride">saree Draping </li>
-                                          <li className="li-Bride">Hair style</li>
-                                          <li className="li-Bride">Bridal Makeup</li>
-                                          <li className="li-Bride">Complete Bridal dressing Package<br/>(hair,makeup and saree draping)</li>
-                                          
-                                      </ul>
-                                 </div>
-                                           
-                                   <div className='list-Bride'>
-                                       <ul type='none'>
-                                            <b><h3 className="main-heading-Bride">Price</h3></b>
-                                            <li className="li-Bride">Rs.100.00 </li>
-                                            <li className="li-Bride">Rs.100.00 </li>
-                                            <li className="li-Bride">Rs.100.00 </li>
-                                           <li className="li-Bride">Rs.100.00 </li>
-                                                
-                                        </ul>
-                                   </div>
-
-                                    <div className='list-Bride'>
-                                        <ul type='none'>
-                                             <b><h3 className="main-heading-Bride1">Time Duration</h3></b>
-                                             <li className="li-Bride">15 min </li>
-                                             <li className="li-Bride">15 min </li>
-                                             <li className="li-Bride">15 min </li>
-                                             <li className="li-Bride">15 min </li>
-                                         </ul>
-                                    </div>
-
-                                  
-                          </div>
-
+                        <div className="small-rect1">
+                        <table className="services-table">
+        <thead>
+          <tr>
+            <th>Service Name</th>
+            <th>Price (Rs.)</th>
+            <th>Duration</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          {services.map((service) => (
+            <tr key={service._id}>
+              <td>{service.name}</td>
+              <td>Rs. {service.price}</td>
+              <td>{service.duration.hours}h {service.duration.minutes}m</td>
+              
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      </div>
                           <div className="small-rect1">
                                 <ul>
                                 <li className="li-Bride1">Early Morning Dressing Charges

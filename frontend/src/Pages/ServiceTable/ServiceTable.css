@@ -1,0 +1,69 @@
+.services-container {
+  padding: 20px;
+}
+
+.category-table-container {
+  margin-bottom: 30px;
+}
+
+.services-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.services-table th, .services-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+.services-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.services-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
+.edit-button, .delete-button, .update-button, .cancel-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+}
+
+.update-button {
+  background-color: #2ecc71;
+}
+
+.cancel-button {
+  background-color: #95a5a6;
+}
+
+.edit-button:hover, .delete-button:hover, .update-button:hover, .cancel-button:hover {
+  opacity: 0.8;
+}
+
+.services-table th{
+  width:20vw;
+}
+
+.services-table td{
+  width:20vw;
+  
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 5px;
+}

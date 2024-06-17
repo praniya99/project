@@ -75,3 +75,41 @@ margin-top: 30px;
   margin-left: 80px;
 
 }
+
+
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 5px;
+}
+
+.services-container {
+  padding: 20px;
+}
+
+.category-table-container {
+  margin-bottom: 20px;
+}
+
+.services-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.services-table th, .services-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.services-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.services-table td {
+  text-align: left;
+}
+
+.edit-button, .delete-button, .update-button, .cancel-button {
+  margin-right: 10px;
+}

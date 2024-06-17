@@ -1,9 +1,38 @@
 import './Haircuts.css'
 import Subheader from "../../Components/Subheader/Subheader"
 import H1 from '../../assets/Haircuts/H1.jpg'
+import  { useEffect, useState } from 'react';
+import axios from 'axios';
 
 
 const Haircuts = () => {
+  const [services, setServices] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
+
+  useEffect(() => {
+    const fetchServices = async () => {
+      try {
+        const response = await axios.get('http://localhost:3000/services/all');
+        setServices(response.data.filter(service => service.category === 'Hair Cuts'));
+      } catch (error) {
+        setError('Failed to fetch services');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchServices();
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>{error}</div>;
+  }
+
   return (
     <div>
       <Subheader/>
@@ -27,47 +56,26 @@ const Haircuts = () => {
 
 
                       <div className="small-rect14">
-                          <div>
-                              <ul>
-                                  <b><h3 className="main-heading-Haircuts">Service</h3></b>
-                                  <li className="li-Haircuts">Eyebrows </li>
-                                  <li className="li-Haircuts">Upper Lip</li>
-                                  <li className="li-Haircuts">Chin</li>
-                                  <li className="li-Haircuts">Neck</li>
-                                  <li className="li-Haircuts">Sides</li>
-                                  <li className="li-Haircuts">Forhead</li>
-                                  <li className="li-Haircuts">Full Face </li>
-                                  <li className="li-Haircuts">Full Face and Neck</li>
-                            </ul>
-                          </div>
-
-                          <div className='list-Haircuts'>
-                              <ul type='none'>
-                                  <b><h3 className="main-heading-Haircuts1">Time Duration</h3></b>
-                                  <li className="li-Haircuts">30 min </li>
-                                  <li className="li-Haircuts">30 min </li>
-                                  <li className="li-Haircuts">30 min </li>
-                                  <li className="li-Haircuts">30 min </li>
-                                  <li className="li-Haircuts">30 min </li>
-                                  <li className="li-Haircuts">30 min </li>
-                               </ul>
-                          </div>
-
-
-
-                          <div className='list-Haircuts'>
-                              <ul type='none'>
-                                    <b><h3 className="main-heading-Haircuts">Price</h3></b>
-                                    <li className="li-Haircuts">Rs.100.00 </li>
-                                    <li className="li-Haircuts">Rs.100.00 </li>
-                                    <li className="li-Haircuts">Rs.100.00 </li>
-                                    <li className="li-Haircuts">Rs.100.00 </li>
-                                    <li className="li-Haircuts">Rs.100.00 </li>
-                                    <li className="li-Haircuts">Rs.100.00 </li>
-                                    <li className="li-Haircuts">Rs.100.00 </li>
-                                    <li className="li-Haircuts">Rs.100.00 </li>
-                            </ul>
-                          </div>
+                      <table className="services-table">
+        <thead>
+          <tr>
+            <th>Service Name</th>
+            <th>Price (Rs.)</th>
+            <th>Duration</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+          {services.map((service) => (
+            <tr key={service._id}>
+              <td>{service.name}</td>
+              <td>Rs. {service.price}</td>
+              <td>{service.duration.hours}h {service.duration.minutes}m</td>
+              
+            </tr>
+          ))}
+        </tbody>
+      </table>
                      </div>
            </div>
        

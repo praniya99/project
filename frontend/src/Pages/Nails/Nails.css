@@ -75,3 +75,26 @@
     margin-left: 80px;
 
 }
+
+.services-container {
+  padding: 20px;
+}
+
+.services-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.services-table th, .services-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.services-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.services-table td {
+  text-align: left;
+}

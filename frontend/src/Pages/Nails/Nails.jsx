@@ -1,8 +1,39 @@
 import './Nails.css'
 import Subheader from '../../Components/Subheader/Subheader'
 import T6 from '../../assets/Nails/T6.jpg'
+import  { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const Nails = () => {
+    const [services, setServices] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState('');
+
+    
+  useEffect(() => {
+    const fetchServices = async () => {
+      try {
+        const response = await axios.get('http://localhost:3000/services/all');
+        const nailsServices = response.data.filter(service => service.category === 'Nails');
+        setServices(nailsServices);
+      } catch (error) {
+        setError('Failed to fetch services');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchServices();
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>{error}</div>;
+  }
+
   return (
     <div>
       <Subheader/>
@@ -23,52 +54,24 @@ const Nails = () => {
 
 
                 <div className="small-rect16">
-                    <div>
-                    <ul>
-                        <b><h3 className="main-heading-Nails">Service</h3></b>
-                        <li className="li-Nails">Basic Manicure </li>
-                        <li className="li-Nails">Basic Pedicure</li>
-                        <li className="li-Nails">Fullset without colour</li>
-                        <li className="li-Nails">Fullset French</li>
-                        <li className="li-Nails">Refill</li>
-                        <li className="li-Nails">Buff & Remove Gel Extentions</li>
-                       
-                    </ul>
-                    </div>
-                    <div className='list-Nails'>
-
-                   
-
-                    <ul type='none'>
-                    <b><h3 className="main-heading-Nails1">Time Duration</h3></b>
-                    <li className="li-Nails">30 min </li>
-                        <li className="li-Nails">30 min </li>
-                        <li className="li-Nails">30 min </li>
-                        <li className="li-Nails">30 min </li>
-                        <li className="li-Nails">30 min </li>
-                        <li className="li-Nails">30 min </li>
-                        
-                        
-                    </ul>
-                    </div>
-
-                    <div className='list-Nails'>
-
-                   
-
-                    <ul type='none'>
-                    <b><h3 className="main-heading-Nails">Price</h3></b>
-                        
-                        <li className="li-Nails">Rs.2300.00 </li>
-                        <li className="li-Nails">Rs.2900.00 </li>
-                        <li className="li-Nails">Rs.600.00 </li>
-                        <li className="li-Nails">Rs.6500.00 </li>
-                        <li className="li-Nails">Rs.4500.00 </li>
-                        <li className="li-Nails">Rs.1700.00 </li>
-                        
-                        
-                    </ul>
-                    </div>
+                <table className="services-table">
+        <thead>
+          <tr>
+            <th>Service Name</th>
+            <th>Price (Rs.)</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          {services.map((service) => (
+            <tr key={service._id}>
+              <td>{service.name}</td>
+              <td>Rs. {service.price}</td>
+              <td>{service.duration.hours}h {service.duration.minutes}m</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
                 </div>
         </div>
         
