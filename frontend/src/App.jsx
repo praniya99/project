@@ -27,6 +27,7 @@ import ViewSlip from './pages/CashierPayment02/Bank Slip 02/ViewSlip'
 import CashierSchedule from './pages/CashierSchedule/CashierSchedule'
 import Admin01cashierRegister from './pages/CashierRegister/Admin01cashierReg'
 import Salary from './pages/Salary/Salary'
+import Report01 from './pages/AppointmentReport/Report01'
 
 
 
@@ -70,6 +71,7 @@ function App() {
                   <Route path="CashierSchedule" element={<CashierSchedule />} />
                   <Route path="Admin01cashierRegister" element={<Admin01cashierRegister />} />
                   <Route path="Salary" element={<Salary />} />
+                  <Route path="Report01" element={<Report01 />} />
 
             
 

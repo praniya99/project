@@ -9,12 +9,14 @@
 
 }
 .table{
-    margin:5%;
+    margin:5% !important;
    font-size: 15px;
-    width: 90%;
+    width: 90% !important;
 }
+
+
 .tr{
-    height: 50px;
+    height: 50px ;
     text-align: center;
     
 }
@@ -32,29 +34,15 @@
     border: none;
   }
  
-  
+  .rounded-table thead{
+    height: 50px !important;
+  } 
   .rounded-table thead th {
-    background-color: #f3d8ef; 
+    background-color: #f3d8ef ; 
   }
   
   
   .rounded-table tbody tr:nth-child(even) {
     background-color: #181818; 
   }
-  @media (max-width: 768px) {
-    .table-responsive {
-      overflow-x: auto;
-      
-    }
-    .table{
-        margin:5%;
-       font-size: 10px;
-        width: 90%;
-    }
-    .tr{
-        height: 30px;
-        text-align: center;
-        
-    }
-    
-  }
+  
