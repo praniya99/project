@@ -8,7 +8,7 @@
   width: 100vw;
   min-height: 150px;
   flex-direction: row;
-  background-color: #F1A4BD;
+  background: linear-gradient(to right,#bb446a,#953050,#7c2343);
   text-align: center;
   align-items: center;
 }
