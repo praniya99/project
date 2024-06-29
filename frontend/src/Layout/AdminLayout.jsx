@@ -16,7 +16,7 @@ const AdminLayout = () => {
      <Navigationbar/>
     </Col>
   </Row>
-  <Row style={{ minHeight: "210vh", marginTop: "-20px" }}>
+  <Row style={{ minHeight: "110vh", marginTop: "-20px" }}>
     <Col>
       <Outlet />
     </Col>

@@ -2,7 +2,7 @@ import  { useEffect, useState } from 'react';
 import axios from 'axios';
 import './ServiceTable.css';
 
-function AllServices() {
+function ServicesTable() {
   const [services, setServices] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
@@ -127,15 +127,15 @@ function AllServices() {
   });
 
   return (
-    <div className="services-container">
+    <div >
      
       {Object.keys(organizedServices).map((category) => (
-        <div key={category} className="category-table-container">
+        <div key={category} >
           <h2>{category}</h2>
-          <table className="services-table">
-            <thead>
+          <table >
+            <thead >
               <tr>
-                <th>Service Name</th>
+                <th >Service Name</th>
                 <th>Price (Rs.)</th>
                 <th>Duration</th>
                 <th>Actions</th>
@@ -208,4 +208,4 @@ function AllServices() {
   );
 }
 
-export default AllServices;
+export default ServicesTable;

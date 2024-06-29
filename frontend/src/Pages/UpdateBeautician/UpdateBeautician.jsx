@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Form, Button, Container, Spinner, Alert } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import BeauticianUpdate from "../../Components/BeauticianUpdate/BeauticianUpdate"
 import "./UpdateBeautician.css";
 
 function UpdateBeautician() {
@@ -126,8 +127,15 @@ function UpdateBeautician() {
   }
 
   return (
-    <Container className="mt-5">
-      <h2 className="heading">Update Beautician Details</h2>
+  
+   
+     
+    
+   <div>
+    <BeauticianUpdate/>
+   
+
+
       <Form onSubmit={handleSubmit} className="Form1">
         <Form.Group controlId="firstname">
           <Form.Label className="Form-label1">First Name</Form.Label>
@@ -223,7 +231,12 @@ function UpdateBeautician() {
           Update
         </Button>
       </Form>
-    </Container>
+      </div>
+  
+    
+   
+    
+   
   );
 }
 

@@ -62,7 +62,7 @@
   margin-left: 120px;
   width: 100%;
   border-collapse: collapse;
-  margin-top: 40px;
+  margin-top: 20px;
   background-color: white;
 }
 
@@ -73,10 +73,17 @@
   text-align: left;
 }
 
+.services-table td{
+  width:1000px;
+
+}
+
+
 .services-table th {
-  background-color: #f2f2f2;
+  background-color: black;
   font-weight: bold;
   padding-bottom: 8px;
+  width:1000px;
 }
 
 .services-table tr:nth-child(even) {
@@ -95,6 +102,7 @@
 .head{
   height:2px;
   margin-top: 20px;
+  color: black;
 }
 
 .body{

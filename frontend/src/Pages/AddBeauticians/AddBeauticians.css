@@ -23,23 +23,41 @@
      margin-top: 8px;
    }
    
-   .btn-register {
-     width:40%;
-           padding: auto;
-           color: black;
-           font-size: 120%;
-           font-weight: 500;
-          margin-right: 185px;
-            background-color: #C3689F;
-            border-color: black  ;
-         display: flex;
-         justify-content: center;
-         margin-top: 35px;
+   .button-register {
+      width:40%;
+      padding: auto;
+      color: black;
+      font-size: 120%;
+      font-weight: 500;
+      margin-right: 185px;
+      background-color:#bb446a;
+      border-color: 2px solid black;
+      display: flex;
+      justify-content: center;
+      margin-top: 35px;
+      margin-left: 30%;
    }
    
-   .btn-register:hover {
-     background-color: #974f7a; 
-           color: black;
-           border-color: #C3689F;
+   .button-register:hover {
+      background-color: #7c2343; 
+      color: white;
+      border-color: 2px solid black;
    }
+
+   .beautician-button-add{
+    background-color: #bb446a;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: 500;
+    margin-left: 100px;
+    width:150px;
+    border: 2px solid black;
+  }
+  
+  .beautician-button-add:hover{
+    background-color: #7c2343;
+    color: white;
+    font-weight: 500;
+    border: 2px solid black;
+  }
    

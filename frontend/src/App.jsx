@@ -24,14 +24,7 @@ import BeauticianSchedule from "./Pages/BeauticianSchedule/BeauticianSchedule"
 import BeauticianSalary from './Pages/BeauticianSalary/BeauticianSalary'
 import UpdateBeautician from './Pages/UpdateBeautician/UpdateBeautician'
 
-import AdminCashier from './Pages/AdminCashier/Admin01Cashier'
-import CashierPayment01 from './Pages/CashierPayment01/CashOnDelivery'
-import BankSlip01 from './Pages/CashierPayment02/Bank Slip 01/BankSlip'
-import BankSlip02 from './Pages/CashierPayment02/Bank Slip 02/ViewSlip'
-import BookingDetails from './Pages/BookingDetails/BookingDetail'
-import CashierSchedule from './Pages/CashierSchedule/CashierSchedule'
-import CashierRegister from './Pages/CashierRegister/Admin01cashierReg'
-import Salary from './Pages/Salary/Salary'
+
 
 
 import AdminHome from "./Pages/AdminHome/AdminHome";
@@ -72,19 +65,12 @@ function App() {
 
 
 
-                  <Route path='AdminCashier'element={<AdminCashier/>}/>
-                  <Route path='CashierRegister'element={<CashierRegister/>}/>
                  
                </Route>
 
               <Route path="/" element={<CashierLayout />}>
                 
-                  <Route path='BookingDetails'element={<BookingDetails/>}/>
-                  <Route path='CashierSchedule'element={<CashierSchedule/>}/>
-                  <Route path='CashierPayment01'element={<CashierPayment01/>}/>
-                  <Route path='BankSlip01'element={<BankSlip01/>}/>
-                  <Route path='BankSlip02'element={<BankSlip02/>}/>
-                  <Route path='Salary'element={<Salary/>}/>
+                  
 
               </Route>
 

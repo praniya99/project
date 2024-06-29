@@ -1,5 +1,5 @@
 
-.btn01{
+.plusbutton01{
     border-radius: 10px;
     background-color: #bb446a;
     width: 50px;
@@ -10,14 +10,14 @@
     color: white;
     
 }
-.btn{
+.plusbutton{
     display: flex;
-     margin-left:30px;
-     margin-top: 10px;
+     margin-left:105px;
+     margin-top: 40px;
      width:400px;
     
 }
-.para{
+.plusheading{
     font-size: 25px;
     margin-left: 10px;
     

@@ -1,9 +1,5 @@
 
-.table{
-    margin:5%;
-   font-size: 15px;
-    width: 90%;
-}
+
 .beauticiansalary-tr{
     height: 50px;
     text-align: center;
@@ -19,9 +15,7 @@
     border-top-right-radius: 15px;
   }
   
-  .table td,.table th,.table tr{
-    border: none;
-  }
+  
   
   .beauticiansalary-rounded-table thead th {
     background-color: #c1d0d6; 

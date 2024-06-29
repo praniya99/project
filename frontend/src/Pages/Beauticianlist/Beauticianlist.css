@@ -1,69 +1,95 @@
+* {
+  box-sizing: border-box;
+}
 
-.table {
-    margin-top: 40px;
-    margin-left: 250px;
-    width: auto; /* Ensure the table takes only necessary width */
-    overflow-x: hidden; /* Add horizontal scroll if needed */
-    width:100;
-  }
+.beautician-button-list{
+  background-color: #bb446a;
+  color: black;
+  margin-top: 40px;
+  font-weight: 500;
+  margin-left: 100px;
+  border: 2px solid black;
+}
+
+.beautician-button-list:hover{
+  background-color: #7c2343;
+  color: white;
+  font-weight: 500;
+  border: 2px solid black;
+}
+
+.search-bar-list{
+  width:250px;
+  border-color: black;
+  margin-left: 50px;
+  margin-top: 40px;
   
-  .table th, .table td {
-    vertical-align: middle;
-  }
-  
-  .table td button {
-    margin-right: 10px;
-  }
-  
-  .btn-list{
-    width:100px;
-    padding: auto;
-    color: black;
-    font-size: 120%;
-    font-weight: 500;
-   margin-right: 185px;
-     background-color: red;
-     border-color: black  ;
-  display: flex;
-  justify-content: center;
-  margin-top: 35px;
-  }
-  
-  
-  
-  .btn-list:hover{
-    background-color: #974f7a; 
-          color: red;
-          
-  
-  }
-  
-  
-  .btn-list1{
-    width:100px;
-    padding: auto;
-    color: black;
-    font-size: 120%;
-    font-weight: 500;
-   margin-right: 185px;
-     background-color:  #C3689F;
-     border-color: black  ;
-  display: flex;
-  justify-content: center;
-  margin-top: 35px;
-  }
-  
-  
-  
-  .btn-list1:hover{
-    background-color: #974f7a; 
-          color: black;
-          border-color: #C3689F;
-  
-  }
-  
-  .heading1 {
-    text-align: center; /* Center the heading */
-    margin-left: 60px; /* Remove the left margin */
-  }
-  
+ 
+
+
+}
+
+
+
+.beautician-table {
+  margin-top: 10px;
+  margin-left: 100px;
+  width: 100%; 
+  overflow-x: auto;
+  border-collapse: collapse; 
+  border: 2px solid black;
+}
+
+.beautician-table th,
+.beautician-table td {
+  border: 1px solid black; 
+  padding: 10px; 
+  vertical-align: middle;
+  text-align: center; 
+  width:100vw;
+}
+
+.beautician-table th {
+  font-size: 17px;
+}
+
+.beautician-button-delete,
+.beautician-button-update {
+  width: 100px;
+  color: black;
+  font-size: 100%; 
+  font-weight: 500;
+  margin: 5px; 
+  display: inline-block;
+  text-align: center;
+}
+
+.beautician-button-delete {
+  background-color: red;
+  border-color: 2px solid black;
+}
+
+.beautician-button-delete:hover {
+  background-color:#7c2343;
+  color: white;
+  border-color: 2px solid black;
+}
+
+.beautician-button-update {
+  background-color:#bb446a;
+  border-color: 2px solid black;
+}
+
+.beautician-button-update:hover {
+  background-color: #7c2343;
+  color: white;
+  border-color: 2px solid black;
+}
+
+
+
+.beautician-table-responsive {
+  width: 100%;
+  margin-top: 3%;
+ 
+}
