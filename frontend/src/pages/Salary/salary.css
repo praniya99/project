@@ -8,59 +8,56 @@
     font-family: Kaushan Script,cursive;
 
 }
-.table{
-    margin:auto !important;
-    margin-top:5% !important;
+.saltr th,.saltr td{
+  width:25% ;
+}
+.rounded-saltable{
+    margin:auto;
+    margin-top:5%;
    font-size: 15px;
-    width: 80% !important;
+    width: 90%;
     padding: 0;
-    border: 2px solid rgb(223, 225, 226) !important;
     
 }
-.tr{
+.saltr {
     height: 50px;
     text-align: center;
     margin: 0px;
    
-    
-    
-}
+    }
 
-  .rounded-table {
+  .rounded-saltable {
     border-radius: 15px ;
     overflow: hidden;
   }  
  
   
-  .table td,.table th{
+  .rounded-saltable .saltr td,.rounded-saltable .saltr th,.rounded-saltable .saltr{
     border: none;
 
 
   }
   
-  .rounded-table thead th {
-    background-color: #c1d0d6; 
+  .rounded-saltable thead th {
+    background-color: #a8c3ce; 
   }
-  .rounded-table thead td {
+  .rounded-saltable thead td {
     background-color: #c1d0d6 !important; 
   }
   
   
-  .rounded-table tbody tr:nth-child(even) {
+  .rounded-saltable tbody tr:nth-child(even) {
     background-color: rgba(240, 238, 238, 0); 
   }
   @media (max-width: 768px) {
-    .table-responsive {
-      overflow-x: auto;
-      
-    }
-    .table{
+    
+    .rounded-saltable{
        font-size: 8px ;
-        width: 95% !important;
+        width: 95% ;
         display:flex;
         flex-direction: column;
     }
-    .tr{
+    .saltr{
         
         text-align: center;
         display:flex;

@@ -18,7 +18,7 @@
     
 } 
 .table01{
-    margin-top: 5%;
+    margin-top:5%;
 
 }
 .table02{
@@ -27,7 +27,7 @@
     flex-direction: column;
    
 }
-table{
+.table01,.table02{
     display:grid;
    margin: 0px !important;
    width: 90% !important;
@@ -51,10 +51,10 @@ input{
   border-color: rgb(207, 5, 5) ;
 }
 
-.tr th,tr td{
+.Bookingtr th,.Bookingtr td{
     width: 150px;
 }
-.dropdown{
+.servicedropdown{
     margin: 5%;
     width: 80%;
     border-radius: 20px !important;
@@ -63,16 +63,16 @@ input{
     justify-content: center;
     
 }
-.dropdown button{
+.servicedropdown button{
    background-color: #b8325d !important;
     border-color: #bb446a !important;
 }
-.dropdown [disabled] {
+.servicedropdown [disabled] {
   cursor: not-allowed;
 }
 
 
-.dropdown button:hover{
+.servicedropdown button:hover{
   background-color: #7c2343;
   border-color: #7c2343;
 }
@@ -81,7 +81,7 @@ input{
     text-align: center;
 }
 .Item:hover{
-    background-color: #b1b1b1 !important;
+    background-color: #b1b1b1 ;
 }
 @media (max-width: 768px) {
     .content{
@@ -94,15 +94,15 @@ input{
       width: 100%;
       margin-left: 5%;
     }
-    .tr th,tr td{
+    .Bookingtr th,.Bookingtr td{
       width:25% ;
     }
-    .table02 table tr{
+    .table02 .t2tr{
       display: flex;
       padding: 5px;
     }
   
-    .table th, .table td {
+    .table01 th,.ta, .table td {
       display: block;
       box-sizing: border-box;
     }
@@ -158,7 +158,7 @@ button[disabled] {
       
     }
   
-    .dropdown-section {
+    .servicedropdown-section {
       text-align: center;
     }
   }

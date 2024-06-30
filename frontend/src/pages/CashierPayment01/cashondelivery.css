@@ -7,7 +7,7 @@
     align-content: center;
     font-family: Kaushan Script,cursive;
 }
-table{
+.cashtable{
     width:80%;
     margin: 5%;
     background-color: rgb(218, 220, 221);
@@ -15,7 +15,7 @@ table{
     text-align: center;
    
 }
-table th,table td{
+.cashtable th,.cashtable td{
  padding: 10px;
  
 }

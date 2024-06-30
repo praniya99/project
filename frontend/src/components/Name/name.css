@@ -17,6 +17,10 @@
     color: #000;
     
 }
+.name:hover{
+    border-color: rgb(173, 48, 86) ;
+    color: rgb(173, 48, 86) ;
+}
 .btn02{
  background-color: rgb(219, 2, 2);
     border-radius: 10px;
@@ -24,10 +28,32 @@
     margin-left: 10px;
     width:100px;
 }
+.btn02:hover{
+    border-color: red;
+    background-color: red;
+}
 .img01{
 width: 40px;
 height: 40px;
 margin-left: 15px;
 margin-right: 10px;
 border-radius: 50%;
+}
+@media (max-width: 768px){
+    .name{
+        padding-bottom:2px;
+        font-size: 15px;
+      
+        
+    }
+    .btn02{
+     background-color: rgb(219, 2, 2);
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .img01{
+    width: 30px;
+    height: 30px;
+   
+    }
 }

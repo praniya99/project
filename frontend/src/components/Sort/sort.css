@@ -5,4 +5,27 @@
     margin-left: 40px;
     border-color: black;
     width: 100px;
+    justify-content: center;
+}
+.sort:hover{
+    background-color: rgba(155, 49, 81, 0.856);
+    border-color: rgba(155, 49, 81, 0.856);
+}
+.sort:focus{
+    background-color:  rgba(155, 49, 81, 0.856);
+    border-color:  rgba(155, 49, 81, 0.856);
+
+}
+
+@media (max-width: 768px){
+    .sort{
+        display: flex;
+        background-color: white;
+        color: black;
+        font-size: 12px;
+        margin-left: 40px;
+        border-color: black;
+        width: 80px;
+        justify-content: center;
+    } 
 }

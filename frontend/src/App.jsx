@@ -28,6 +28,7 @@ import CashierSchedule from './pages/CashierSchedule/CashierSchedule'
 import Admin01cashierRegister from './pages/CashierRegister/Admin01cashierReg'
 import Salary from './pages/Salary/Salary'
 import Report01 from './pages/AppointmentReport/Report01'
+import MyLeaves from './pages/MyLeaves/MyLeaves'
 
 
 
@@ -72,6 +73,7 @@ function App() {
                   <Route path="Admin01cashierRegister" element={<Admin01cashierRegister />} />
                   <Route path="Salary" element={<Salary />} />
                   <Route path="Report01" element={<Report01 />} />
+                  <Route path="MyLeaves" element={<MyLeaves />} />
 
             
 

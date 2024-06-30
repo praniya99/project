@@ -53,13 +53,13 @@ export default function BookingDetail() {
       <div className='content'>
         <div className='table01'>
           <table>
-            <tr className='tr'>
+            <tr className='Bookingtr'>
               <th>ID</th>
               <th>Name</th>
               <th>Services</th>
               <th>Total Price (Rs:)</th>
             </tr>
-            <tr className='tr'>
+            <tr className='Bookingtr'>
               <td>001</td>
               <td>Nimali</td>
               <td>
@@ -73,7 +73,7 @@ export default function BookingDetail() {
         </div>
         <div><div className='button-container'>
           <Dropdown className='drop' >
-            <Dropdown.Toggle id="dropdown-basic" className='dropdown' disabled={isPaid} >
+            <Dropdown.Toggle id="dropdown-basic" className='servicedropdown' disabled={isPaid} >
               Add Service
             </Dropdown.Toggle>
             <Dropdown.Menu className='Menu'>
@@ -94,7 +94,7 @@ export default function BookingDetail() {
           <table>
             <p><b> Billing Details</b></p>
             {services.map((service, index) => (
-              <tr key={index}>
+              <tr className='t2tr' key={index}>
                 <td>{service.name}</td>
                 <td>{service.price.toFixed(2)}</td>
                 <td>
@@ -102,7 +102,7 @@ export default function BookingDetail() {
                 </td>
               </tr>
             ))}
-            <tr >
+            <tr className='t2tr'>
               <td>Discount (%)</td>
               <td>
                 <input 
@@ -114,11 +114,11 @@ export default function BookingDetail() {
                 />
               </td>
             </tr>
-            <tr>
+            <tr className='t2tr'>
               <td>Total</td>
               <td>{calculateTotalWithDiscount().toFixed(2)}</td>
             </tr>
-            <tr>
+            <tr className='t2tr'>
               <td>Payment Status</td>
               <td>{paymentStatus}</td>
             </tr>

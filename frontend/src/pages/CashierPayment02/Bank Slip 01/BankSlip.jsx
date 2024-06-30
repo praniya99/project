@@ -8,8 +8,10 @@ export default function BankSlip() {
         <p>Bank Slip</p>
      </div>
      <div>
-        <table>
-            <tr>
+
+        <table className='sliptable'>
+          <thead>
+             <tr className='sliprow'>
                 <th>Order ID</th>
                 <th>Buyer Name</th>
                 <th>Income(Rs:)</th>
@@ -17,7 +19,9 @@ export default function BankSlip() {
                 <th></th>
 
             </tr>
-            <tr>
+            </thead>
+            <tbody>
+               <tr className='sliprow'>
                 <td>001</td>
                 <td>Nimali</td>
                 <td>1500.00</td>
@@ -26,7 +30,7 @@ export default function BankSlip() {
                     <a href=" ">View slip</a>
                 </td>
             </tr>
-            <tr>
+            <tr className='sliprow'>
                 <td>002</td>
                 <td>Amali</td>
                 <td>1580.00</td>
@@ -34,7 +38,9 @@ export default function BankSlip() {
                 <td>
                     <a href=" ">View slip</a>
                 </td>
-            </tr>
+            </tr></tbody>
+           
+           
         </table>
      </div>
       
