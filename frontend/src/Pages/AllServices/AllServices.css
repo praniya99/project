@@ -1,0 +1,94 @@
+.big-rect1-AllServices {
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  height: 130vh;
+  margin-top: -130.7vh;
+  margin-left: 18%;
+  width: 99vw;
+  padding-bottom: 100px;
+}
+
+.small-rect1-AllServices {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  height: 60%;
+  margin-left: 7.3%;
+  margin-top: 7%;
+  margin-bottom: -8%;
+
+}
+
+.small-rect1-1-AllServices {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    height: 60%;
+    margin-left: 20.3%;
+  margin-top: 8%;
+   
+    
+  }
+
+.small-rect2-AllServices {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: 100%;
+  margin-left: 10%;
+  align-items: center;
+  margin-right: 10px;
+  
+  
+}
+
+.main-photo-AllServices {
+  width: 100%;
+  height: 70%;
+  margin-bottom: 10px;
+  background-color: aliceblue;
+}
+
+.rect-image-AllServices {
+    display: flex;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+.rect-heading-AllServices {
+  color: black; 
+  text-align: center;
+  font-size: 1rem; 
+  margin-top: 2px;
+}
+
+.rect-head-head-AllServices{
+    font-weight: 700;
+}
+
+@media screen and (max-width: 400px) {
+ 
+  
+  .small-rect1-AllServices {
+    width: 75%; 
+    margin-left: 2%; 
+  }
+  
+  .small-rect1-1-AllServices {
+    width: 50%; 
+    margin-left: 15%; 
+  }
+  
+  .small-rect2-AllServices {
+    width: 80%; 
+    margin-left: 2%;
+    margin-right: 0; 
+  }
+  .rect-head-head-AllServices{
+    font-size: 16px;
+  }
+
+  
+}

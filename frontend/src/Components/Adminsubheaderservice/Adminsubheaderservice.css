@@ -1,0 +1,36 @@
+.BIg-main-main-rect-serviceform{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 100vw;
+    margin-left: -112px;
+    margin-top: 10px;
+  }
+  .main-head-serviceform{
+    display: flex;
+    width: 99vw;
+    min-height: 120px;
+    flex-direction: row;
+    background-color: #F1A4BD;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .main-head-serviceform1-1{
+    margin-left: 10%;
+    color: black;
+    font-family: 'Arial';
+    font-size: 35px;
+    font-family: 'Idran' ,
+  }
+
+  @media screen and (max-width: 400px) {
+    .main-head-serviceform1-1 {
+      margin-left: 15%;
+      font-size: 25px;
+    }
+    .BIg-main-main-rect-serviceform{
+     width:400px;
+      margin-left: -10px;
+    }
+  }
