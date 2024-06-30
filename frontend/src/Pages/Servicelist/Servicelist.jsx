@@ -1,7 +1,7 @@
-import Adminsubheaderservice from '../../Components/Adminsubheaderservice/Adminsubheaderservice'
-import ServicePlus from '../../Components/ServicePlus/ServicePlus'
-import Servicesort from '../../Components/Servicesort/Servicesort'
-import  Servicelistrow from '../../Components/Servicelistrow/Servicelistrow'
+import Adminsubheaderservice from '../../components/Adminsubheaderservice/Adminsubheaderservice'
+import ServicePlus from '../../components/ServicePlus/ServicePlus'
+import Servicesort from '../../components/Servicesort/Servicesort'
+import  Servicelistrow from '../../components/Servicelistrow/Servicelistrow'
 
 const Servicelist = () => {
   return (

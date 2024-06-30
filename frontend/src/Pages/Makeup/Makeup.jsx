@@ -1,5 +1,5 @@
 import './Makeup.css'
-import Subheader from '../../Components/Subheader/Subheader.jsx'
+import Subheader from '../../components/Subheader/Subheader.jsx'
 import S5 from '../../assets/Makeup/S5.jpg'
 const Makeup = () => {
   return (

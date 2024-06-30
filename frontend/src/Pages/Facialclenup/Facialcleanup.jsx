@@ -1,5 +1,5 @@
 import './Facialcleanup.css'
-import Subheader from "../../Components/Subheader/Subheader"
+import Subheader from "../../components/Subheader/Subheader"
 import T5 from '../../assets/Facialcleanup/T5.jpg'
 
 

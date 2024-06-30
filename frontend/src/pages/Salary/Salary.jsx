@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Salary/salary.css'
+import './salary.css'
 
 import Table from 'react-bootstrap/Table';
 
@@ -11,9 +11,9 @@ export default function Salary() {
         <p>Salary</p>
      </div>
      <div >
-     <Table striped bordered hover className="rounded-table">
+     <Table striped bordered hover className="rounded-saltable">
   <thead>
-    <tr className='tr'>
+    <tr className='saltr'>
       <th> Name</th>
       <th>Month</th>
       <th>Basic(Rs.)</th>
@@ -25,7 +25,7 @@ export default function Salary() {
     </tr>
   </thead>
   <tbody>
-    <tr className='tr'>
+    <tr className='saltr'>
       <td>W.H.Nimali</td>
       <td>January</td>
       <td>60 000</td>
@@ -37,7 +37,7 @@ export default function Salary() {
 
 
     </tr>
-    <tr className='tr'>
+    <tr className='saltr'>
     <td>W.H.Nimali</td>
       <td>February</td>
       <td>60 000</td>

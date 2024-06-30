@@ -1,5 +1,5 @@
 import './Threading.css'
-import Subheader from "../../Components/Subheader/Subheader"
+import Subheader from "../../components/Subheader/Subheader"
 import S1 from '../../assets/Threading/S1.jpg'
 
 const Threading = () => {

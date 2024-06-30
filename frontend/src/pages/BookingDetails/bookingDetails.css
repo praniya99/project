@@ -1,3 +1,6 @@
+#root{
+  width: 100%;
+}
 .topicBox{
     background:linear-gradient(to right,#bb446a,#953050,#7c2343);
     height: 150px;
@@ -13,74 +16,149 @@
     margin-left: 10%;
     margin-right: 10%;
     
-}
+} 
 .table01{
-    min-height: 300px;
-    margin-top: 8%;
-    border: 1px solid;
-    border-radius: 15px;
-    
+    margin-top:5%;
+
 }
 .table02{
-    min-height: 300px;
-    margin-top: 8%;
-    border: 1px solid;
     border-radius: 15px;
-}
-table{
-    min-height: 300px;
-  display: grid;
-   margin: 10px;
+    display: flex;
+    flex-direction: column;
    
+}
+.table01,.table02{
+    display:grid;
+   margin: 0px !important;
+   width: 90% !important;
+   padding: 5px;
+   height: 50%;
 
 }
+input{
+  width: 80px;
+  background-color: white;
+  border: none;
+  color: black;
+}
+.remove{
+  border-radius: 50%;
+  background-color: rgb(230, 48, 48) ;
+  padding: 0px 8px ;
+}
+.remove:hover{
+  background-color: rgb(207, 5, 5);
+  border-color: rgb(207, 5, 5) ;
+}
 
-.tr th,tr td{
+.Bookingtr th,.Bookingtr td{
     width: 150px;
-    text-align: center;
 }
-.dropdown{
+.servicedropdown{
     margin: 5%;
-    width: 90%;
+    width: 80%;
     border-radius: 20px !important;
+    align-items: center ;
+    display: flex;
+    justify-content: center;
+    
+}
+.servicedropdown button{
+   background-color: #b8325d !important;
+    border-color: #bb446a !important;
+}
+.servicedropdown [disabled] {
+  cursor: not-allowed;
 }
 
+
+.servicedropdown button:hover{
+  background-color: #7c2343;
+  border-color: #7c2343;
+}
 
 .Menu{
     text-align: center;
 }
 .Item:hover{
-    background-color: #b1b1b1 !important;
+    background-color: #b1b1b1 ;
 }
 @media (max-width: 768px) {
     .content{
         margin-left: 0%;
         margin-right: 5%;
+        flex-direction: column;
     }
     .table01, .table02 {
       display: block;
       width: 100%;
       margin-left: 5%;
     }
+    .Bookingtr th,.Bookingtr td{
+      width:25% ;
+    }
+    .table02 .t2tr{
+      display: flex;
+      padding: 5px;
+    }
   
-    .table th, .table td {
+    .table01 th,.ta, .table td {
       display: block;
-      width: 100%;
       box-sizing: border-box;
     }
+   
   
     .table th {
       text-align: center;
     }
   }
+  /* Style for the Pay Now button */
+
+.payment-button {
+  padding: 10px 40px;
+  background-color: #b8325d;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+margin: 5%;
+display: flex;
+justify-content: center;
   
+}
+
+.payment-button:hover {
+  background-color: #7c2343;
+}
+
+.payment-button:disabled {
+  background-color: #bb6e8a;
+  cursor: not-allowed;
+}
+
+/* Style for the Remove button */
+button[disabled] {
+  cursor: not-allowed;
+}
+
+/* Style for the disabled discount input */
+.discount-input:disabled {
+  cursor: not-allowed;
+}
+
   @media (max-width: 480px) {
     .topicBox p {
-      font-size: 10px;
+      font-size: 30px;
+      align-content: center;
+
+
     }
-   
+    .content{
+      font-size: 10px;
+      
+    }
   
-    .dropdown-section {
+    .servicedropdown-section {
       text-align: center;
     }
   }

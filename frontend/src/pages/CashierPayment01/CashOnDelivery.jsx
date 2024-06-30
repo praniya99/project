@@ -8,7 +8,7 @@ export default function CashOnDelivery() {
         <p>Cash On Delivery</p>
      </div>
      <div>
-        <table>
+        <table className='cashtable'>
             <tr>
                 <th>Order ID</th>
                 <th>Buyer Name</th>

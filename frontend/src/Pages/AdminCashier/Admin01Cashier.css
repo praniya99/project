@@ -1,0 +1,103 @@
+#root{
+    width: 100%;
+}
+.list-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border: 2px solid #e8e8e8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .list-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .listtable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+ .listtable thead {
+    background-color: #d274a7;
+    color: white;
+  }
+  
+  .listtable th,.listtable td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+  
+ .listtable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .D_btn {
+    padding: 5px 10px;
+    color: #fff !important;
+    background-color: #d274a7 ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px ;
+  }
+  
+  
+  .D_btn:hover {
+    background-color: #ad477a !important;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  @media (max-width: 1030px) {
+    .list-container {
+      width: 95%;
+      margin: 20px auto;
+    }
+    .list-container h1 {
+      font-size: 30px;
+    }
+   .listtable th,.listtable td {
+      padding: 2px;
+      text-align: left;
+      border: 1px solid #ccc;
+    }
+    .D_btn {
+      width: 70px !important;
+    }
+    
+  
+    .listtable, th, td {
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 768px) {
+    .list-container {
+      width: 95%;
+      margin: 20px auto;
+    }
+    .list-container h1 {
+      font-size: 20px;
+    }
+   .listtable th,.listtable td {
+      padding: 2px;
+      text-align: left;
+      border: 1px solid #ccc;
+    }
+    .D_btn {
+      width: 50px !important;
+      padding: 5px ;
+      font-size: 10px !important;
+    }
+    .listtable,.listtable th,.listtable td {
+      font-size: 8px;
+    }
+  }
+  

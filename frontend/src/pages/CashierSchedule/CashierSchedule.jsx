@@ -11,9 +11,9 @@ export default function CashierSchedule() {
         <p>Schedule</p>
      </div>
      <div >
-     <Table striped bordered hover className="rounded-table">
+     <Table striped bordered hover className="rounded-scheduletable">
   <thead>
-    <tr className='tr'>
+    <tr className='schedule_tr'>
       <th> Date</th>
       <th>Time</th>
       <th>Name</th>
@@ -23,7 +23,7 @@ export default function CashierSchedule() {
     </tr>
   </thead>
   <tbody>
-    <tr className='tr'>
+    <tr className='schedule_tr'>
       <td>2024/05/13</td>
       <td>10.00 a.m.</td>
       <td>Shehani</td>
@@ -32,7 +32,7 @@ export default function CashierSchedule() {
 
 
     </tr>
-    <tr className='tr'>
+    <tr className='schedule_tr'>
     
       <td>2024/05/20</td>
       <td>11.00 a.m.</td>

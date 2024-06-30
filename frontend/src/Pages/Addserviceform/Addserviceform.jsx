@@ -1,6 +1,6 @@
 import  { useState } from 'react';
 import './Addserviceform.css';
-import Adminsubheaderservice from '../../Components/Adminsubheaderservice/Adminsubheaderservice'
+import Adminsubheaderservice from '../../components/Adminsubheaderservice/Adminsubheaderservice'
 
 
 function Addserviceform() {

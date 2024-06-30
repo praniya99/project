@@ -8,53 +8,64 @@
     font-family: Kaushan Script,cursive;
 
 }
-.table{
-    margin:5%;
-   font-size: 15px;
-    width: 90%;
+.schedule_tr th,.schedule_tr td{
+  width:20% ;
 }
-.tr{
-    height: 50px;
-    text-align: center;
+.schedule_tr{
+
+  height: 50px;
+  text-align: center;
+  margin: 0px;
+ 
     
 }
 
-  .rounded-table {
-    border-radius: 15px;
-    overflow: hidden;
+  .rounded-scheduletable {
+    margin:auto;
+      margin-top:5%;
+     font-size: 15px;
+      width: 90%;
+      padding: 0;
+       border-radius: 15px ;
+      overflow: hidden;
   }  
-  .rounded-table thead tr {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
   
-  .table td,.table tr,.table th{
+  
+  .rounded-scheduletable td,.rounded-scheduletable th,.rounded-scheduletable tr{
     border: none;
+    
   }
  
-  
-  .rounded-table thead th {
-    background-color: #f3d8ef; 
+  .rounded-scheduletable thead{
+    height: 50px;
+  } 
+  .rounded-scheduletable thead th {
+    background-color: #99a5ee63 ; 
   }
   
   
-  .rounded-table tbody tr:nth-child(even) {
+  .rounded-scheduletable tbody tr:nth-child(even) {
     background-color: #181818; 
   }
   @media (max-width: 768px) {
-    .table-responsive {
-      overflow-x: auto;
       
+    .rounded-scheduletable{
+       font-size: 10px ;
+        width: 95% ;
+        display:flex;
+        flex-direction: column;
     }
-    .table{
-        margin:5%;
-       font-size: 10px;
-        width: 90%;
-    }
-    .tr{
-        height: 30px;
-        text-align: center;
+    .schedule_tr{
         
+        text-align: center;
+        display:flex;
+        flex-direction: row;
+        
+    }
+
+    .topicBox{
+      height: 80px;
+      font-size: 30px;
     }
     
   }
