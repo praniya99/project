@@ -1,24 +1,23 @@
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AdminLayout from './Layout/AdminLayout'
-import AdminCashierLayout from './Layout/AdminCashierLayout'
-import MainLayout from './Layout/MainLayout' 
-import AllServices from './Pages/AllServices/AllServices'
-import Bridal from './Pages/Bridal/Bridal'
-import Facialcleanup from './Pages/Facialclenup/Facialcleanup'
-import Haircolour from './Pages/Haircolour/Haircolour'
-import Haircuts from './Pages/Haircuts/Haircuts'
-import Makeup from './Pages/Haircuts/Haircuts'
-import Nails from './Pages/Nails/Nails'
-import Threading from './Pages/Threading/Threading'
-import Beauticians from './Pages/Beauticians/Beauticians'
+
+import AllServices from './pages/AllServices/AllServices'
+import Bridal from './pages/Bridal/Bridal'
+import Facialcleanup from './pages/Facialclenup/Facialcleanup'
+import Haircolour from './pages/Haircolour/Haircolour'
+import Haircuts from './pages/Haircuts/Haircuts'
+import Makeup from './pages/Haircuts/Haircuts'
+import Nails from './pages/Nails/Nails'
+import Threading from './pages/Threading/Threading'
+import Beauticians from './pages/Beauticians/Beauticians'
 
 
-import Addserviceform from './Pages/Addserviceform/Addserviceform'
-import Servicelist from "./Pages/Servicelist/Servicelist";
-import AddBeauticians from './Pages/AddBeauticians/AddBeauticians'
-import Beauticianlist from './Pages/Beauticianlist/Beauticianlist'
-import BeauticianProfile from './Pages/BeauticianProfile/BeauticianProfile'
+import Addserviceform from './pages/Addserviceform/Addserviceform'
+import Servicelist from "./pages/Servicelist/Servicelist";
+import AddBeauticians from './pages/AddBeauticians/AddBeauticians'
+import Beauticianlist from './pages/Beauticianlist/Beauticianlist'
+import BeauticianProfile from './pages/BeauticianProfile/BeauticianProfile'
 
 
 function App() {
@@ -31,7 +30,7 @@ function App() {
 {/*
               <Route path="/" element={<MainLayout />}>*/}
                     
-                  <Route path="Allservices" element={<AllServices />} />
+                  <Route path="AllServices" element={<AllServices />} />
                   <Route path="Bridal" element={<Bridal />} />
                   <Route path="Facialcleanup" element={<Facialcleanup />} />
                   <Route path="Haircolour" element={<Haircolour />} />
@@ -40,7 +39,7 @@ function App() {
                   <Route path="Nails " element={<Nails />} />
                   <Route path="Threading " element={<Threading />} />
                   <Route path="Beauticians" element={<Beauticians />} />
-              </Route>
+              
 
                <Route path="/" element={<AdminLayout />}>
                   <Route path="Addserviceform" element={<Addserviceform />} />
