@@ -44,22 +44,22 @@ const Threading = () => {
                         
                     </div>
                     <div className="rect-heading-Thread">
-                        <h3><b> make the most beautiful day of your life even more beautiful.</b></h3>
+                        <h3 className="paragraph-threading"><b> make the most beautiful day of your life even more beautiful.</b></h3>
                         <h5 className="rect-head-Thread">A facial is a family of skin care treatments for the face, including steam, exfoliation, extraction, creams, lotions, facial masks, peels, and massage. They are normally performed in beauty salons, but are also a common spa treatment. They are used for general skin health as well as for specific skin conditions.</h5>
                     </div>
                 </div>
 
 
-                <div className="small-rect17">
-                <table className="services-table">
-        <thead>
+                <div className="threading-table-container">
+                <table className="threading-table">
+        <thead className="threadinghead">
           <tr>
             <th>Service Name</th>
             <th>Price (Rs.)</th>
             <th>Duration</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="threadingbody">
           {services.map((service) => (
             <tr key={service._id}>
               <td>{service.name}</td>

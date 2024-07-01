@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { Form, Button, Row, Col } from "react-bootstrap";
+import { Form, Button, Row, Col, Alert } from "react-bootstrap";
 import { Link } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./AddBeauticians.css";
@@ -19,6 +19,8 @@ function App() {
     address: "",
   });
   const [profilePhoto, setProfilePhoto] = useState(null);
+  const [showSuccess, setShowSuccess] = useState(false);
+  const [errors, setErrors] = useState({});
 
   useEffect(() => {
     axios
@@ -29,19 +31,82 @@ function App() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
+    let errorMessage = "";
+
+    if (name === "firstname" || name === "lastname") {
+      const regex = /^[A-Za-z\s]*$/; // Allow only letters and spaces
+      if (!regex.test(value)) {
+        errorMessage = "Only letters are allowed";
+      }
+    }
+
+    if (name === "mobileno") {
+      const regex = /^[0-9]{0,10}$/; // Allows only numbers and up to 10 digits
+      if (!regex.test(value)) {
+        errorMessage = "Only 10 digits allowed";
+      } else if (value.length > 10) {
+        errorMessage = "Mobile number cannot exceed 10 digits";
+      } else {
+        errorMessage = ""; // Clear the error if the value is within limits
+      }
+    }
+
+    if (name === "email") {
+      const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!regex.test(value)) {
+        errorMessage = "Invalid email format";
+      }
+    }
+
     setFormData({ ...formData, [name]: value });
+    if (errorMessage) {
+      setErrors((prevErrors) => ({ ...prevErrors, [name]: errorMessage }));
+    } else {
+      setErrors((prevErrors) => ({ ...prevErrors, [name]: undefined }));
+    }
+  };
+
+  const handleKeyPress = (e) => {
+    const key = e.key;
+    // Block numeric keys in firstname and lastname
+    if ((e.target.name === "firstname" || e.target.name === "lastname") && key >= '0' && key <= '9') {
+      e.preventDefault();
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        [e.target.name]: "Only letters are allowed",
+      }));
+    }
   };
 
   const handleFileChange = (e) => {
-    setProfilePhoto(e.target.files[0]);
+    const file = e.target.files[0];
+    if (file && file.type.startsWith("image/")) {
+      setProfilePhoto(file);
+    } else {
+      window.alert("Please upload a valid image file (JPEG, PNG, etc.)");
+      setProfilePhoto(null);
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Check for errors before submitting
+    if (Object.values(errors).some(error => error)) {
+      window.alert("Please fix the errors before submitting.");
+      return;
+    }
+
     const formDataToSubmit = new FormData();
     formDataToSubmit.append("profilePhoto", profilePhoto);
     for (const key in formData) {
       formDataToSubmit.append(key, formData[key]);
+    }
+
+    // Log the formData to see what is being sent
+    for (const pair of formDataToSubmit.entries()) {
+      console.log(pair[0] + ': ' + pair[1]);
     }
 
     try {
@@ -62,20 +127,26 @@ function App() {
         address: "",
       });
       setProfilePhoto(null);
+      setShowSuccess(true);
+      setTimeout(() => setShowSuccess(false), 3000); // Clear success message after 3 seconds
+      window.alert("Beautician added successfully!"); // Show pop-up alert
     } catch (error) {
-      console.error(error);
+      console.error("There was an error!", error.response ? error.response.data : error.message);
     }
   };
 
   return (
     <div>
       <AddBeautician />
+      {showSuccess && <Alert variant="success">Beautician added successfully!</Alert>} {/* Render success alert */}
+
       <Form onSubmit={handleSubmit} className="form">
         <Form.Group controlId="formProfilePhoto">
           <Form.Label>Profile Photo</Form.Label>
           <Form.Control
             type="file"
             name="profilePhoto"
+            accept="image/*"
             onChange={handleFileChange}
           />
         </Form.Group>
@@ -90,6 +161,7 @@ function App() {
                 onChange={handleChange}
                 required
               >
+                <option>Mr</option>
                 <option>Mrs</option>
                 <option>Miss</option>
               </Form.Control>
@@ -104,8 +176,10 @@ function App() {
                 placeholder="First name"
                 value={formData.firstname}
                 onChange={handleChange}
+                onKeyPress={handleKeyPress}
                 required
               />
+              {errors.firstname && <Alert variant="danger">{errors.firstname}</Alert>}
             </Form.Group>
           </Col>
         </Row>
@@ -119,8 +193,10 @@ function App() {
                 placeholder="Last name"
                 value={formData.lastname}
                 onChange={handleChange}
+                onKeyPress={handleKeyPress}
                 required
               />
+              {errors.lastname && <Alert variant="danger">{errors.lastname}</Alert>}
             </Form.Group>
           </Col>
         </Row>
@@ -173,8 +249,16 @@ function App() {
             placeholder="07X XXXX XXX"
             value={formData.mobileno}
             onChange={handleChange}
+            onInput={(e) => {
+              const { value } = e.target;
+              if (value.length > 10) {
+                e.target.value = value.slice(0, 10); // Limit input length to 10
+              }
+            }}
+            maxLength={10}
             required
           />
+          {errors.mobileno && <Alert variant="danger">{errors.mobileno}</Alert>}
         </Form.Group>
         <Form.Group controlId="formEmail">
           <Form.Label>Email</Form.Label>
@@ -186,6 +270,7 @@ function App() {
             onChange={handleChange}
             required
           />
+          {errors.email && <Alert variant="danger">{errors.email}</Alert>}
         </Form.Group>
         <Form.Group controlId="formAddress">
           <Form.Label className="form-label">Address</Form.Label>

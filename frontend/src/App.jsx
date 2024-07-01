@@ -12,7 +12,6 @@ import Makeup from './Pages/Makeup/Makeup'
 import Nails from './Pages/Nails/Nails'
 import Threading from './Pages/Threading/Threading'
 import Beauticians from './Pages/Beauticians/Beauticians'
-import Servicelist from './Pages/Servicelist/Servicelist'
 import Addserviceform from "./Pages/Addserviceform/Addserviceform"
 import ServicesTable from "./Pages/ServiceTable/ServicesTable"
 
@@ -20,9 +19,8 @@ import ServicesTable from "./Pages/ServiceTable/ServicesTable"
 import AddBeauticians from './Pages/AddBeauticians/AddBeauticians'
 import Beauticianlist from './Pages/Beauticianlist/Beauticianlist'
 import BeauticianProfile from './Pages/BeauticianProfile/BeauticianProfile'
-import BeauticianSchedule from "./Pages/BeauticianSchedule/BeauticianSchedule"
-import BeauticianSalary from './Pages/BeauticianSalary/BeauticianSalary'
 import UpdateBeautician from './Pages/UpdateBeautician/UpdateBeautician'
+import BeauticianHome from './Pages/BeauticianHome/BeauticianHome'
 
 
 
@@ -56,7 +54,6 @@ function App() {
                   <Route path='AdminHome'element={<AdminHome/>}/>
 
                   <Route path="Addserviceform" element={<Addserviceform />} />
-                  <Route path="Servicelist" element={<Servicelist />} />
                   <Route path="AddBeauticians" element={<AddBeauticians />} />
                   <Route path="Beauticianlist" element={<Beauticianlist />} />
                   <Route path="BeauticianProfile" element={<BeauticianProfile />} />
@@ -75,9 +72,7 @@ function App() {
               </Route>
 
               <Route path="/" element={<BeauticianLayout />}>
-              <Route path='BeauticianSchedule'element={<BeauticianSchedule/>}/>
-              <Route path='BeauticianSalary'element={<BeauticianSalary/>}/>
-
+              <Route path="/home" element={<BeauticianHome/>}/>
                 
                
             </Route>

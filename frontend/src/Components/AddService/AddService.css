@@ -1,4 +1,4 @@
-.BIg-main-main-rect-beauticiansalary{
+.BIg-main-main-rect-AddService{
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -6,27 +6,32 @@
     margin-left: -11.9px;
     margin-top: 20px;
   }
-  .main-head-beauticiansalary{
+
+  .main-head-AddService{
     display: flex;
     width: 99vw;
     min-height: 120px;
     flex-direction: row;
-    background-color: #F1A4BD;
+    background: linear-gradient(to right,#bb446a,#953050,#7c2343);
     text-align: center;
     align-items: center;
   }
   
-  .main-head-beauticiansalary1-1{
+  .main-head-AddService1-1{
     margin-left: 10%;
-    color: black;
+    color: white;
     font-family: 'Arial';
     font-size: 35px;
     font-family: 'Idran' ,
   }
 
   @media screen and (max-width: 400px) {
-    .main-head-beauticianfsalary1-1 {
-      margin-left: 5%;
-      font-size: 20px;
+    .main-head-sAddService1-1 {
+      margin-left: 15%;
+      font-size: 25px;
+    }
+    .BIg-main-main-rect-AddService{
+     width:400px;
+      margin-left: -10px;
     }
   }

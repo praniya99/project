@@ -8,6 +8,8 @@
   background-color: #fff;
   border-bottom: 1px solid #ddd;
   width:97vw;
+ 
+  overflow-x: hidden;
 }
 
 

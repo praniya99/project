@@ -10,9 +10,9 @@ import AdminFooter from '../Components/AdminFooter/AdminFooter'
 const AdminLayout = () => {
   return (
     <>
-    <Container>
-    <Row>
-    <Col>
+    <Container >
+    <Row >
+    <Col >
      <Navigationbar/>
     </Col>
   </Row>

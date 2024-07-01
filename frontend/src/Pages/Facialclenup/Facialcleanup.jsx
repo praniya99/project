@@ -51,17 +51,16 @@ const Facialcleanup = () => {
                             </div>
                         </div>
 
-
-                        <div className="small-rect12">
-                        <table className="services-table">
-        <thead>
+                        <div className="cleanup-table-container">
+                        <table className="cleanup-table">
+        <thead className="cleanuphead">
           <tr>
             <th>Service Name</th>
             <th>Price (Rs.)</th>
             <th>Duration</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="cleanupbody">
           {facialCleanupServices.map((service) => (
             <tr key={service._id}>
               <td>{service.name}</td>

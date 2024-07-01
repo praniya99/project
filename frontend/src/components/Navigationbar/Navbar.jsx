@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import './navbar.css'; 
 import pic01 from '../../assets/images/navbar/pic01.jpg'
 import se from '../../assets/images/navbar/se.png'

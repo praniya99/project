@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  
 }
 
 .beautician-button-list{
@@ -7,11 +8,28 @@
   color: black;
   margin-top: 40px;
   font-weight: 500;
-  margin-left: 100px;
+  margin-left: 130px;
   border: 2px solid black;
 }
 
 .beautician-button-list:hover{
+  background-color: #7c2343;
+  color: white;
+  font-weight: 500;
+  border: 2px solid black;
+}
+
+
+.pdf-Button{
+  background-color: #bb446a;
+  color: black;
+  margin-top: 40px;
+  font-weight: 500;
+  margin-right: -50px;
+  border: 2px solid black;
+}
+
+.pdf-Button:hover{
   background-color: #7c2343;
   color: white;
   font-weight: 500;
@@ -23,19 +41,15 @@
   border-color: black;
   margin-left: 50px;
   margin-top: 40px;
-  
- 
-
-
 }
 
 
 
 .beautician-table {
   margin-top: 10px;
-  margin-left: 100px;
-  width: 100%; 
-  overflow-x: auto;
+  margin-left: 70px;
+  width: 105%; 
+  overflow-x:hidden;
   border-collapse: collapse; 
   border: 2px solid black;
 }
@@ -91,5 +105,6 @@
 .beautician-table-responsive {
   width: 100%;
   margin-top: 3%;
+  margin-left: 60px;
  
 }

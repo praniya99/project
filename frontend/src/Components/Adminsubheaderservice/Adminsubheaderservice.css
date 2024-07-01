@@ -6,19 +6,20 @@
     margin-left: -11.9px;
     margin-top: 20px;
   }
+
   .main-head-serviceform{
     display: flex;
     width: 99vw;
     min-height: 120px;
     flex-direction: row;
-    background-color: #F1A4BD;
+    background: linear-gradient(to right,#bb446a,#953050,#7c2343);
     text-align: center;
     align-items: center;
   }
   
   .main-head-serviceform1-1{
     margin-left: 10%;
-    color: black;
+    color: white;
     font-family: 'Arial';
     font-size: 35px;
     font-family: 'Idran' ,

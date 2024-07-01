@@ -5,7 +5,7 @@ const Adminsubheaderservice = () => {
     <div>
       <div className="BIg-main-main-rect-serviceform">
       <div className="main-head-serviceform">
-        <h3 className="main-head-serviceform1-1">Services</h3>
+        <h3 className="main-head-serviceform1-1">List Of Services</h3>
         
         </div>
         </div>

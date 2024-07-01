@@ -48,7 +48,7 @@ const Makeup = () => {
                     </div>
 
                     <div className="rect-heading-Makeup">
-                        <h3><b> make the most beautiful day of your life even more beautiful.</b></h3>
+                        <h3><b className="paragraph-makeup"> make the most beautiful day of your life even more beautiful.</b></h3>
                         <h5 className="rect-head-Makeup">Natural Makeup: Enhances features subtly for a fresh, flawless look.
                         Glam Makeup: Dramatic with bold colors and contouring for special events.
                         Bridal Makeup: Tailored for weddings, ranging from soft to glamorous.
@@ -61,16 +61,16 @@ const Makeup = () => {
                 </div>
 
 
-                <div className="small-rect15">
-                <table className="services-table">
-        <thead>
+                <div className="makeup-table-container">
+                <table className="makeup-table">
+        <thead className="makeuphead">
           <tr>
             <th>Service Name</th>
             <th>Price (Rs.)</th>
             <th>Duration</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="makeupbody">
           {makeupServices.map((service) => (
             <tr key={service._id}>
               <td>{service.name}</td>

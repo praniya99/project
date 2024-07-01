@@ -44,13 +44,9 @@
   margin-left: 15px;
 }
 
-.heading-Bride {
-  font-size: 40px;
-  margin-left: 50px;
-  margin-top: 30px;
-}
 
-.table-container {
+
+.bridal-table-container {
   display: flex;
   justify-content: center;
   margin: 20px 4.3%;
@@ -58,39 +54,39 @@
   margin-top: 60px;
 }
 
-.services-table {
+.bridal-table {
   margin-left: 120px;
-  width: 100%;
+  width: 70%;
   border-collapse: collapse;
   margin-top: 20px;
   background-color: white;
 }
 
-.services-table th,
-.services-table td {
+.bridal-table th,
+.bridal-table td {
   border: 1px solid #dddddd;
   padding: 12px;
   text-align: left;
 }
 
-.services-table td{
+.bridal-table td{
   width:1000px;
 
 }
 
 
-.services-table th {
-  background-color: black;
+.bridal-table th {
+  
   font-weight: bold;
   padding-bottom: 8px;
   width:1000px;
 }
 
-.services-table tr:nth-child(even) {
+.bridal-table tr:nth-child(even) {
   background-color: #f9f9f9;
 }
 
-.services-table tr:hover {
+.bridal-table tr:hover {
   background-color: #f1f1f1;
 }
 
@@ -99,13 +95,13 @@
   margin-left: 100px;
   margin-top: -130px;
 }
-.head{
+.bridalhead{
   height:2px;
   margin-top: 20px;
   color: black;
 }
 
-.body{
+.bridalbody{
   height:2px;
   margin-top: -92px;
 }
@@ -138,19 +134,19 @@
     margin-top: 70px;
   }
 
-  .table-container {
+  .bridal-table-container {
     margin: 20px 2.3%;
     width: 75%;
     margin-top: -10px;
   }
 
-  .services-table {
+  .bridal-table {
     margin-left: 0;
     margin-top: 20px;
   }
   
-  .services-table th, 
-  .services-table td {
+  .bridal-table th, 
+  .bridal-table td {
     padding: 8px;
     font-size: 11px;
   }

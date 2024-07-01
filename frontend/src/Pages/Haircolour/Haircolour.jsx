@@ -54,8 +54,8 @@ const Haircolour = () => {
                 </div>
 
 
-                <div className="small-rect13">
-                <table className="services-table">
+                <div className="haircolour-table-container">
+                <table className="haircolourhead">
         <thead>
           <tr>
             <th>Service Name</th>
@@ -64,7 +64,7 @@ const Haircolour = () => {
             
           </tr>
         </thead>
-        <tbody>
+        <tbody className="haircolourbody">
           {services.map((service) => (
             <tr key={service._id}>
               <td>{service.name}</td>

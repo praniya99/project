@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 
 import { Outlet } from "react-router-dom";
-import CashierNav from "../Components/CashierNav/CashierNav"
+//import CashierNav from "../Components/CashierNav/CashierNav"
 import AdminFooter from "../Components/AdminFooter/AdminFooter"
 
 function CashierLayout() {
@@ -11,7 +11,7 @@ function CashierLayout() {
 
         <Row>
             <Col>
-               <CashierNav/>
+              
             </Col>
         </Row>
 

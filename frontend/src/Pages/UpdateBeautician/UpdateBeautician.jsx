@@ -3,13 +3,14 @@ import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Form, Button, Container, Spinner, Alert } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import BeauticianUpdate from "../../Components/BeauticianUpdate/BeauticianUpdate"
+import BeauticianUpdate from "../../Components/BeauticianUpdate/BeauticianUpdate";
 import "./UpdateBeautician.css";
 
 function UpdateBeautician() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [beautician, setBeautician] = useState({
+    title: "Mrs",
     firstname: "",
     lastname: "",
     dateofbirth: "",
@@ -17,6 +18,7 @@ function UpdateBeautician() {
     mobileno: "",
     email: "",
     address: "",
+    profilePhotoUrl: "" // Add profilePhotoUrl to store the URL of the current profile photo
   });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -49,7 +51,7 @@ function UpdateBeautician() {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    if ((name === "firstname" || name === "lastname") && /[^a-zA-Z]/.test(value)) {
+    if ((name === "firstname" || name === "lastname") && /[^a-zA-Z\s]/.test(value)) {
       setInputErrors((prevErrors) => ({
         ...prevErrors,
         [name]: `${name.charAt(0).toUpperCase() + name.slice(1)} can only contain letters.`,
@@ -60,10 +62,10 @@ function UpdateBeautician() {
           ...prevErrors,
           [name]: "Mobile number can only contain digits.",
         }));
-      } else if (value.length > 9) {
+      } else if (value.length > 10) {
         setInputErrors((prevErrors) => ({
           ...prevErrors,
-          [name]: "Mobile number can only be up to 9 digits long.",
+          [name]: "Mobile number can only be up to 10 digits long.",
         }));
       } else {
         setInputErrors((prevErrors) => ({
@@ -98,10 +100,35 @@ function UpdateBeautician() {
     }));
   };
 
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file && file.type.startsWith("image/")) {
+      setBeautician((prevState) => ({
+        ...prevState,
+        profilePhotoUrl: URL.createObjectURL(file), // Set the preview image URL
+        profilePhotoFile: file // Set the actual file object to be uploaded
+      }));
+    } else {
+      window.alert("Please upload a valid image file (JPEG, PNG, etc.)");
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    const formDataToSubmit = new FormData();
+    if (beautician.profilePhotoFile instanceof File) {
+      formDataToSubmit.append("profilePhoto", beautician.profilePhotoFile);
+    }
+    for (const key in beautician) {
+      formDataToSubmit.append(key, beautician[key]);
+    }
+
     axios
-      .put(`http://localhost:3000/beauticians/${id}`, beautician)
+      .put(`http://localhost:3000/beauticians/${id}`, formDataToSubmit, {
+        headers: {
+          "Content-Type": "multipart/form-data"
+        }
+      })
       .then(() => {
         navigate("/list");
       })
@@ -127,16 +154,43 @@ function UpdateBeautician() {
   }
 
   return (
-  
-   
-     
-    
-   <div>
-    <BeauticianUpdate/>
-   
-
-
+    <div>
+      <BeauticianUpdate />
       <Form onSubmit={handleSubmit} className="Form1">
+        <Form.Group controlId="formProfilePhoto">
+          <Form.Label>Profile Photo</Form.Label>
+          <div className="mb-3">
+            {/* Display the current profile photo */}
+            {beautician.profilePhotoUrl && (
+              <img
+                src={beautician.profilePhotoUrl}
+                alt="Current profile"
+                className="img-thumbnail"
+                style={{ maxHeight: '150px' }}
+              />
+            )}
+          </div>
+          <Form.Control
+            type="file"
+            name="profilePhoto"
+            accept="image/*"
+            onChange={handleFileChange}
+          />
+        </Form.Group>
+        <Form.Group controlId="formTitle">
+          <Form.Label>Title</Form.Label>
+          <Form.Control
+            as="select"
+            name="title"
+            value={beautician.title}
+            onChange={handleChange}
+            required
+          >
+            <option>Mr</option>
+            <option>Mrs</option>
+            <option>Miss</option>
+          </Form.Control>
+        </Form.Group>
         <Form.Group controlId="firstname">
           <Form.Label className="Form-label1">First Name</Form.Label>
           <Form.Control
@@ -178,14 +232,26 @@ function UpdateBeautician() {
 
         <Form.Group controlId="gender">
           <Form.Label>Gender</Form.Label>
-          <Form.Select
+          <Form.Check
+            inline
+            type="radio"
             name="gender"
-            value={beautician.gender}
+            label="Male"
+            value="Male"
+            checked={beautician.gender === "Male"}
             onChange={handleChange}
-          >
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-          </Form.Select>
+            required
+          />
+          <Form.Check
+            inline
+            type="radio"
+            name="gender"
+            label="Female"
+            value="Female"
+            checked={beautician.gender === "Female"}
+            onChange={handleChange}
+            required
+          />
         </Form.Group>
 
         <Form.Group controlId="mobileno">
@@ -195,6 +261,7 @@ function UpdateBeautician() {
             name="mobileno"
             value={beautician.mobileno}
             onChange={handleChange}
+            maxLength={10}
           />
           {inputErrors.mobileno && (
             <Alert variant="danger" className="mt-2">
@@ -227,16 +294,11 @@ function UpdateBeautician() {
             onChange={handleChange}
           />
         </Form.Group>
-        <Button variant="primary" type="submit" className="btn-update">
-          Update
+        <Button variant="primary" type="submit" className="mt-3">
+          Update Beautician
         </Button>
       </Form>
-      </div>
-  
-    
-   
-    
-   
+    </div>
   );
 }
 

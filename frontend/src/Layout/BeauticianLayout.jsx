@@ -15,7 +15,7 @@ function BeauticianLayout() {
             </Col>
         </Row>
 
-        <Row style={{ minHeight: "100vh", marginTop: "-20px" }}>
+        <Row style={{ minHeight: "100vh", marginTop: "-20px"}}>
             <Col>
                 <Outlet />
             </Col>

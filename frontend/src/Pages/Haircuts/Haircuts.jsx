@@ -55,9 +55,9 @@ const Haircuts = () => {
                       </div>
 
 
-                      <div className="small-rect14">
-                      <table className="services-table">
-        <thead>
+                      <div className="haircuts-table-container">
+                      <table className="haircuts-table">
+        <thead  className="haircutshead">
           <tr>
             <th>Service Name</th>
             <th>Price (Rs.)</th>
@@ -65,7 +65,7 @@ const Haircuts = () => {
            
           </tr>
         </thead>
-        <tbody>
+        <tbody className="haircutsbody">
           {services.map((service) => (
             <tr key={service._id}>
               <td>{service.name}</td>

@@ -47,22 +47,22 @@ const Nails = () => {
                         
                     </div>
                     <div className="rect-heading-Nails">
-                    <h3><b>s make the most beautiful day of your life even more beautiful.</b></h3>
+                    <h3 className="paragraph-nails"><b>s make the most beautiful day of your life even more beautiful.</b></h3>
                     <h5 className="rect-head-Nails">A facial is a family of skin care treatments for the face, including steam, exfoliation, extraction, creams, lotions, facial masks, peels, and massage. They are normally performed in beauty salons, but are also a common spa treatment. They are used for general skin health as well as for specific skin conditions.</h5>
                     </div>
                 </div>
 
 
-                <div className="small-rect16">
-                <table className="services-table">
-        <thead>
+                <div className="nails-table-container">
+                <table className="nails-table">
+        <thead className="nailshead">
           <tr>
             <th>Service Name</th>
             <th>Price (Rs.)</th>
             <th>Duration</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="nailsbody">
           {services.map((service) => (
             <tr key={service._id}>
               <td>{service.name}</td>

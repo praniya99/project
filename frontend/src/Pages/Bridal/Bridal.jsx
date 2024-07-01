@@ -53,35 +53,27 @@ const Bridal = () => {
             </p>
           </div>
         </div>
-        <div className="table-container">
-          <table className="services-table">
-            <thead className="head">
+        <div className="bridal-table-container">
+          <table className="bridal-table">
+            <thead className="bridalhead">
               <tr>
                 <th>Service Name</th>
                 <th>Price (Rs.)</th>
                 <th>Duration</th>
               </tr>
             </thead>
-            <tbody className="body">
+            <tbody className="bridalbody">
               {services.map((service) => (
                 <tr key={service._id}>
                   <td>{service.name}</td>
                   <td>Rs. {service.price}</td>
-                  <td>{service.duration.hours}h {service.duration.minutes}m</td>
+                  <td>{service.duration.hours}h {service.duration.minutes}min</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-        <div className="small-rect1">
-          <ul>
-            <li className="li-Bride1">
-              Early Morning Dressing Charges
-              For services between 06.00 am and 9.00 am, 
-              an additional charge of <b>Rs. 4130.00</b> applies.
-            </li>
-          </ul>
-        </div>
+        
       </div>
     </div>
   );

@@ -1,5 +1,8 @@
-import  { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+import { Table, Button, Form, FormControl } from 'react-bootstrap';
+import Adminsubheaderservice from '../../Components/Adminsubheaderservice/Adminsubheaderservice';
 import './ServiceTable.css';
 
 function ServicesTable() {
@@ -13,6 +16,7 @@ function ServicesTable() {
     duration: { hours: '', minutes: '' }
   });
   const [validationErrors, setValidationErrors] = useState({});
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     const fetchServices = async () => {
@@ -109,6 +113,10 @@ function ServicesTable() {
     }
   };
 
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
   if (loading) {
     return <div>Loading...</div>;
   }
@@ -117,9 +125,12 @@ function ServicesTable() {
     return <div>{error}</div>;
   }
 
-  // Organize services by category
+  const filteredServices = services.filter((service) =>
+    service.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   const organizedServices = {};
-  services.forEach((service) => {
+  filteredServices.forEach((service) => {
     if (!organizedServices[service.category]) {
       organizedServices[service.category] = [];
     }
@@ -127,15 +138,31 @@ function ServicesTable() {
   });
 
   return (
-    <div >
-     
+    <div>
+      <Adminsubheaderservice/>
+      <div className="d-flex justify-content-between align-items-center mb-3">
+        <Link to="/Addserviceform">
+          <Button className="beautician-button-list">+ Add Service</Button>
+        </Link>
+      </div>
+
+
+      <Form className="search-bar">
+        <FormControl
+          type="text"
+          placeholder="Search services..."
+          value={searchQuery}
+          onChange={handleSearchChange}
+          className="search-bar"
+        />
+      </Form>
       {Object.keys(organizedServices).map((category) => (
-        <div key={category} >
-          <h2>{category}</h2>
-          <table >
-            <thead >
+        <div key={category}>
+          <h2 className="allservice">{category}</h2>
+          <Table striped bordered hover className="beautician-table">
+            <thead>
               <tr>
-                <th >Service Name</th>
+                <th>Service Name</th>
                 <th>Price (Rs.)</th>
                 <th>Duration</th>
                 <th>Actions</th>
@@ -147,63 +174,75 @@ function ServicesTable() {
                   {editingService === service._id ? (
                     <>
                       <td>
-                        <input
+                        <Form.Control
                           type="text"
                           name="name"
                           value={updatedService.name}
                           onChange={handleUpdateChange}
+                          isInvalid={!!validationErrors.name}
                         />
-                        {validationErrors.name && <p className="error-message">{validationErrors.name}</p>}
+                        <Form.Control.Feedback type="invalid">
+                          {validationErrors.name}
+                        </Form.Control.Feedback>
                       </td>
                       <td>
-                        <input
+                        <Form.Control
                           type="text"
                           name="price"
                           value={updatedService.price}
                           onChange={handleUpdateChange}
+                          isInvalid={!!validationErrors.price}
                         />
-                        {validationErrors.price && <p className="error-message">{validationErrors.price}</p>}
+                        <Form.Control.Feedback type="invalid">
+                          {validationErrors.price}
+                        </Form.Control.Feedback>
                       </td>
                       <td>
-                        <input
+                        <Form.Control
                           type="number"
                           name="hours"
                           value={updatedService.duration.hours}
                           onChange={handleUpdateChange}
+                          isInvalid={!!validationErrors.hours}
+                          style={{ width: '70px', display: 'inline-block' }}
                         />
                         h
-                        <input
+                        <Form.Control
                           type="number"
                           name="minutes"
                           value={updatedService.duration.minutes}
                           onChange={handleUpdateChange}
+                          isInvalid={!!validationErrors.minutes}
+                          style={{ width: '70px', display: 'inline-block' }}
                         />
                         m
-                        {validationErrors.hours && <p className="error-message">{validationErrors.hours}</p>}
-                        {validationErrors.minutes && <p className="error-message">{validationErrors.minutes}</p>}
+                        <Form.Control.Feedback type="invalid">
+                          {validationErrors.hours || validationErrors.minutes}
+                        </Form.Control.Feedback>
                       </td>
                       <td>
-                        <button onClick={() => handleUpdateSubmit(service._id)} className="update-button">Save</button>
-                        <button onClick={() => setEditingService(null)} className="cancel-button">Cancel</button>
+                        <Button onClick={() => handleUpdateSubmit(service._id)} className="beautician-button-save">Save</Button>
+                        <Button onClick={() => setEditingService(null)} className="beautician-button-cancel">Cancel</Button>
                       </td>
                     </>
                   ) : (
                     <>
                       <td>{service.name}</td>
                       <td>Rs. {service.price}</td>
-                      <td>{service.duration.hours}h {service.duration.minutes}m</td>
+                      <td>{service.duration.hours}h {service.duration.minutes}min</td>
                       <td>
-                        <button onClick={() => handleEdit(service)} className="edit-button">Edit</button>
-                        <button onClick={() => handleDelete(service._id)} className="delete-button">Delete</button>
+                        <Button onClick={() => handleEdit(service)} className="beautician-button-update">Edit</Button>
+                        <Button onClick={() => handleDelete(service._id)} className="beautician-button-delete">Delete</Button>
                       </td>
                     </>
                   )}
                 </tr>
               ))}
             </tbody>
-          </table>
+          </Table>
         </div>
       ))}
+     
     </div>
   );
 }
