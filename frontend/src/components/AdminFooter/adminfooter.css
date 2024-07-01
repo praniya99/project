@@ -42,9 +42,9 @@ p{
 
  }
 .fulfooter{
-  
+    width:100vw;
     background:linear-gradient(to right,#bb446a,#953050,#7c2343);
-  
+    margin-left: -12px;
  
  
   

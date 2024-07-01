@@ -8,6 +8,7 @@ import T6 from '../../assets/AllServices/T6.jpg'
 import T7 from '../../assets/AllServices/T7.jpg'
 import T8 from '../../assets/AllServices/T8.jpg'
 import T81 from '../../assets/AllServices/T81.jpg'
+import { Link } from 'react-router-dom';
 
 
 
@@ -19,12 +20,12 @@ const AllServices = () => {
               <div className="small-rect1-AllServices">
                           <div className="small-rect2-AllServices">
                                   <div className="main-photo-AllServices">
-                                        <a href="#"><img
+                                        <Link to="/Bridal"><img
                                           src={T3}
                                           alt="Description 1"
                                           className="rect-image-AllServices"
                                         />
-                                        </a>
+                                        </Link>
                                   </div>
                                   <div className="rect-heading-AllServices">
                                         <h5 className="rect-head-head-AllServices">Bridal</h5>
@@ -33,13 +34,13 @@ const AllServices = () => {
 
                           <div className="small-rect2-AllServices">
                                  <div className="main-photo-AllServices">
-                                        <a href="#">
+                                        <Link to="/Nails">
                                           <img
                                             src={T6}
                                             alt="Description 1"
                                             className="rect-image-AllServices"
                                           />
-                                          </a>
+                                          </Link>
                                   </div>
                                    <div className="rect-heading-AllServices">
                                        <h5 className="rect-head-head-AllServices">Nails</h5>
@@ -48,13 +49,13 @@ const AllServices = () => {
 
                           <div className="small-rect2-AllServices">
                                     <div className="main-photo-AllServices">
-                                          <a href="#">
+                                          <Link to="/Makeup">
                                             <img
                                               src={T7}
                                               alt="Description 1"
                                               className="rect-image-AllServices"
                                             />
-                                            </a>
+                                            </Link>
                                     </div>
                                     <div className="rect-heading-AllServices">
                                           <h5 className="rect-head-head-AllServices">Makeup</h5>
@@ -65,13 +66,13 @@ const AllServices = () => {
               <div className="small-rect1-AllServices">
                         <div className="small-rect2-AllServices">
                                 <div className="main-photo-AllServices">
-                                      <a href="#">
+                                      <Link to="/Haircuts">
                                         <img
                                           src={T8}
                                           alt="Description 1"
                                           className="rect-image-AllServices"
                                         />
-                                        </a>
+                                        </Link>
                                 </div>
                                 <div className="rect-heading-AllServices">
                                        <h5 className="rect-head-head-AllServices">Hair Cuts</h5>
@@ -80,13 +81,13 @@ const AllServices = () => {
 
                         <div className="small-rect2-AllServices">
                                 <div className="main-photo-AllServices">
-                                      <a href="#">
+                                      <Link to="/Haircolour">
                                         <img
                                           src={T81}
                                           alt="Description 1"
                                           className="rect-image-AllServices"
                                         />
-                                        </a>
+                                        </Link>
                                 </div>
                                 <div className="rect-heading-AllServices">
                                        <h5 className="rect-head-head-AllServices">Hair Colouring</h5>
@@ -95,13 +96,13 @@ const AllServices = () => {
 
                         <div className="small-rect2-AllServices">
                                 <div className="main-photo-AllServices">
-                                      <a href="#">
+                                      <Link to="/Facialcleanup">
                                         <img
                                           src={T5}
                                           alt="Description 1"
                                           className="rect-image-AllServices"
                                         />
-                                        </a>
+                                        </Link>
                                 </div>
                                 <div className="rect-heading-AllServices">
                                        <h5 className="rect-head-head-AllServices">Facial Cleanup</h5>
@@ -112,13 +113,13 @@ const AllServices = () => {
               <div className="small-rect1-1-AllServices">
                               <div className="small-rect2-AllServices">
                                       <div className="main-photo-AllServices">
-                                            <a href="#">
+                                            <Link to="/Threading">
                                               <img
                                                 src={T1}
                                                 alt="Description 1"
                                                 className="rect-image-AllServices"
                                               />
-                                              </a>
+                                              </Link>
                                       </div>
 
                                       <div className="rect-heading-AllServices">
@@ -128,13 +129,13 @@ const AllServices = () => {
 
                                 <div className="small-rect2-AllServices">
                                         <div className="main-photo-AllServices">
-                                                <a href="#">
+                                                <Link to="/Waxing">
                                                   <img
                                                     src={T4}
                                                     alt="Description 1"
                                                     className="rect-image-AllServices"
                                                   />
-                                                  </a>
+                                                  </Link>
                                         </div>
 
                                         <div className="rect-heading-AllServices">

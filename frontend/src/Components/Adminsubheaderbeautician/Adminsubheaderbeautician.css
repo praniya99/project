@@ -3,22 +3,23 @@
     flex-direction: column;
     overflow-x: hidden;
     width: 100vw;
-    margin-left: -112px;
-    margin-top: 10px;
+    margin-left: -11.9px;
+    margin-top: 20px;
   }
+  
   .main-head-beauticianform{
     display: flex;
     width: 99vw;
     min-height: 120px;
     flex-direction: row;
-    background-color: #F1A4BD;
+    background: linear-gradient(to right,#bb446a,#953050,#7c2343);
     text-align: center;
     align-items: center;
   }
   
   .main-head-beauticianform1-1{
-    margin-left: 10%;
-    color: black;
+    margin-left: 8%;
+    color: white;
     font-family: 'Arial';
     font-size: 35px;
     font-family: 'Idran' ,

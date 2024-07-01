@@ -1,4 +1,4 @@
-.BIg-main-main-rect-serviceform{
+.BIg-main-main-rect-AddService{
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -7,7 +7,7 @@
     margin-top: 20px;
   }
 
-  .main-head-serviceform{
+  .main-head-AddService{
     display: flex;
     width: 99vw;
     min-height: 120px;
@@ -17,7 +17,7 @@
     align-items: center;
   }
   
-  .main-head-serviceform1-1{
+  .main-head-AddService1-1{
     margin-left: 10%;
     color: white;
     font-family: 'Arial';
@@ -26,11 +26,11 @@
   }
 
   @media screen and (max-width: 400px) {
-    .main-head-serviceform1-1 {
+    .main-head-sAddService1-1 {
       margin-left: 15%;
       font-size: 25px;
     }
-    .BIg-main-main-rect-serviceform{
+    .BIg-main-main-rect-AddService{
      width:400px;
       margin-left: -10px;
     }

@@ -1,7 +1,39 @@
 import './Makeup.css'
 import Subheader from '../../Components/Subheader/Subheader.jsx'
 import S5 from '../../assets/Makeup/S5.jpg'
+import  { useEffect, useState } from 'react';
+import axios from 'axios';
+
+
 const Makeup = () => {
+  const [makeupServices, setMakeupServices] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
+
+  useEffect(() => {
+    const fetchMakeupServices = async () => {
+      try {
+        const response = await axios.get('http://localhost:3000/services/category/Makeup');
+        setMakeupServices(response.data);
+      } catch (error) {
+        setError('Failed to fetch Makeup services');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchMakeupServices();
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>{error}</div>;
+  }
+
+
   return (
     <div>
       <Subheader/>
@@ -16,7 +48,7 @@ const Makeup = () => {
                     </div>
 
                     <div className="rect-heading-Makeup">
-                        <h3><b> make the most beautiful day of your life even more beautiful.</b></h3>
+                        <h3><b className="paragraph-makeup"> make the most beautiful day of your life even more beautiful.</b></h3>
                         <h5 className="rect-head-Makeup">Natural Makeup: Enhances features subtly for a fresh, flawless look.
                         Glam Makeup: Dramatic with bold colors and contouring for special events.
                         Bridal Makeup: Tailored for weddings, ranging from soft to glamorous.
@@ -29,47 +61,25 @@ const Makeup = () => {
                 </div>
 
 
-                <div className="small-rect15">
-                    <div>
-                        <ul>
-                            <b><h3 className="main-heading-Makeup">Service</h3></b>
-                            <li className="li-Makeup">Eyebrows </li>
-                            <li className="li-Makeup">Upper Lip</li>
-                            <li className="li-Makeup">Chin</li>
-                            <li className="li-Makeup">Neck</li>
-                            <li className="li-Makeup">Eyebrows </li>
-                            <li className="li-Makeup">Upper Lip</li>
-                            <li className="li-Makeup">Chin</li>
-                            <li className="li-Makeup">Neck</li>
-                     </ul>
-                    </div>
-
-                    <div className='list-Makeup'>
-                        <ul type='none'>
-                            <b><h3 className="main-heading-Makeup1">Time Duration</h3></b>
-                            <li className="li-Makeup">30 min </li>
-                            <li className="li-Makeup">30 min </li>
-                            <li className="li-Makeup">30 min </li>
-                            <li className="li-Makeup">30 min </li>
-                            <li className="li-Makeup">30 min </li>
-                            <li className="li-Makeup">30 min </li>
-                        
-                         </ul>
-                    </div>
-
-                    <div className='list-Makeup'>
-                             <ul type='none'>
-                                   <b><h3 className="main-heading-Makeup">Price</h3></b>
-                                    <li className="li-Makeup">Rs.100.00 </li>
-                                    <li className="li-Makeup">Rs.100.00 </li>
-                                    <li className="li-Makeup">Rs.100.00 </li>
-                                    <li className="li-Makeup">Rs.100.00 </li>
-                                    <li className="li-Makeup">Rs.100.00 </li>
-                                    <li className="li-Makeup">Rs.100.00 </li>
-                                    <li className="li-Makeup">Rs.100.00 </li>
-                                    <li className="li-Makeup">Rs.100.00 </li>
-                            </ul>
-                    </div>
+                <div className="makeup-table-container">
+                <table className="makeup-table">
+        <thead className="makeuphead">
+          <tr>
+            <th>Service Name</th>
+            <th>Price (Rs.)</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody className="makeupbody">
+          {makeupServices.map((service) => (
+            <tr key={service._id}>
+              <td>{service.name}</td>
+              <td>Rs. {service.price}</td>
+              <td>{service.duration.hours}h {service.duration.minutes}m</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
                 </div>
          </div>
        

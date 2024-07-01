@@ -1,10 +1,8 @@
 .big-rect12 {
   display: flex;
-  overflow-x: hidden;
   flex-direction: column;
-  height: 130vh;
-  margin-top: -130.7vh;
-  margin-left: 18%;
+  margin-top: -905px;
+  margin-left: 17%;
   width: 83%;
   padding-bottom: 100px;
   background-color: white;
@@ -14,55 +12,37 @@
   display: flex;
   flex-direction: row;
   width: 90%;
-  height: 55%;
   margin-left: 4.3%;
   margin-top: 2%;
-background-color: white;
+  background-color: white;
 }
 
 .rect-image-facialcleanup{
   display: flex;
-width: 100;
-height: 100%;
-margin-bottom: 10px;
+  width: 190px;
+  height: auto;
+  margin-right: 20px;
 }
 
-.main-photo-facialcleanup {
-  width: 100%;
-  height: 90%;
-  background-color: white;
-}
+
 
 .rect-heading-facialcleanup {
-color: black; 
-text-align: center; 
-margin-top: 25px;
-margin-left: 20px;
+  color: black; 
+  text-align: center; 
+  margin-top: 25px;
 }
 
 .rect-head-facialcleanup{
   font-weight: 600;
-  margin-top: 25px;
-  font-size: 23px;
+  margin-top: 35px;
+  font-size: 18px;
   text-align: left;
+  margin-left: 15px;
 }
 
-.main-heading-facialcleanup{
-  margin-top: 30px;
-  margin-left: 150px auto;
-}
 
-.main-heading-facialcleanup1{
-  margin-top: 30px;
-  margin-left: 80px auto;
-}
 
-.li-facialcleanup{
-  font-size: 20px;
-  font-weight: 500;
-  margin-top: 18px;
-  margin-left: 135px auto;
-}
+
 
 .heading-facialcleanup{
 font-size: 40px;
@@ -71,16 +51,62 @@ margin-top: 30px;
 
 }
 
-.list-facialcleanup{
-  margin-left: 60px;
+.cleanup-table-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 4.3%;
+  width: 90%;
+  margin-top: 60px;
+}
+
+.cleanup-table {
+  margin-left: 120px;
+  width: 70%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.cleanup-table th,
+.cleanup-table td {
+  border: 1px solid #dddddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.cleanup-table td{
+  width:1000px;
 
 }
 
-.list-facialcleanup1{
-  margin-left: 0px;
+
+.cleanup-table th {
   
-
+  font-weight: bold;
+  padding-bottom: 8px;
+  width:1000px;
 }
+
+.cleanup-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.cleanup-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+.cleanuphead{
+  height:2px;
+  margin-top: 20px;
+  color: black;
+}
+
+.cleanupbody{
+  height:2px;
+  margin-top: -92px;
+}
+
 
 @media (max-width: 400px) {
  
@@ -136,3 +162,25 @@ margin-top: 30px;
   }
 }
 
+.services-container {
+  padding: 20px;
+}
+
+.services-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.services-table th, .services-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.services-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.services-table td {
+  text-align: left;
+}

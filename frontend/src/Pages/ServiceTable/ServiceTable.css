@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+.beautician-button-list{
+  background-color: #bb446a;
+  color: black;
+  margin-top: 40px;
+  font-weight: 500;
+  margin-left: 130px;
+  border: 2px solid black;
+}
+
+.beautician-button-list:hover{
+  background-color: #7c2343;
+  color: white;
+  font-weight: 500;
+  border: 2px solid black;
+}
+
+
+.pdf-Button{
+  background-color: #bb446a;
+  color: black;
+  margin-top: 40px;
+  font-weight: 500;
+  margin-right: -50px;
+  border: 2px solid black;
+}
+
+.pdf-Button:hover{
+  background-color: #7c2343;
+  color: white;
+  font-weight: 500;
+  border: 2px solid black;
+}
+
+.search-bar{
+  width:200px;
+  border-color: black;
+  margin-left: 320px;
+  margin-top: -55px;
+  height:40px;
+  
+}
+
+
+
+.beautician-table {
+  margin-top: 10px;
+  margin-left: 70px;
+  width: 105%; 
+  overflow-x:hidden;
+  border-collapse: collapse; 
+  border: 2px solid black;
+}
+
+.beautician-table th,
+.beautician-table td {
+  border: 1px solid black; 
+  padding: 10px; 
+  vertical-align: middle;
+  text-align: center; 
+  width:100vw;
+}
+
+.beautician-table th {
+  font-size: 17px;
+}
+
+.beautician-button-delete,
+.beautician-button-update {
+  width: 100px;
+  color: black;
+  font-size: 100%; 
+  font-weight: 500;
+  margin: 5px; 
+  display: inline-block;
+  text-align: center;
+}
+
+.beautician-button-delete {
+  background-color: red;
+  border-color: 2px solid black;
+}
+
+.beautician-button-delete:hover {
+  background-color:#7c2343;
+  color: white;
+  border-color: 2px solid black;
+}
+
+.beautician-button-update {
+  background-color:#bb446a;
+  border-color: 2px solid black;
+}
+
+.beautician-button-update:hover {
+  background-color: #7c2343;
+  color: white;
+  border-color: 2px solid black;
+}
+
+.beautician-button-save {
+  background-color:#bb446a;
+  border-color: 2px solid black;
+}
+
+.beautician-button-save:hover {
+  background-color: #7c2343;
+  color: white;
+  border-color: 2px solid black;
+}
+
+.beautician-button-cancel {
+  background-color:#bb446a;
+  border-color: 2px solid black;
+}
+
+.beautician-button-cancel:hover {
+  background-color: #7c2343;
+  color: white;
+  border-color: 2px solid black;
+}
+
+.beautician-table-responsive {
+  width: 100%;
+  margin-top: 3%;
+  margin-left: 60px;
+ 
+}
+
+.allservice{
+  margin-left: 70px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}

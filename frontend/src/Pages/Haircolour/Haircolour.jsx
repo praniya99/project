@@ -1,8 +1,39 @@
 import './Haircolour.css'
 import Subheader from "../../Components/Subheader/Subheader"
 import T8 from '../../assets/Haircolour/T8.jpg'
+import  { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const Haircolour = () => {
+
+    const [services, setServices] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState('');
+  
+    useEffect(() => {
+      const fetchServices = async () => {
+        try {
+          const response = await axios.get('http://localhost:3000/services/all');
+          const hairColouringServices = response.data.filter(service => service.category === 'Hair Colouring');
+          setServices(hairColouringServices);
+        } catch (error) {
+          setError('Failed to fetch services');
+        } finally {
+          setLoading(false);
+        }
+      };
+  
+      fetchServices();
+    }, []);
+  
+    if (loading) {
+      return <div>Loading...</div>;
+    }
+  
+    if (error) {
+      return <div>{error}</div>;
+    }
+  
   return (
     <div>
       <Subheader/>
@@ -23,47 +54,27 @@ const Haircolour = () => {
                 </div>
 
 
-                <div className="small-rect13">
-                    <div>
-                    <ul>
-                        <b><h3 className="main-heading-Haircolour">Service</h3></b>
-                        <li className="li-Haircolour">Eyebrows </li>
-                        <li className="li-Haircolour">Eyebrows </li>
-                        <li className="li-Haircolour">Eyebrows </li>
-                        <li className="li-Haircolour">Eyebrows </li>
-                        <li className="li-Haircolour">Eyebrows </li>
-                        <li className="li-Haircolour">Eyebrows </li>
-                        <li className="li-Haircolour">Eyebrows </li>
-                        <li className="li-Haircolour">Eyebrows </li>
-                    </ul>
-                    </div>
-
-                    <div className='list-Haircolour'>
-                        <ul type='none'>
-                           <b><h3 className="main-heading-Haircolour1">Time Duration</h3></b>
-                            <li className="li-Haircolour">30 min </li>
-                            <li className="li-Haircolour">30 min </li>
-                            <li className="li-Haircolour">30 min </li>
-                            <li className="li-Haircolour">30 min </li>
-                            <li className="li-Haircolour">30 min </li>
-                            <li className="li-Haircolour">30 min </li>
-                        </ul>
-                    </div>
-
-                    <div className='list-Haircolour1'>
-                        <ul type='none'>
-                           <b><h3 className="main-heading-Haircolour">Price</h3></b>
-                            <li className="li-Haircolour">Rs.100.00 </li>
-                            <li className="li-Haircolour">Rs.100.00 </li>
-                            <li className="li-Haircolour">Rs.100.00 </li>
-                            <li className="li-Haircolour">Rs.100.00 </li>
-                            <li className="li-Haircolour">Rs.100.00 </li>
-                            <li className="li-Haircolour">Rs.100.00 </li>
-                            <li className="li-Haircolour">Rs.100.00 </li>
-                            <li className="li-Haircolour">Rs.100.00 </li>
-                            <li className="li-Haircolour">Rs.100.00 </li>
-                         </ul>
-                      </div>
+                <div className="haircolour-table-container">
+                <table className="haircolourhead">
+        <thead>
+          <tr>
+            <th>Service Name</th>
+            <th>Price (Rs.)</th>
+            <th>Duration</th>
+            
+          </tr>
+        </thead>
+        <tbody className="haircolourbody">
+          {services.map((service) => (
+            <tr key={service._id}>
+              <td>{service.name}</td>
+              <td>Rs. {service.price}</td>
+              <td>{service.duration.hours}h {service.duration.minutes}m</td>
+              
+            </tr>
+          ))}
+        </tbody>
+      </table>
                 </div>
         </div>
        

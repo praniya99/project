@@ -1,9 +1,38 @@
 import './Facialcleanup.css'
 import Subheader from "../../Components/Subheader/Subheader"
 import T5 from '../../assets/Facialcleanup/T5.jpg'
+import  { useEffect, useState } from 'react';
+import axios from 'axios';
 
 
 const Facialcleanup = () => {
+
+    const [facialCleanupServices, setFacialCleanupServices] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState('');
+  
+    useEffect(() => {
+      const fetchFacialCleanupServices = async () => {
+        try {
+          const response = await axios.get('http://localhost:3000/services/category/Facial%20Cleanup');
+          setFacialCleanupServices(response.data);
+        } catch (error) {
+          setError('Failed to fetch Facial Cleanup services');
+        } finally {
+          setLoading(false);
+        }
+      };
+  
+      fetchFacialCleanupServices();
+    }, []);
+  
+    if (loading) {
+      return <div>Loading...</div>;
+    }
+  
+    if (error) {
+      return <div>{error}</div>;
+    }
   return (
     <div>
       <Subheader/>
@@ -22,45 +51,25 @@ const Facialcleanup = () => {
                             </div>
                         </div>
 
-
-                        <div className="small-rect12">
-                            <div>
-                                <ul>
-                                    <b><h3 className="main-heading-facialcleanup">Service</h3></b>
-                                    <li className="li-facialcleanup">Basic Manicure </li>
-                                    <li className="li-facialcleanup">Basic Pedicure</li>
-                                    <li className="li-facialcleanup">Basic Manicure </li>
-                                    <li className="li-facialcleanup">Basic Pedicure</li>
-                                    <li className="li-facialcleanup">Basic Manicure </li>
-                                    <li className="li-facialcleanup">Basic Pedicure</li>
-                            
-                                 </ul>
-                            </div>
-
-                            <div className='list-facialcleanup'>
-                                 <ul type='none'>
-                                    <b><h3 className="main-heading-facialcleanup1">Time Duration</h3></b>
-                                    <li className="li-facialcleanup">30 min </li>
-                                    <li className="li-facialcleanup">30 min </li>
-                                    <li className="li-facialcleanup">30 min </li>
-                                    <li className="li-facialcleanup">30 min </li>
-                                    <li className="li-facialcleanup">30 min </li>
-                                    <li className="li-facialcleanup">30 min </li>
-                                </ul>
-                            </div>
-
-                            <div className='list-facialcleanup1'>
-                                <ul type='none'>
-                                    <b><h3 className="main-heading-facialcleanup">Price</h3></b>
-                                     <li className="li-facialcleanup">Rs.2900.00 </li>
-                                     <li className="li-facialcleanup">Rs.600.00 </li>
-                                     <li className="li-facialcleanup">Rs.6500.00 </li>
-                                    <li className="li-facialcleanup">Rs.4500.00 </li>
-                                     <li className="li-facialcleanup">Rs.1700.00 </li>
-                                
-                                
-                                </ul>
-                            </div>
+                        <div className="cleanup-table-container">
+                        <table className="cleanup-table">
+        <thead className="cleanuphead">
+          <tr>
+            <th>Service Name</th>
+            <th>Price (Rs.)</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody className="cleanupbody">
+          {facialCleanupServices.map((service) => (
+            <tr key={service._id}>
+              <td>{service.name}</td>
+              <td>Rs. {service.price}</td>
+              <td>{service.duration.hours}h {service.duration.minutes}m</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
                         </div>
                 </div>
        

@@ -1,117 +1,64 @@
-
-  
- 
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Ensure the font color is visible */
+.form-container {
   width: 100%;
-  overflow-x: hidden;
-  
-  }
-
-  *,
-*::before,
-*::after {
-  box-sizing: inherit;}
-
-  .form-container {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-margin-top: -30px;
-margin-left: 80px;
-   
-    
-  }
-  
-  .product-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
-    width: 600px;
-    box-sizing: border-box;
-    background-color: rgba(204, 205, 206);
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-    display: flex;
-  flex-direction: column;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .form-group textarea {
-    resize: vertical;
-    height: 100px;
-  }
-  
-  .form-group input[type="file"] {
-    padding: 3px;
-  }
-  
-  .button {
-    width: 25%;
-    padding: 10px;
-    background-color:  #c3689F;
-    color: black;
-    border: 1px solid #c3689F;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    
-  }
-
- 
-  
-  .button:hover {
-    background-color: #974f7a;
-    border-color:#c3689f;
-    color: black;
-  }
-  
-.field {
-  background-color: white;
-  width: 10%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color:  rgb(204, 205, 206);
+  border-radius: 5px;
+  box-shadow: 0 0 10px ;
+  overflow-x:hidden;
+  margin-top: 50px;
 }
 
-.field1 {
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.field, .field1 {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
   background-color: white;
   color: black;
-  max-width: 100%;
 }
-  
-@media screen and (max-width: 400px) {
-  .product-form {
-    width: 60%; 
-    margin-left: -180px;
-    margin-top: 38px;
-  }
 
-  .button{
-    width:50%
-  }
+.field::placeholder, .field1::placeholder {
+  color: black;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #218838;
+}
+
+.message {
+  font-size: 16px;
+  color: green;
+  margin-top: 20px;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem; /* Adjust font size as needed */
+  margin-top: 0.25rem; /* Optional: Add margin for spacing */
 }

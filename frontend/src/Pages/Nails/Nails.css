@@ -22,47 +22,27 @@
 
   .rect-image-Nails{
     display: flex;
-  width: 100;
-  height: 100%;
-  margin-bottom: 10px;
+  width: 190px;
+  height: auto;
+  margin-right: 20px;
 }
 
-.main-photo-Nails {
-    width: 100%;
-    height: 90%;
-    background-color: white;
-  }
+
 
 .rect-heading-Nails {
   color: black; 
   text-align: center; 
   margin-top: 25px;
-  margin-left: 20px;
 }
 
 .rect-head-Nails{
-    font-weight: 600;
-    margin-top: 25px;
-    font-size: 23px;
-    text-align: left;
+  font-weight: 600;
+  margin-top: 35px;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 15px;
 }
 
-.main-heading-Nails{
-    margin-top: 30px;
-    margin-left: 100px;
-}
-
-.main-heading-Nails1{
-    margin-top: 30px;
-    margin-left: 30px;
-}
-
-.li-Nails{
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 18px;
-    margin-left: 85px;
-}
 
 .heading-Nails{
   font-size: 40px;
@@ -71,7 +51,62 @@
 
 }
 
-.list-Nails{
-    margin-left: 80px;
+.nails-table-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 4.3%;
+  width: 90%;
+  margin-top: 60px;
+}
 
+.nails-table {
+  margin-left: 120px;
+  width: 70%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.nails-table th,
+.nails-table td {
+  border: 1px solid #dddddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.nails-table td{
+  width:1000px;
+
+}
+
+
+.nails-table th {
+  
+  font-weight: bold;
+  padding-bottom: 8px;
+  width:1000px;
+}
+
+.nails-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.nails-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.li-nails1{
+  color: red;
+  margin-left: 100px;
+  margin-top: -130px;
+}
+.nailshead{
+  height:2px;
+  margin-top: 20px;
+  color: black;
+}
+
+.nailsbody{
+  height:2px;
+  margin-top: -92px;
 }

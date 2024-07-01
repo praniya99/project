@@ -22,47 +22,34 @@ background-color: white;
 
 .rect-image-Makeup{
   display: flex;
-width: 100;
-height: 100%;
-margin-bottom: 10px;
+  width: 190px;
+  height: auto;
+  margin-right: 20px;
 }
 
-.main-photo-Makeup {
-  width: 100%;
-  height: 90%;
-  background-color: white;
-}
 
 .rect-heading-Makeup {
-color: black;
-text-align: center;
-margin-top: 25px;
-margin-left: 20px;
+  color: black; 
+  text-align: center; 
+  margin-top: 25px;
 }
 
 .rect-head-Makeup{
   font-weight: 600;
-  margin-top: 25px;
-  font-size: 23px;
+  margin-top: 35px;
+  font-size: 18px;
   text-align: left;
+  margin-left: 15px;
 }
 
-.main-heading-Makeup{
-  margin-top: 30px;
-  margin-left: 100px;
+.paragraph-makeup{
+  margin-top: -32px;
+  margin-left: 15px;
+  text-align:center;
+
 }
 
-.main-heading-Makeup1{
-  margin-top: 30px;
-  margin-left: 30px;
-}
 
-.li-Makeup{
-  font-size: 20px;
-  font-weight: 500;
-  margin-top: 18px;
-  margin-left: 85px;
-}
 
 .heading-Makeup{
 font-size: 40px;
@@ -71,7 +58,62 @@ margin-top: 30px;
 
 }
 
-.list-Makeup{
-  margin-left: 80px;
+.makeup-table-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 4.3%;
+  width: 90%;
+  margin-top: 60px;
+}
 
+.makeup-table {
+  margin-left: 120px;
+  width: 70%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.makeup-table th,
+.makeup-table td {
+  border: 1px solid #dddddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.makeup-table td{
+  width:1000px;
+
+}
+
+
+.makeup-table th {
+  
+  font-weight: bold;
+  padding-bottom: 8px;
+  width:1000px;
+}
+
+.makeup-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.makeup-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.li-makeup1{
+  color: red;
+  margin-left: 100px;
+  margin-top: -130px;
+}
+.makeuphead{
+  height:2px;
+  margin-top: 20px;
+  color: black;
+}
+
+.makeupbody{
+  height:2px;
+  margin-top: -92px;
 }

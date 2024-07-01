@@ -1,0 +1,46 @@
+.heading{
+  text-align: center;
+  margin-left:60px;
+  
+ 
+ }
+ 
+ 
+ .Form1{
+   border-width: 10px;
+   width: 40vw;
+ margin-top: 40px;
+  
+  border: 2px solid rgb(204, 205, 206);
+ padding: 20px;
+ border-radius: 5px;
+ background-color: rgb(204, 205, 206);
+ margin-left: 450px;
+ margin-bottom: 40px;
+      
+ }
+ 
+ .Form-label{
+   margin-top: 8px;
+ }
+ 
+ .btn-update {
+   width:30%;
+         padding: auto;
+         color: black;
+         font-size: 120%;
+         font-weight: 500;
+        margin-right: 185px;
+          background-color: #C3689F;
+          border-color: black  ;
+       display: flex;
+       justify-content: center;
+       margin-top: 35px;
+ }
+ 
+ .btn-update:hover {
+   background-color: #974f7a; 
+         color: black;
+         border-color: #C3689F;
+ }
+ 

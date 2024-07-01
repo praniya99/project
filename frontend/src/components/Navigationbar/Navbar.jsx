@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import './navbar.css'; 
 import pic01 from '../../assets/images/navbar/pic01.jpg'
-import se from '../assets/images/navbar/se.png'
+import se from '../../assets/images/navbar/se.png'
 
-const NavBar = () => {
+const Navbar = () => {
   const [EmployeeDropdownOpen, setEmployeeDropdownOpen] = useState(false);
   const [salonDropdownOpen, setSalonDropdownOpen] = useState(false);
 
@@ -35,9 +35,9 @@ const NavBar = () => {
           >            <span className='salon'>Salon</span>
             {salonDropdownOpen && (
               <div className="dropdown-menu">
-                <a href="#">Hair</a>
-                <a href="#">Nails</a>
-                <a href="#">Spa</a>
+                <a href="#">Item</a>
+                <a href="#">Service</a>
+               
               </div>
             )}
           </div>
@@ -64,4 +64,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;
