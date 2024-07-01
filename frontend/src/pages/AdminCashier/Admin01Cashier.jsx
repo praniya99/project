@@ -55,8 +55,9 @@ export default function Admin01Cashier() {
               <td>{cashier.email}</td>
               <td>{cashier.address}</td>
               <td>
-                  <Link to={`/edit-cashier/${cashier._id}`}><button className='D_btn'>Edit</button></Link>
-               
+              <Link to={`/UpdateCashier/${cashier._id}`}>
+                                        <button className='D_btn'>Edit</button>
+                                    </Link>               
                 <button className='D_btn' onClick={() => deleteCashier(cashier._id)}>Delete</button>
               </td>
             </tr>

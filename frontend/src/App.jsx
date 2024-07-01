@@ -29,6 +29,7 @@ import Admin01cashierRegister from './pages/CashierRegister/Admin01cashierReg'
 import Salary from './pages/Salary/Salary'
 import Report01 from './pages/AppointmentReport/Report01'
 import MyLeaves from './pages/MyLeaves/MyLeaves'
+import UpdateCashier from './pages/UpdateCashier/UpdateCashier'
 
 
 
@@ -74,6 +75,9 @@ function App() {
                   <Route path="Salary" element={<Salary />} />
                   <Route path="Report01" element={<Report01 />} />
                   <Route path="MyLeaves" element={<MyLeaves />} />
+                  <Route path="UpdateCashier" element={<UpdateCashier />} />
+                  <Route path="/" element={<Admin01Cashier />} />
+                  <Route path="/updatecashier/:id" element={<UpdateCashier />} />
 
             
 
